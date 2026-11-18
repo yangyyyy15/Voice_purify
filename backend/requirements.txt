@@ -1,0 +1,14 @@
+# Python 3.10 / 3.11。PyTorch 需按 CUDA 版本单独安装，见 docs/开发规程.md Step 0：
+#   pip install torch torchaudio --index-url https://download.pytorch.org/whl/cu121
+ffmpeg-python
+demucs
+silero-vad
+panns-inference
+librosa
+pyannote.audio>=3.1,<4
+modelscope
+funasr
+fastapi
+uvicorn
+pydantic>=2
+editdistance
