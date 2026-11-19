@@ -69,6 +69,7 @@ MUSIC_MERGE_GAP_S = 8.0
 
 # ---------- Step 5: 说话人分离 (pyannote) ----------
 PYANNOTE_PIPELINE = "pyannote/speaker-diarization-3.1"
+WESPEAKER_EMBEDDING = PROJECT_ROOT / "models" / "wespeaker-voxceleb-resnet34-LM" / "speaker-embedding.onnx"
 # 已知人数时填上，能明显提升准确率；不知道就保持 None
 NUM_SPEAKERS = None
 MIN_SPEAKERS = None

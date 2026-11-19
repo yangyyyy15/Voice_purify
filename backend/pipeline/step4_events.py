@@ -16,7 +16,13 @@ BATCH = 64
 
 
 def run(full_48k: Path, cache: Path, device: str) -> List[dict]:
+    import os
     import numpy as np
+    model_dir = config.PROJECT_ROOT / "models" / "panns"
+    for filename in ("class_labels_indices.csv", "Cnn14_mAP=0.431.pth"):
+        if not (model_dir / filename).is_file():
+            raise FileNotFoundError(f"Missing PANNs asset: {model_dir / filename}. See docs/windows-runtime.md")
+    os.environ["PANNS_DATA_DIR"] = str(model_dir)
     from panns_inference import AudioTagging, labels
 
     mix32 = cache / "mix_32k.wav"
@@ -34,7 +40,7 @@ def run(full_48k: Path, cache: Path, device: str) -> List[dict]:
 
     win, hop = int(config.EVENT_WINDOW_S * sr), int(config.EVENT_HOP_S * sr)
     starts = list(range(0, max(1, len(audio) - win + 1), hop))
-    at = AudioTagging(checkpoint_path=None, device=device)
+    at = AudioTagging(checkpoint_path=str(model_dir / "Cnn14_mAP=0.431.pth"), device=device)
 
     events = []
     for b in range(0, len(starts), BATCH):

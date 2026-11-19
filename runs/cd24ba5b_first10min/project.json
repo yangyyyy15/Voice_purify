@@ -1,0 +1,9498 @@
+{
+  "schema_version": 1,
+  "video_id": "cd24ba5b_first10min",
+  "source_video": "data/input/cd24ba5b_first10min.mp4",
+  "media": "data/input/cd24ba5b_first10min.mp4",
+  "peaks": "data/cache/cd24ba5b_first10min/peaks.json",
+  "audio_analysis": "data/cache/cd24ba5b_first10min/vocals_16k.wav",
+  "audio_export": "data/cache/cd24ba5b_first10min/full_48k.wav",
+  "duration": 600.04,
+  "created_at": "2026-11-19T01:21:38",
+  "pipeline_params": {
+    "step1": {
+      "video": "E:\\Voice_purify\\data\\input\\cd24ba5b_first10min.mp4",
+      "size": 177509543,
+      "mtime": 1795022061,
+      "preview": "auto"
+    },
+    "step2": {
+      "demucs": true,
+      "model": "htdemucs"
+    },
+    "step3": {
+      "th": 0.5,
+      "sp": 250,
+      "si": 300
+    },
+    "step4": {
+      "skip": false,
+      "th": [
+        0.3,
+        0.3
+      ],
+      "labels": [
+        "Music",
+        "Ringtone",
+        "Telephone",
+        "Telephone bell ringing",
+        "Alarm",
+        "Alarm clock",
+        "Laughter",
+        "Applause",
+        "Clapping",
+        "Cough",
+        "Sneeze",
+        "Siren",
+        "Dog",
+        "Bark",
+        "Door",
+        "Knock",
+        "Typing",
+        "Computer keyboard",
+        "Beep, bleep",
+        "Vehicle",
+        "Car",
+        "Engine",
+        "Television",
+        "Radio"
+      ],
+      "win": [
+        1.0,
+        0.5
+      ]
+    },
+    "step5": {
+      "pipe": "pyannote/speaker-diarization-3.1",
+      "n": null,
+      "min": null,
+      "max": null,
+      "th": null
+    },
+    "step6": {
+      "backend": "funasr",
+      "hot": "",
+      "on_vocals": true,
+      "model": "paraformer-zh"
+    },
+    "step7": {
+      "gap": 0.3,
+      "tol": 0.5,
+      "max": 20.0
+    }
+  },
+  "speakers": [
+    {
+      "id": "SPEAKER_04",
+      "name": "说话人1",
+      "color": "#e6194b"
+    },
+    {
+      "id": "SPEAKER_05",
+      "name": "说话人2",
+      "color": "#3cb44b"
+    },
+    {
+      "id": "SPEAKER_03",
+      "name": "说话人3",
+      "color": "#4363d8"
+    },
+    {
+      "id": "SPEAKER_01",
+      "name": "说话人4",
+      "color": "#f58231"
+    },
+    {
+      "id": "SPEAKER_00",
+      "name": "说话人5",
+      "color": "#911eb4"
+    },
+    {
+      "id": "SPEAKER_07",
+      "name": "说话人6",
+      "color": "#42d4f4"
+    },
+    {
+      "id": "SPEAKER_06",
+      "name": "说话人7",
+      "color": "#f032e6"
+    },
+    {
+      "id": "SPEAKER_02",
+      "name": "说话人8",
+      "color": "#9a6324"
+    }
+  ],
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 16.163,
+      "type": "non_speech",
+      "speaker": null,
+      "overlap_speakers": [],
+      "text": "",
+      "words": [],
+      "confidence": null,
+      "note": "Music",
+      "flags": [],
+      "id": "seg_00001",
+      "reviewed": false
+    },
+    {
+      "start": 16.163,
+      "end": 17.547,
+      "type": "speech",
+      "speaker": "SPEAKER_04",
+      "overlap_speakers": [],
+      "text": "谁嘿，",
+      "words": [
+        {
+          "word": "谁",
+          "start": 16.21,
+          "end": 16.45
+        },
+        {
+          "word": "嘿，",
+          "start": 16.53,
+          "end": 16.77
+        }
+      ],
+      "confidence": null,
+      "note": "",
+      "flags": [
+        "noise"
+      ],
+      "id": "seg_00002",
+      "reviewed": false
+    },
+    {
+      "start": 17.547,
+      "end": 18.695,
+      "type": "non_speech",
+      "speaker": null,
+      "overlap_speakers": [],
+      "text": "",
+      "words": [],
+      "confidence": null,
+      "note": "Music",
+      "flags": [],
+      "id": "seg_00003",
+      "reviewed": false
+    },
+    {
+      "start": 18.695,
+      "end": 23.082,
+      "type": "speech",
+      "speaker": "SPEAKER_04",
+      "overlap_speakers": [],
+      "text": "你有没有在想我",
+      "words": [
+        {
+          "word": "你",
+          "start": 18.71,
+          "end": 18.95
+        },
+        {
+          "word": "有",
+          "start": 19.05,
+          "end": 19.29
+        },
+        {
+          "word": "没",
+          "start": 19.37,
+          "end": 19.61
+        },
+        {
+          "word": "有",
+          "start": 19.77,
+          "end": 20.01
+        },
+        {
+          "word": "在",
+          "start": 20.25,
+          "end": 20.49
+        },
+        {
+          "word": "想",
+          "start": 21.67,
+          "end": 21.91
+        },
+        {
+          "word": "我",
+          "start": 22.21,
+          "end": 22.45
+        }
+      ],
+      "confidence": null,
+      "note": "",
+      "flags": [
+        "noise"
+      ],
+      "id": "seg_00004",
+      "reviewed": false
+    },
+    {
+      "start": 23.082,
+      "end": 24.702,
+      "type": "non_speech",
+      "speaker": null,
+      "overlap_speakers": [],
+      "text": "",
+      "words": [],
+      "confidence": null,
+      "note": "Music",
+      "flags": [],
+      "id": "seg_00005",
+      "reviewed": false
+    },
+    {
+      "start": 24.702,
+      "end": 27.132,
+      "type": "speech",
+      "speaker": "SPEAKER_04",
+      "overlap_speakers": [],
+      "text": "怎么一想到你，",
+      "words": [
+        {
+          "word": "怎",
+          "start": 24.83,
+          "end": 25.03
+        },
+        {
+          "word": "么",
+          "start": 25.03,
+          "end": 25.27
+        },
+        {
+          "word": "一",
+          "start": 25.33,
+          "end": 25.57
+        },
+        {
+          "word": "想",
+          "start": 25.67,
+          "end": 25.91
+        },
+        {
+          "word": "到",
+          "start": 26.09,
+          "end": 26.33
+        },
+        {
+          "word": "你，",
+          "start": 26.63,
+          "end": 26.87
+        }
+      ],
+      "confidence": null,
+      "note": "",
+      "flags": [
+        "noise"
+      ],
+      "id": "seg_00006",
+      "reviewed": false
+    },
+    {
+      "start": 27.132,
+      "end": 27.757,
+      "type": "non_speech",
+      "speaker": null,
+      "overlap_speakers": [],
+      "text": "",
+      "words": [],
+      "confidence": null,
+      "note": "Music",
+      "flags": [],
+      "id": "seg_00007",
+      "reviewed": false
+    },
+    {
+      "start": 27.757,
+      "end": 30.895,
+      "type": "speech",
+      "speaker": "SPEAKER_04",
+      "overlap_speakers": [],
+      "text": "我就不知所措。",
+      "words": [
+        {
+          "word": "我",
+          "start": 27.85,
+          "end": 28.01
+        },
+        {
+          "word": "就",
+          "start": 28.01,
+          "end": 28.25
+        },
+        {
+          "word": "不",
+          "start": 28.39,
+          "end": 28.63
+        },
+        {
+          "word": "知",
+          "start": 28.89,
+          "end": 29.13
+        },
+        {
+          "word": "所",
+          "start": 29.53,
+          "end": 29.77
+        },
+        {
+          "word": "措。",
+          "start": 29.91,
+          "end": 30.15
+        }
+      ],
+      "confidence": null,
+      "note": "",
+      "flags": [
+        "noise"
+      ],
+      "id": "seg_00008",
+      "reviewed": false
+    },
+    {
+      "start": 30.895,
+      "end": 32.127,
+      "type": "non_speech",
+      "speaker": null,
+      "overlap_speakers": [],
+      "text": "",
+      "words": [],
+      "confidence": null,
+      "note": "Music",
+      "flags": [],
+      "id": "seg_00009",
+      "reviewed": false
+    },
+    {
+      "start": 32.127,
+      "end": 33.295,
+      "type": "speech",
+      "speaker": "SPEAKER_04",
+      "overlap_speakers": [],
+      "text": "谁",
+      "words": [
+        {
+          "word": "谁",
+          "start": 32.49,
+          "end": 33.295
+        }
+      ],
+      "confidence": null,
+      "note": "",
+      "flags": [
+        "noise"
+      ],
+      "id": "seg_00010",
+      "reviewed": false
+    },
+    {
+      "start": 33.295,
+      "end": 34.76,
+      "type": "non_speech",
+      "speaker": null,
+      "overlap_speakers": [],
+      "text": "",
+      "words": [],
+      "confidence": null,
+      "note": "Music",
+      "flags": [],
+      "id": "seg_00011",
+      "reviewed": false
+    },
+    {
+      "start": 34.76,
+      "end": 39.451,
+      "type": "speech",
+      "speaker": "SPEAKER_04",
+      "overlap_speakers": [],
+      "text": "从遇见你那天起，",
+      "words": [
+        {
+          "word": "从",
+          "start": 34.79,
+          "end": 35.03
+        },
+        {
+          "word": "遇",
+          "start": 35.13,
+          "end": 35.33
+        },
+        {
+          "word": "见",
+          "start": 35.33,
+          "end": 35.57
+        },
+        {
+          "word": "你",
+          "start": 35.81,
+          "end": 36.05
+        },
+        {
+          "word": "那",
+          "start": 36.33,
+          "end": 36.57
+        },
+        {
+          "word": "天",
+          "start": 37.75,
+          "end": 37.99
+        },
+        {
+          "word": "起，",
+          "start": 38.25,
+          "end": 38.49
+        }
+      ],
+      "confidence": null,
+      "note": "",
+      "flags": [
+        "noise"
+      ],
+      "id": "seg_00012",
+      "reviewed": false
+    },
+    {
+      "start": 39.451,
+      "end": 40.666,
+      "type": "non_speech",
+      "speaker": null,
+      "overlap_speakers": [],
+      "text": "",
+      "words": [],
+      "confidence": null,
+      "note": "Music",
+      "flags": [],
+      "id": "seg_00013",
+      "reviewed": false
+    },
+    {
+      "start": 40.666,
+      "end": 46.319,
+      "type": "speech",
+      "speaker": "SPEAKER_04",
+      "overlap_speakers": [],
+      "text": "我是不是就深深爱上了你，",
+      "words": [
+        {
+          "word": "我",
+          "start": 40.75,
+          "end": 40.99
+        },
+        {
+          "word": "是",
+          "start": 41.03,
+          "end": 41.27
+        },
+        {
+          "word": "不",
+          "start": 41.29,
+          "end": 41.53
+        },
+        {
+          "word": "是",
+          "start": 41.65,
+          "end": 41.89
+        },
+        {
+          "word": "就",
+          "start": 42.05,
+          "end": 42.29
+        },
+        {
+          "word": "深",
+          "start": 42.709,
+          "end": 42.95
+        },
+        {
+          "word": "深",
+          "start": 43.09,
+          "end": 43.33
+        },
+        {
+          "word": "爱",
+          "start": 44.07,
+          "end": 44.31
+        },
+        {
+          "word": "上",
+          "start": 44.51,
+          "end": 44.75
+        },
+        {
+          "word": "了",
+          "start": 44.93,
+          "end": 45.17
+        },
+        {
+          "word": "你，",
+          "start": 45.29,
+          "end": 45.855
+        }
+      ],
+      "confidence": null,
+      "note": "",
+      "flags": [
+        "noise"
+      ],
+      "id": "seg_00014",
+      "reviewed": false
+    },
+    {
+      "start": 46.319,
+      "end": 48.81,
+      "type": "non_speech",
+      "speaker": null,
+      "overlap_speakers": [],
+      "text": "",
+      "words": [],
+      "confidence": null,
+      "note": "Music",
+      "flags": [],
+      "id": "seg_00015",
+      "reviewed": false
+    },
+    {
+      "start": 48.81,
+      "end": 55.027,
+      "type": "speech",
+      "speaker": "SPEAKER_04",
+      "overlap_speakers": [],
+      "text": "不管爱你值不值得，我只要简单的",
+      "words": [
+        {
+          "word": "不",
+          "start": 48.81,
+          "end": 49.05
+        },
+        {
+          "word": "管",
+          "start": 49.07,
+          "end": 49.31
+        },
+        {
+          "word": "爱",
+          "start": 49.39,
+          "end": 49.63
+        },
+        {
+          "word": "你",
+          "start": 50.05,
+          "end": 50.29
+        },
+        {
+          "word": "值",
+          "start": 50.39,
+          "end": 50.63
+        },
+        {
+          "word": "不",
+          "start": 50.69,
+          "end": 50.93
+        },
+        {
+          "word": "值",
+          "start": 51.09,
+          "end": 51.33
+        },
+        {
+          "word": "得，",
+          "start": 51.53,
+          "end": 51.77
+        },
+        {
+          "word": "我",
+          "start": 52.79,
+          "end": 53.03
+        },
+        {
+          "word": "只",
+          "start": 53.11,
+          "end": 53.31
+        },
+        {
+          "word": "要",
+          "start": 53.31,
+          "end": 53.55
+        },
+        {
+          "word": "简",
+          "start": 54.05,
+          "end": 54.29
+        },
+        {
+          "word": "单",
+          "start": 54.33,
+          "end": 54.57
+        },
+        {
+          "word": "的",
+          "start": 54.75,
+          "end": 54.99
+        }
+      ],
+      "confidence": null,
+      "note": "",
+      "flags": [
+        "noise"
+      ],
+      "id": "seg_00016",
+      "reviewed": false
+    },
+    {
+      "start": 55.027,
+      "end": 64.52,
+      "type": "speech",
+      "speaker": "SPEAKER_05",
+      "overlap_speakers": [],
+      "text": "快乐，不管是对错的选择，只要爱了就不会割舍。",
+      "words": [
+        {
+          "word": "快",
+          "start": 55.03,
+          "end": 55.27
+        },
+        {
+          "word": "乐，",
+          "start": 55.53,
+          "end": 55.77
+        },
+        {
+          "word": "不",
+          "start": 56.77,
+          "end": 57.01
+        },
+        {
+          "word": "管",
+          "start": 57.03,
+          "end": 57.27
+        },
+        {
+          "word": "是",
+          "start": 57.33,
+          "end": 57.57
+        },
+        {
+          "word": "对",
+          "start": 58.03,
+          "end": 58.27
+        },
+        {
+          "word": "错",
+          "start": 58.27,
+          "end": 58.51
+        },
+        {
+          "word": "的",
+          "start": 58.69,
+          "end": 58.93
+        },
+        {
+          "word": "选",
+          "start": 59.07,
+          "end": 59.31
+        },
+        {
+          "word": "择，",
+          "start": 59.53,
+          "end": 59.77
+        },
+        {
+          "word": "只",
+          "start": 60.35,
+          "end": 60.59
+        },
+        {
+          "word": "要",
+          "start": 60.67,
+          "end": 60.91
+        },
+        {
+          "word": "爱",
+          "start": 61.13,
+          "end": 61.37
+        },
+        {
+          "word": "了",
+          "start": 61.49,
+          "end": 61.73
+        },
+        {
+          "word": "就",
+          "start": 62.23,
+          "end": 62.47
+        },
+        {
+          "word": "不",
+          "start": 62.73,
+          "end": 62.97
+        },
+        {
+          "word": "会",
+          "start": 63.05,
+          "end": 63.29
+        },
+        {
+          "word": "割",
+          "start": 63.59,
+          "end": 63.83
+        },
+        {
+          "word": "舍。",
+          "start": 64.13,
+          "end": 64.37
+        }
+      ],
+      "confidence": null,
+      "note": "",
+      "flags": [
+        "noise"
+      ],
+      "id": "seg_00017",
+      "reviewed": false
+    },
+    {
+      "start": 64.52,
+      "end": 68.12,
+      "type": "non_speech",
+      "speaker": null,
+      "overlap_speakers": [],
+      "text": "",
+      "words": [],
+      "confidence": null,
+      "note": "Music",
+      "flags": [],
+      "id": "seg_00018",
+      "reviewed": false
+    },
+    {
+      "start": 68.12,
+      "end": 101.534,
+      "type": "speech",
+      "speaker": "SPEAKER_05",
+      "overlap_speakers": [],
+      "text": "梦是一抱着我，紧紧相拥着沉默。梦睡醒看着我一去表单就足够梦睡醒相信我。如果世界没有了你爱情就失去所有的意梦，是一",
+      "words": [
+        {
+          "word": "梦",
+          "start": 68.27,
+          "end": 68.51
+        },
+        {
+          "word": "是",
+          "start": 68.63,
+          "end": 68.87
+        },
+        {
+          "word": "一",
+          "start": 69.05,
+          "end": 69.285
+        },
+        {
+          "word": "抱",
+          "start": 70.38,
+          "end": 70.62
+        },
+        {
+          "word": "着",
+          "start": 70.72,
+          "end": 70.96
+        },
+        {
+          "word": "我，",
+          "start": 71.14,
+          "end": 71.38
+        },
+        {
+          "word": "紧",
+          "start": 72.32,
+          "end": 72.56
+        },
+        {
+          "word": "紧",
+          "start": 72.7,
+          "end": 72.94
+        },
+        {
+          "word": "相",
+          "start": 73.1,
+          "end": 73.3
+        },
+        {
+          "word": "拥",
+          "start": 73.3,
+          "end": 73.54
+        },
+        {
+          "word": "着",
+          "start": 73.6,
+          "end": 73.8
+        },
+        {
+          "word": "沉",
+          "start": 73.8,
+          "end": 74.04
+        },
+        {
+          "word": "默。",
+          "start": 74.24,
+          "end": 74.48
+        },
+        {
+          "word": "梦",
+          "start": 76.36,
+          "end": 76.6
+        },
+        {
+          "word": "睡",
+          "start": 76.66,
+          "end": 76.9
+        },
+        {
+          "word": "醒",
+          "start": 77.06,
+          "end": 77.3
+        },
+        {
+          "word": "看",
+          "start": 78.34,
+          "end": 78.58
+        },
+        {
+          "word": "着",
+          "start": 78.74,
+          "end": 78.98
+        },
+        {
+          "word": "我",
+          "start": 79.14,
+          "end": 79.38
+        },
+        {
+          "word": "一",
+          "start": 80.04,
+          "end": 80.28
+        },
+        {
+          "word": "去",
+          "start": 80.28,
+          "end": 80.52
+        },
+        {
+          "word": "表",
+          "start": 80.8,
+          "end": 81.04
+        },
+        {
+          "word": "单",
+          "start": 81.06,
+          "end": 81.3
+        },
+        {
+          "word": "就",
+          "start": 81.56,
+          "end": 81.8
+        },
+        {
+          "word": "足",
+          "start": 82.02,
+          "end": 82.26
+        },
+        {
+          "word": "够",
+          "start": 82.3,
+          "end": 82.54
+        },
+        {
+          "word": "梦",
+          "start": 84.34,
+          "end": 84.58
+        },
+        {
+          "word": "睡",
+          "start": 84.64,
+          "end": 84.88
+        },
+        {
+          "word": "醒",
+          "start": 85.06,
+          "end": 85.3
+        },
+        {
+          "word": "相",
+          "start": 86.239,
+          "end": 86.48
+        },
+        {
+          "word": "信",
+          "start": 86.68,
+          "end": 86.92
+        },
+        {
+          "word": "我。",
+          "start": 87.04,
+          "end": 87.215
+        },
+        {
+          "word": "如",
+          "start": 88.12,
+          "end": 88.36
+        },
+        {
+          "word": "果",
+          "start": 88.36,
+          "end": 88.6
+        },
+        {
+          "word": "世",
+          "start": 88.84,
+          "end": 89.08
+        },
+        {
+          "word": "界",
+          "start": 89.08,
+          "end": 89.32
+        },
+        {
+          "word": "没",
+          "start": 89.34,
+          "end": 89.58
+        },
+        {
+          "word": "有",
+          "start": 89.62,
+          "end": 89.86
+        },
+        {
+          "word": "了",
+          "start": 89.86,
+          "end": 90.1
+        },
+        {
+          "word": "你",
+          "start": 90.34,
+          "end": 90.58
+        },
+        {
+          "word": "爱",
+          "start": 92.3,
+          "end": 92.54
+        },
+        {
+          "word": "情",
+          "start": 92.8,
+          "end": 93.04
+        },
+        {
+          "word": "就",
+          "start": 94.36,
+          "end": 94.6
+        },
+        {
+          "word": "失",
+          "start": 95.0,
+          "end": 95.24
+        },
+        {
+          "word": "去",
+          "start": 95.74,
+          "end": 95.98
+        },
+        {
+          "word": "所",
+          "start": 96.34,
+          "end": 96.58
+        },
+        {
+          "word": "有",
+          "start": 96.82,
+          "end": 97.06
+        },
+        {
+          "word": "的",
+          "start": 97.12,
+          "end": 97.36
+        },
+        {
+          "word": "意",
+          "start": 97.56,
+          "end": 97.8
+        },
+        {
+          "word": "梦，",
+          "start": 98.16,
+          "end": 98.4
+        },
+        {
+          "word": "是",
+          "start": 100.38,
+          "end": 100.62
+        },
+        {
+          "word": "一",
+          "start": 100.72,
+          "end": 100.96
+        }
+      ],
+      "confidence": null,
+      "note": "",
+      "flags": [
+        "noise"
+      ],
+      "id": "seg_00019",
+      "reviewed": false
+    },
+    {
+      "start": 101.534,
+      "end": 104.133,
+      "type": "non_speech",
+      "speaker": null,
+      "overlap_speakers": [],
+      "text": "",
+      "words": [],
+      "confidence": null,
+      "note": "Music",
+      "flags": [],
+      "id": "seg_00020",
+      "reviewed": false
+    },
+    {
+      "start": 104.133,
+      "end": 105.955,
+      "type": "speech",
+      "speaker": "SPEAKER_03",
+      "overlap_speakers": [],
+      "text": "梦醒",
+      "words": [
+        {
+          "word": "梦",
+          "start": 104.26,
+          "end": 104.5
+        },
+        {
+          "word": "醒",
+          "start": 104.72,
+          "end": 104.96
+        }
+      ],
+      "confidence": null,
+      "note": "",
+      "flags": [
+        "noise"
+      ],
+      "id": "seg_00021",
+      "reviewed": false
+    },
+    {
+      "start": 105.955,
+      "end": 108.166,
+      "type": "non_speech",
+      "speaker": null,
+      "overlap_speakers": [],
+      "text": "",
+      "words": [],
+      "confidence": null,
+      "note": "Music",
+      "flags": [],
+      "id": "seg_00022",
+      "reviewed": false
+    },
+    {
+      "start": 108.166,
+      "end": 108.57,
+      "type": "speech",
+      "speaker": "SPEAKER_03",
+      "overlap_speakers": [],
+      "text": "啊。",
+      "words": [
+        {
+          "word": "啊。",
+          "start": 108.18,
+          "end": 108.42
+        }
+      ],
+      "confidence": null,
+      "note": "",
+      "flags": [
+        "noise"
+      ],
+      "id": "seg_00023",
+      "reviewed": false
+    },
+    {
+      "start": 108.57,
+      "end": 111.63,
+      "type": "non_speech",
+      "speaker": null,
+      "overlap_speakers": [],
+      "text": "",
+      "words": [],
+      "confidence": null,
+      "note": "Music",
+      "flags": [],
+      "id": "seg_00024",
+      "reviewed": false
+    },
+    {
+      "start": 111.63,
+      "end": 113.195,
+      "type": "speech",
+      "speaker": "SPEAKER_03",
+      "overlap_speakers": [],
+      "text": "亲爱的，",
+      "words": [
+        {
+          "word": "亲",
+          "start": 111.78,
+          "end": 112.02
+        },
+        {
+          "word": "爱",
+          "start": 112.18,
+          "end": 112.42
+        },
+        {
+          "word": "的，",
+          "start": 112.58,
+          "end": 112.905
+        }
+      ],
+      "confidence": null,
+      "note": "",
+      "flags": [
+        "low_vad",
+        "noise"
+      ],
+      "id": "seg_00025",
+      "reviewed": false
+    },
+    {
+      "start": 113.195,
+      "end": 114.781,
+      "type": "non_speech",
+      "speaker": null,
+      "overlap_speakers": [],
+      "text": "",
+      "words": [],
+      "confidence": null,
+      "note": "Music",
+      "flags": [],
+      "id": "seg_00026",
+      "reviewed": false
+    },
+    {
+      "start": 114.781,
+      "end": 115.962,
+      "type": "non_speech",
+      "speaker": null,
+      "overlap_speakers": [],
+      "text": "",
+      "words": [],
+      "confidence": null,
+      "note": "Music",
+      "flags": [],
+      "id": "seg_00027",
+      "reviewed": false
+    },
+    {
+      "start": 115.962,
+      "end": 119.5,
+      "type": "non_speech",
+      "speaker": null,
+      "overlap_speakers": [],
+      "text": "",
+      "words": [],
+      "confidence": null,
+      "note": "Music",
+      "flags": [],
+      "id": "seg_00028",
+      "reviewed": false
+    },
+    {
+      "start": 122.5,
+      "end": 164.85,
+      "type": "non_speech",
+      "speaker": null,
+      "overlap_speakers": [],
+      "text": "",
+      "words": [],
+      "confidence": null,
+      "note": "Music",
+      "flags": [],
+      "id": "seg_00029",
+      "reviewed": false
+    },
+    {
+      "start": 164.85,
+      "end": 165.693,
+      "type": "speech",
+      "speaker": "SPEAKER_01",
+      "overlap_speakers": [],
+      "text": "我叫乔飞，",
+      "words": [
+        {
+          "word": "我",
+          "start": 164.85,
+          "end": 165.05
+        },
+        {
+          "word": "叫",
+          "start": 165.05,
+          "end": 165.17
+        },
+        {
+          "word": "乔",
+          "start": 165.17,
+          "end": 165.33
+        },
+        {
+          "word": "飞，",
+          "start": 165.33,
+          "end": 165.57
+        }
+      ],
+      "confidence": null,
+      "note": "",
+      "flags": [],
+      "id": "seg_00030",
+      "reviewed": false
+    },
+    {
+      "start": 166.13,
+      "end": 168.97,
+      "type": "speech",
+      "speaker": "SPEAKER_01",
+      "overlap_speakers": [],
+      "text": "是一名外大到苏黎世大学的法语交换生。",
+      "words": [
+        {
+          "word": "是",
+          "start": 166.13,
+          "end": 166.37
+        },
+        {
+          "word": "一",
+          "start": 166.37,
+          "end": 166.47
+        },
+        {
+          "word": "名",
+          "start": 166.47,
+          "end": 166.67
+        },
+        {
+          "word": "外",
+          "start": 166.67,
+          "end": 166.83
+        },
+        {
+          "word": "大",
+          "start": 166.83,
+          "end": 167.07
+        },
+        {
+          "word": "到",
+          "start": 167.07,
+          "end": 167.21
+        },
+        {
+          "word": "苏",
+          "start": 167.21,
+          "end": 167.37
+        },
+        {
+          "word": "黎",
+          "start": 167.37,
+          "end": 167.55
+        },
+        {
+          "word": "世",
+          "start": 167.55,
+          "end": 167.69
+        },
+        {
+          "word": "大",
+          "start": 167.69,
+          "end": 167.85
+        },
+        {
+          "word": "学",
+          "start": 167.85,
+          "end": 168.03
+        },
+        {
+          "word": "的",
+          "start": 168.03,
+          "end": 168.15
+        },
+        {
+          "word": "法",
+          "start": 168.15,
+          "end": 168.25
+        },
+        {
+          "word": "语",
+          "start": 168.25,
+          "end": 168.45
+        },
+        {
+          "word": "交",
+          "start": 168.45,
+          "end": 168.55
+        },
+        {
+          "word": "换",
+          "start": 168.55,
+          "end": 168.73
+        },
+        {
+          "word": "生。",
+          "start": 168.73,
+          "end": 168.97
+        }
+      ],
+      "confidence": null,
+      "note": "",
+      "flags": [],
+      "id": "seg_00031",
+      "reviewed": false
+    },
+    {
+      "start": 169.0,
+      "end": 169.67,
+      "type": "non_speech",
+      "speaker": null,
+      "overlap_speakers": [],
+      "text": "",
+      "words": [],
+      "confidence": null,
+      "note": "Music",
+      "flags": [],
+      "id": "seg_00032",
+      "reviewed": false
+    },
+    {
+      "start": 169.67,
+      "end": 172.67,
+      "type": "speech",
+      "speaker": "SPEAKER_01",
+      "overlap_speakers": [],
+      "text": "我的人生信条是走过路过不要错过，",
+      "words": [
+        {
+          "word": "我",
+          "start": 169.67,
+          "end": 169.87
+        },
+        {
+          "word": "的",
+          "start": 169.87,
+          "end": 169.99
+        },
+        {
+          "word": "人",
+          "start": 169.99,
+          "end": 170.11
+        },
+        {
+          "word": "生",
+          "start": 170.11,
+          "end": 170.29
+        },
+        {
+          "word": "信",
+          "start": 170.29,
+          "end": 170.47
+        },
+        {
+          "word": "条",
+          "start": 170.47,
+          "end": 170.65
+        },
+        {
+          "word": "是",
+          "start": 170.65,
+          "end": 170.89
+        },
+        {
+          "word": "走",
+          "start": 171.23,
+          "end": 171.43
+        },
+        {
+          "word": "过",
+          "start": 171.43,
+          "end": 171.63
+        },
+        {
+          "word": "路",
+          "start": 171.63,
+          "end": 171.77
+        },
+        {
+          "word": "过",
+          "start": 171.77,
+          "end": 171.97
+        },
+        {
+          "word": "不",
+          "start": 171.97,
+          "end": 172.07
+        },
+        {
+          "word": "要",
+          "start": 172.07,
+          "end": 172.27
+        },
+        {
+          "word": "错",
+          "start": 172.27,
+          "end": 172.43
+        },
+        {
+          "word": "过，",
+          "start": 172.43,
+          "end": 172.67
+        }
+      ],
+      "confidence": null,
+      "note": "",
+      "flags": [],
+      "id": "seg_00033",
+      "reviewed": false
+    },
+    {
+      "start": 173.15,
+      "end": 175.396,
+      "type": "speech",
+      "speaker": "SPEAKER_01",
+      "overlap_speakers": [],
+      "text": "我不想错过任何一道美丽的风景，",
+      "words": [
+        {
+          "word": "我",
+          "start": 173.15,
+          "end": 173.33
+        },
+        {
+          "word": "不",
+          "start": 173.33,
+          "end": 173.45
+        },
+        {
+          "word": "想",
+          "start": 173.45,
+          "end": 173.65
+        },
+        {
+          "word": "错",
+          "start": 173.65,
+          "end": 173.81
+        },
+        {
+          "word": "过",
+          "start": 173.81,
+          "end": 174.01
+        },
+        {
+          "word": "任",
+          "start": 174.01,
+          "end": 174.17
+        },
+        {
+          "word": "何",
+          "start": 174.17,
+          "end": 174.35
+        },
+        {
+          "word": "一",
+          "start": 174.35,
+          "end": 174.45
+        },
+        {
+          "word": "道",
+          "start": 174.45,
+          "end": 174.59
+        },
+        {
+          "word": "美",
+          "start": 174.59,
+          "end": 174.69
+        },
+        {
+          "word": "丽",
+          "start": 174.69,
+          "end": 174.87
+        },
+        {
+          "word": "的",
+          "start": 174.87,
+          "end": 174.97
+        },
+        {
+          "word": "风",
+          "start": 174.97,
+          "end": 175.11
+        },
+        {
+          "word": "景，",
+          "start": 175.11,
+          "end": 175.35
+        }
+      ],
+      "confidence": null,
+      "note": "",
+      "flags": [],
+      "id": "seg_00034",
+      "reviewed": false
+    },
+    {
+      "start": 175.767,
+      "end": 177.145,
+      "type": "speech",
+      "speaker": "SPEAKER_01",
+      "overlap_speakers": [],
+      "text": "错过任何一份美好。",
+      "words": [
+        {
+          "word": "错",
+          "start": 175.77,
+          "end": 175.95
+        },
+        {
+          "word": "过",
+          "start": 175.95,
+          "end": 176.15
+        },
+        {
+          "word": "任",
+          "start": 176.15,
+          "end": 176.25
+        },
+        {
+          "word": "何",
+          "start": 176.25,
+          "end": 176.43
+        },
+        {
+          "word": "一",
+          "start": 176.43,
+          "end": 176.51
+        },
+        {
+          "word": "份",
+          "start": 176.51,
+          "end": 176.69
+        },
+        {
+          "word": "美",
+          "start": 176.69,
+          "end": 176.85
+        },
+        {
+          "word": "好。",
+          "start": 176.85,
+          "end": 177.145
+        }
+      ],
+      "confidence": null,
+      "note": "",
+      "flags": [],
+      "id": "seg_00035",
+      "reviewed": false
+    },
+    {
+      "start": 177.145,
+      "end": 189.5,
+      "type": "non_speech",
+      "speaker": null,
+      "overlap_speakers": [],
+      "text": "",
+      "words": [],
+      "confidence": null,
+      "note": "Music",
+      "flags": [],
+      "id": "seg_00036",
+      "reviewed": false
+    },
+    {
+      "start": 189.67,
+      "end": 190.651,
+      "type": "speech",
+      "speaker": "SPEAKER_00",
+      "overlap_speakers": [],
+      "text": "我叫程家阳，",
+      "words": [
+        {
+          "word": "我",
+          "start": 189.67,
+          "end": 189.83
+        },
+        {
+          "word": "叫",
+          "start": 189.83,
+          "end": 190.07
+        },
+        {
+          "word": "程",
+          "start": 190.07,
+          "end": 190.19
+        },
+        {
+          "word": "家",
+          "start": 190.19,
+          "end": 190.37
+        },
+        {
+          "word": "阳，",
+          "start": 190.37,
+          "end": 190.61
+        }
+      ],
+      "confidence": null,
+      "note": "",
+      "flags": [],
+      "id": "seg_00037",
+      "reviewed": false
+    },
+    {
+      "start": 191.11,
+      "end": 192.23,
+      "type": "speech",
+      "speaker": "SPEAKER_00",
+      "overlap_speakers": [],
+      "text": "是一名翻译官。",
+      "words": [
+        {
+          "word": "是",
+          "start": 191.11,
+          "end": 191.35
+        },
+        {
+          "word": "一",
+          "start": 191.35,
+          "end": 191.51
+        },
+        {
+          "word": "名",
+          "start": 191.51,
+          "end": 191.65
+        },
+        {
+          "word": "翻",
+          "start": 191.65,
+          "end": 191.81
+        },
+        {
+          "word": "译",
+          "start": 191.81,
+          "end": 191.99
+        },
+        {
+          "word": "官。",
+          "start": 191.99,
+          "end": 192.23
+        }
+      ],
+      "confidence": null,
+      "note": "",
+      "flags": [],
+      "id": "seg_00038",
+      "reviewed": false
+    },
+    {
+      "start": 192.23,
+      "end": 193.0,
+      "type": "non_speech",
+      "speaker": null,
+      "overlap_speakers": [],
+      "text": "",
+      "words": [],
+      "confidence": null,
+      "note": "Music",
+      "flags": [],
+      "id": "seg_00039",
+      "reviewed": false
+    },
+    {
+      "start": 193.19,
+      "end": 195.33,
+      "type": "speech",
+      "speaker": "SPEAKER_00",
+      "overlap_speakers": [],
+      "text": "尽管法语被誉为最美的语言，",
+      "words": [
+        {
+          "word": "尽",
+          "start": 193.19,
+          "end": 193.41
+        },
+        {
+          "word": "管",
+          "start": 193.41,
+          "end": 193.65
+        },
+        {
+          "word": "法",
+          "start": 193.69,
+          "end": 193.83
+        },
+        {
+          "word": "语",
+          "start": 193.83,
+          "end": 194.01
+        },
+        {
+          "word": "被",
+          "start": 194.01,
+          "end": 194.15
+        },
+        {
+          "word": "誉",
+          "start": 194.15,
+          "end": 194.31
+        },
+        {
+          "word": "为",
+          "start": 194.31,
+          "end": 194.51
+        },
+        {
+          "word": "最",
+          "start": 194.51,
+          "end": 194.67
+        },
+        {
+          "word": "美",
+          "start": 194.67,
+          "end": 194.85
+        },
+        {
+          "word": "的",
+          "start": 194.85,
+          "end": 194.97
+        },
+        {
+          "word": "语",
+          "start": 194.97,
+          "end": 195.09
+        },
+        {
+          "word": "言，",
+          "start": 195.09,
+          "end": 195.33
+        }
+      ],
+      "confidence": null,
+      "note": "",
+      "flags": [],
+      "id": "seg_00040",
+      "reviewed": false
+    },
+    {
+      "start": 195.33,
+      "end": 195.87,
+      "type": "non_speech",
+      "speaker": null,
+      "overlap_speakers": [],
+      "text": "",
+      "words": [],
+      "confidence": null,
+      "note": "Music",
+      "flags": [],
+      "id": "seg_00041",
+      "reviewed": false
+    },
+    {
+      "start": 195.87,
+      "end": 199.845,
+      "type": "speech",
+      "speaker": "SPEAKER_00",
+      "overlap_speakers": [],
+      "text": "而在我们每个中国人的心目中，汉语才是最美的语言。",
+      "words": [
+        {
+          "word": "而",
+          "start": 195.87,
+          "end": 196.09
+        },
+        {
+          "word": "在",
+          "start": 196.09,
+          "end": 196.21
+        },
+        {
+          "word": "我",
+          "start": 196.21,
+          "end": 196.33
+        },
+        {
+          "word": "们",
+          "start": 196.33,
+          "end": 196.53
+        },
+        {
+          "word": "每",
+          "start": 196.53,
+          "end": 196.63
+        },
+        {
+          "word": "个",
+          "start": 196.63,
+          "end": 196.77
+        },
+        {
+          "word": "中",
+          "start": 196.77,
+          "end": 196.93
+        },
+        {
+          "word": "国",
+          "start": 196.93,
+          "end": 197.11
+        },
+        {
+          "word": "人",
+          "start": 197.11,
+          "end": 197.23
+        },
+        {
+          "word": "的",
+          "start": 197.23,
+          "end": 197.35
+        },
+        {
+          "word": "心",
+          "start": 197.35,
+          "end": 197.45
+        },
+        {
+          "word": "目",
+          "start": 197.45,
+          "end": 197.569
+        },
+        {
+          "word": "中，",
+          "start": 197.569,
+          "end": 197.81
+        },
+        {
+          "word": "汉",
+          "start": 198.17,
+          "end": 198.41
+        },
+        {
+          "word": "语",
+          "start": 198.41,
+          "end": 198.65
+        },
+        {
+          "word": "才",
+          "start": 198.79,
+          "end": 198.95
+        },
+        {
+          "word": "是",
+          "start": 198.95,
+          "end": 199.15
+        },
+        {
+          "word": "最",
+          "start": 199.15,
+          "end": 199.25
+        },
+        {
+          "word": "美",
+          "start": 199.25,
+          "end": 199.43
+        },
+        {
+          "word": "的",
+          "start": 199.43,
+          "end": 199.51
+        },
+        {
+          "word": "语",
+          "start": 199.51,
+          "end": 199.61
+        },
+        {
+          "word": "言。",
+          "start": 199.61,
+          "end": 199.845
+        }
+      ],
+      "confidence": null,
+      "note": "",
+      "flags": [],
+      "id": "seg_00042",
+      "reviewed": false
+    },
+    {
+      "start": 199.845,
+      "end": 200.978,
+      "type": "non_speech",
+      "speaker": null,
+      "overlap_speakers": [],
+      "text": "",
+      "words": [],
+      "confidence": null,
+      "note": "Music",
+      "flags": [],
+      "id": "seg_00043",
+      "reviewed": false
+    },
+    {
+      "start": 200.978,
+      "end": 201.637,
+      "type": "speech",
+      "speaker": "SPEAKER_00",
+      "overlap_speakers": [],
+      "text": "我的工作",
+      "words": [
+        {
+          "word": "我",
+          "start": 200.99,
+          "end": 201.15
+        },
+        {
+          "word": "的",
+          "start": 201.15,
+          "end": 201.27
+        },
+        {
+          "word": "工",
+          "start": 201.27,
+          "end": 201.37
+        },
+        {
+          "word": "作",
+          "start": 201.37,
+          "end": 201.61
+        }
+      ],
+      "confidence": null,
+      "note": "",
+      "flags": [],
+      "id": "seg_00044",
+      "reviewed": false
+    },
+    {
+      "start": 202.008,
+      "end": 203.898,
+      "type": "speech",
+      "speaker": "SPEAKER_00",
+      "overlap_speakers": [],
+      "text": "就是在这两种语言间穿梭",
+      "words": [
+        {
+          "word": "就",
+          "start": 202.03,
+          "end": 202.21
+        },
+        {
+          "word": "是",
+          "start": 202.21,
+          "end": 202.33
+        },
+        {
+          "word": "在",
+          "start": 202.33,
+          "end": 202.45
+        },
+        {
+          "word": "这",
+          "start": 202.45,
+          "end": 202.59
+        },
+        {
+          "word": "两",
+          "start": 202.59,
+          "end": 202.75
+        },
+        {
+          "word": "种",
+          "start": 202.75,
+          "end": 202.95
+        },
+        {
+          "word": "语",
+          "start": 202.95,
+          "end": 203.05
+        },
+        {
+          "word": "言",
+          "start": 203.05,
+          "end": 203.17
+        },
+        {
+          "word": "间",
+          "start": 203.17,
+          "end": 203.41
+        },
+        {
+          "word": "穿",
+          "start": 203.45,
+          "end": 203.65
+        },
+        {
+          "word": "梭",
+          "start": 203.65,
+          "end": 203.89
+        }
+      ],
+      "confidence": null,
+      "note": "",
+      "flags": [],
+      "id": "seg_00045",
+      "reviewed": false
+    },
+    {
+      "start": 204.81,
+      "end": 205.433,
+      "type": "speech",
+      "speaker": "SPEAKER_00",
+      "overlap_speakers": [],
+      "text": "翻译时，",
+      "words": [
+        {
+          "word": "翻",
+          "start": 204.81,
+          "end": 205.03
+        },
+        {
+          "word": "译",
+          "start": 205.03,
+          "end": 205.19
+        },
+        {
+          "word": "时，",
+          "start": 205.19,
+          "end": 205.43
+        }
+      ],
+      "confidence": null,
+      "note": "",
+      "flags": [],
+      "id": "seg_00046",
+      "reviewed": false
+    },
+    {
+      "start": 206.11,
+      "end": 207.59,
+      "type": "speech",
+      "speaker": "SPEAKER_00",
+      "overlap_speakers": [],
+      "text": "最常用的是主动语态。",
+      "words": [
+        {
+          "word": "最",
+          "start": 206.11,
+          "end": 206.33
+        },
+        {
+          "word": "常",
+          "start": 206.33,
+          "end": 206.45
+        },
+        {
+          "word": "用",
+          "start": 206.45,
+          "end": 206.63
+        },
+        {
+          "word": "的",
+          "start": 206.63,
+          "end": 206.75
+        },
+        {
+          "word": "是",
+          "start": 206.75,
+          "end": 206.89
+        },
+        {
+          "word": "主",
+          "start": 206.89,
+          "end": 207.05
+        },
+        {
+          "word": "动",
+          "start": 207.05,
+          "end": 207.19
+        },
+        {
+          "word": "语",
+          "start": 207.19,
+          "end": 207.35
+        },
+        {
+          "word": "态。",
+          "start": 207.35,
+          "end": 207.59
+        }
+      ],
+      "confidence": null,
+      "note": "",
+      "flags": [],
+      "id": "seg_00047",
+      "reviewed": false
+    },
+    {
+      "start": 208.03,
+      "end": 209.03,
+      "type": "speech",
+      "speaker": "SPEAKER_00",
+      "overlap_speakers": [],
+      "text": "做人也一样，",
+      "words": [
+        {
+          "word": "做",
+          "start": 208.03,
+          "end": 208.25
+        },
+        {
+          "word": "人",
+          "start": 208.25,
+          "end": 208.43
+        },
+        {
+          "word": "也",
+          "start": 208.43,
+          "end": 208.63
+        },
+        {
+          "word": "一",
+          "start": 208.63,
+          "end": 208.79
+        },
+        {
+          "word": "样，",
+          "start": 208.79,
+          "end": 209.03
+        }
+      ],
+      "confidence": null,
+      "note": "",
+      "flags": [
+        "noise"
+      ],
+      "id": "seg_00048",
+      "reviewed": false
+    },
+    {
+      "start": 209.03,
+      "end": 209.69,
+      "type": "non_speech",
+      "speaker": null,
+      "overlap_speakers": [],
+      "text": "",
+      "words": [],
+      "confidence": null,
+      "note": "Music",
+      "flags": [],
+      "id": "seg_00049",
+      "reviewed": false
+    },
+    {
+      "start": 209.69,
+      "end": 212.41,
+      "type": "speech",
+      "speaker": "SPEAKER_00",
+      "overlap_speakers": [],
+      "text": "如果遇见有人在翻译上犯了关键错误，",
+      "words": [
+        {
+          "word": "如",
+          "start": 209.69,
+          "end": 209.85
+        },
+        {
+          "word": "果",
+          "start": 209.85,
+          "end": 210.07
+        },
+        {
+          "word": "遇",
+          "start": 210.07,
+          "end": 210.21
+        },
+        {
+          "word": "见",
+          "start": 210.21,
+          "end": 210.35
+        },
+        {
+          "word": "有",
+          "start": 210.35,
+          "end": 210.51
+        },
+        {
+          "word": "人",
+          "start": 210.51,
+          "end": 210.69
+        },
+        {
+          "word": "在",
+          "start": 210.69,
+          "end": 210.83
+        },
+        {
+          "word": "翻",
+          "start": 210.83,
+          "end": 210.99
+        },
+        {
+          "word": "译",
+          "start": 210.99,
+          "end": 211.17
+        },
+        {
+          "word": "上",
+          "start": 211.17,
+          "end": 211.37
+        },
+        {
+          "word": "犯",
+          "start": 211.37,
+          "end": 211.53
+        },
+        {
+          "word": "了",
+          "start": 211.53,
+          "end": 211.67
+        },
+        {
+          "word": "关",
+          "start": 211.67,
+          "end": 211.83
+        },
+        {
+          "word": "键",
+          "start": 211.83,
+          "end": 212.03
+        },
+        {
+          "word": "错",
+          "start": 212.03,
+          "end": 212.17
+        },
+        {
+          "word": "误，",
+          "start": 212.17,
+          "end": 212.41
+        }
+      ],
+      "confidence": null,
+      "note": "",
+      "flags": [
+        "noise"
+      ],
+      "id": "seg_00050",
+      "reviewed": false
+    },
+    {
+      "start": 212.77,
+      "end": 214.31,
+      "type": "speech",
+      "speaker": "SPEAKER_00",
+      "overlap_speakers": [],
+      "text": "我不会让他蒙混过关，",
+      "words": [
+        {
+          "word": "我",
+          "start": 212.77,
+          "end": 212.97
+        },
+        {
+          "word": "不",
+          "start": 212.97,
+          "end": 213.07
+        },
+        {
+          "word": "会",
+          "start": 213.07,
+          "end": 213.25
+        },
+        {
+          "word": "让",
+          "start": 213.25,
+          "end": 213.37
+        },
+        {
+          "word": "他",
+          "start": 213.37,
+          "end": 213.53
+        },
+        {
+          "word": "蒙",
+          "start": 213.53,
+          "end": 213.67
+        },
+        {
+          "word": "混",
+          "start": 213.67,
+          "end": 213.91
+        },
+        {
+          "word": "过",
+          "start": 213.91,
+          "end": 214.03
+        },
+        {
+          "word": "关，",
+          "start": 214.03,
+          "end": 214.27
+        }
+      ],
+      "confidence": null,
+      "note": "",
+      "flags": [
+        "noise"
+      ],
+      "id": "seg_00051",
+      "reviewed": false
+    },
+    {
+      "start": 214.65,
+      "end": 215.465,
+      "type": "speech",
+      "speaker": "SPEAKER_00",
+      "overlap_speakers": [],
+      "text": "一定会指出，",
+      "words": [
+        {
+          "word": "一",
+          "start": 214.65,
+          "end": 214.81
+        },
+        {
+          "word": "定",
+          "start": 214.81,
+          "end": 214.99
+        },
+        {
+          "word": "会",
+          "start": 214.99,
+          "end": 215.13
+        },
+        {
+          "word": "指",
+          "start": 215.13,
+          "end": 215.29
+        },
+        {
+          "word": "出，",
+          "start": 215.29,
+          "end": 215.465
+        }
+      ],
+      "confidence": null,
+      "note": "",
+      "flags": [
+        "noise"
+      ],
+      "id": "seg_00052",
+      "reviewed": false
+    },
+    {
+      "start": 215.465,
+      "end": 216.47,
+      "type": "non_speech",
+      "speaker": null,
+      "overlap_speakers": [],
+      "text": "",
+      "words": [],
+      "confidence": null,
+      "note": "Music",
+      "flags": [],
+      "id": "seg_00053",
+      "reviewed": false
+    },
+    {
+      "start": 216.47,
+      "end": 217.09,
+      "type": "speech",
+      "speaker": "SPEAKER_00",
+      "overlap_speakers": [],
+      "text": "有些人",
+      "words": [
+        {
+          "word": "有",
+          "start": 216.47,
+          "end": 216.67
+        },
+        {
+          "word": "些",
+          "start": 216.67,
+          "end": 216.85
+        },
+        {
+          "word": "人",
+          "start": 216.85,
+          "end": 217.09
+        }
+      ],
+      "confidence": null,
+      "note": "",
+      "flags": [
+        "noise"
+      ],
+      "id": "seg_00054",
+      "reviewed": false
+    },
+    {
+      "start": 217.668,
+      "end": 219.485,
+      "type": "speech",
+      "speaker": "SPEAKER_00",
+      "overlap_speakers": [],
+      "text": "天生就当不了翻译官，",
+      "words": [
+        {
+          "word": "天",
+          "start": 217.67,
+          "end": 217.91
+        },
+        {
+          "word": "生",
+          "start": 217.91,
+          "end": 218.15
+        },
+        {
+          "word": "就",
+          "start": 218.27,
+          "end": 218.45
+        },
+        {
+          "word": "当",
+          "start": 218.45,
+          "end": 218.61
+        },
+        {
+          "word": "不",
+          "start": 218.61,
+          "end": 218.79
+        },
+        {
+          "word": "了",
+          "start": 218.79,
+          "end": 218.91
+        },
+        {
+          "word": "翻",
+          "start": 218.91,
+          "end": 219.07
+        },
+        {
+          "word": "译",
+          "start": 219.07,
+          "end": 219.19
+        },
+        {
+          "word": "官，",
+          "start": 219.19,
+          "end": 219.485
+        }
+      ],
+      "confidence": null,
+      "note": "",
+      "flags": [],
+      "id": "seg_00055",
+      "reviewed": false
+    },
+    {
+      "start": 219.5,
+      "end": 227.5,
+      "type": "non_speech",
+      "speaker": null,
+      "overlap_speakers": [],
+      "text": "",
+      "words": [],
+      "confidence": null,
+      "note": "Music",
+      "flags": [],
+      "id": "seg_00056",
+      "reviewed": false
+    },
+    {
+      "start": 229.919,
+      "end": 231.758,
+      "type": "speech",
+      "speaker": "SPEAKER_01",
+      "overlap_speakers": [],
+      "text": "你去吃饭吧，我帮你在这盯着好",
+      "words": [
+        {
+          "word": "你",
+          "start": 229.94,
+          "end": 230.08
+        },
+        {
+          "word": "去",
+          "start": 230.08,
+          "end": 230.2
+        },
+        {
+          "word": "吃",
+          "start": 230.2,
+          "end": 230.3
+        },
+        {
+          "word": "饭",
+          "start": 230.3,
+          "end": 230.48
+        },
+        {
+          "word": "吧，",
+          "start": 230.48,
+          "end": 230.6
+        },
+        {
+          "word": "我",
+          "start": 230.6,
+          "end": 230.72
+        },
+        {
+          "word": "帮",
+          "start": 230.72,
+          "end": 230.82
+        },
+        {
+          "word": "你",
+          "start": 230.82,
+          "end": 230.92
+        },
+        {
+          "word": "在",
+          "start": 230.92,
+          "end": 231.0
+        },
+        {
+          "word": "这",
+          "start": 231.0,
+          "end": 231.12
+        },
+        {
+          "word": "盯",
+          "start": 231.12,
+          "end": 231.28
+        },
+        {
+          "word": "着",
+          "start": 231.28,
+          "end": 231.52
+        },
+        {
+          "word": "好",
+          "start": 231.52,
+          "end": 231.725
+        }
+      ],
+      "confidence": null,
+      "note": "",
+      "flags": [],
+      "id": "seg_00057",
+      "reviewed": false
+    },
+    {
+      "start": 244.718,
+      "end": 245.35,
+      "type": "speech",
+      "speaker": "SPEAKER_01",
+      "overlap_speakers": [],
+      "text": "buru",
+      "words": [
+        {
+          "word": "buru",
+          "start": 244.73,
+          "end": 245.35
+        }
+      ],
+      "confidence": null,
+      "note": "",
+      "flags": [],
+      "id": "seg_00058",
+      "reviewed": false
+    },
+    {
+      "start": 246.63,
+      "end": 250.785,
+      "type": "speech",
+      "speaker": "SPEAKER_01",
+      "overlap_speakers": [],
+      "text": "buru mercill why ceiliabori do not go lock bove zonce of you。",
+      "words": [
+        {
+          "word": "buru",
+          "start": 246.63,
+          "end": 247.09
+        },
+        {
+          "word": "mercill",
+          "start": 247.09,
+          "end": 247.53
+        },
+        {
+          "word": "why",
+          "start": 247.53,
+          "end": 247.71
+        },
+        {
+          "word": "ceiliabori",
+          "start": 247.71,
+          "end": 248.45
+        },
+        {
+          "word": "do",
+          "start": 248.45,
+          "end": 248.55
+        },
+        {
+          "word": "not",
+          "start": 248.55,
+          "end": 248.79
+        },
+        {
+          "word": "go",
+          "start": 248.81,
+          "end": 248.91
+        },
+        {
+          "word": "lock",
+          "start": 248.91,
+          "end": 249.23
+        },
+        {
+          "word": "bove",
+          "start": 249.23,
+          "end": 249.79
+        },
+        {
+          "word": "zonce",
+          "start": 249.79,
+          "end": 250.17
+        },
+        {
+          "word": "of",
+          "start": 250.17,
+          "end": 250.37
+        },
+        {
+          "word": "you。",
+          "start": 250.37,
+          "end": 250.785
+        }
+      ],
+      "confidence": null,
+      "note": "",
+      "flags": [],
+      "id": "seg_00059",
+      "reviewed": false
+    },
+    {
+      "start": 252.548,
+      "end": 253.983,
+      "type": "speech",
+      "speaker": "SPEAKER_01",
+      "overlap_speakers": [],
+      "text": "哦，您听不懂法文是吧？",
+      "words": [
+        {
+          "word": "哦，",
+          "start": 252.58,
+          "end": 252.74
+        },
+        {
+          "word": "您",
+          "start": 252.74,
+          "end": 252.88
+        },
+        {
+          "word": "听",
+          "start": 252.88,
+          "end": 253.02
+        },
+        {
+          "word": "不",
+          "start": 253.02,
+          "end": 253.12
+        },
+        {
+          "word": "懂",
+          "start": 253.12,
+          "end": 253.28
+        },
+        {
+          "word": "法",
+          "start": 253.28,
+          "end": 253.38
+        },
+        {
+          "word": "文",
+          "start": 253.38,
+          "end": 253.62
+        },
+        {
+          "word": "是",
+          "start": 253.62,
+          "end": 253.74
+        },
+        {
+          "word": "吧？",
+          "start": 253.74,
+          "end": 253.98
+        }
+      ],
+      "confidence": null,
+      "note": "",
+      "flags": [],
+      "id": "seg_00060",
+      "reviewed": false
+    },
+    {
+      "start": 255.1,
+      "end": 257.14,
+      "type": "speech",
+      "speaker": "SPEAKER_01",
+      "overlap_speakers": [],
+      "text": "可是我们的中文资料刚刚发完了，",
+      "words": [
+        {
+          "word": "可",
+          "start": 255.1,
+          "end": 255.3
+        },
+        {
+          "word": "是",
+          "start": 255.3,
+          "end": 255.42
+        },
+        {
+          "word": "我",
+          "start": 255.42,
+          "end": 255.54
+        },
+        {
+          "word": "们",
+          "start": 255.54,
+          "end": 255.62
+        },
+        {
+          "word": "的",
+          "start": 255.62,
+          "end": 255.72
+        },
+        {
+          "word": "中",
+          "start": 255.72,
+          "end": 255.84
+        },
+        {
+          "word": "文",
+          "start": 255.84,
+          "end": 255.98
+        },
+        {
+          "word": "资",
+          "start": 255.98,
+          "end": 256.06
+        },
+        {
+          "word": "料",
+          "start": 256.06,
+          "end": 256.26
+        },
+        {
+          "word": "刚",
+          "start": 256.26,
+          "end": 256.36
+        },
+        {
+          "word": "刚",
+          "start": 256.36,
+          "end": 256.5
+        },
+        {
+          "word": "发",
+          "start": 256.5,
+          "end": 256.66
+        },
+        {
+          "word": "完",
+          "start": 256.66,
+          "end": 256.9
+        },
+        {
+          "word": "了，",
+          "start": 256.9,
+          "end": 257.14
+        }
+      ],
+      "confidence": null,
+      "note": "",
+      "flags": [],
+      "id": "seg_00061",
+      "reviewed": false
+    },
+    {
+      "start": 257.72,
+      "end": 260.868,
+      "type": "speech",
+      "speaker": "SPEAKER_01",
+      "overlap_speakers": [],
+      "text": "要不这份您先拿着，里面有配图也比较详细。",
+      "words": [
+        {
+          "word": "要",
+          "start": 257.72,
+          "end": 257.92
+        },
+        {
+          "word": "不",
+          "start": 257.92,
+          "end": 258.1
+        },
+        {
+          "word": "这",
+          "start": 258.1,
+          "end": 258.24
+        },
+        {
+          "word": "份",
+          "start": 258.24,
+          "end": 258.42
+        },
+        {
+          "word": "您",
+          "start": 258.42,
+          "end": 258.58
+        },
+        {
+          "word": "先",
+          "start": 258.58,
+          "end": 258.78
+        },
+        {
+          "word": "拿",
+          "start": 258.78,
+          "end": 259.0
+        },
+        {
+          "word": "着，",
+          "start": 259.0,
+          "end": 259.24
+        },
+        {
+          "word": "里",
+          "start": 259.36,
+          "end": 259.48
+        },
+        {
+          "word": "面",
+          "start": 259.48,
+          "end": 259.58
+        },
+        {
+          "word": "有",
+          "start": 259.58,
+          "end": 259.74
+        },
+        {
+          "word": "配",
+          "start": 259.74,
+          "end": 259.88
+        },
+        {
+          "word": "图",
+          "start": 259.88,
+          "end": 260.06
+        },
+        {
+          "word": "也",
+          "start": 260.06,
+          "end": 260.16
+        },
+        {
+          "word": "比",
+          "start": 260.16,
+          "end": 260.24
+        },
+        {
+          "word": "较",
+          "start": 260.24,
+          "end": 260.38
+        },
+        {
+          "word": "详",
+          "start": 260.38,
+          "end": 260.54
+        },
+        {
+          "word": "细。",
+          "start": 260.54,
+          "end": 260.78
+        }
+      ],
+      "confidence": null,
+      "note": "",
+      "flags": [],
+      "id": "seg_00062",
+      "reviewed": false
+    },
+    {
+      "start": 261.42,
+      "end": 264.475,
+      "type": "speech",
+      "speaker": "SPEAKER_01",
+      "overlap_speakers": [],
+      "text": "我一会儿再帮您取中文的，您去那边桌上签个字就好了。",
+      "words": [
+        {
+          "word": "我",
+          "start": 261.42,
+          "end": 261.58
+        },
+        {
+          "word": "一",
+          "start": 261.58,
+          "end": 261.68
+        },
+        {
+          "word": "会",
+          "start": 261.68,
+          "end": 261.76
+        },
+        {
+          "word": "儿",
+          "start": 261.76,
+          "end": 261.86
+        },
+        {
+          "word": "再",
+          "start": 261.86,
+          "end": 261.94
+        },
+        {
+          "word": "帮",
+          "start": 261.94,
+          "end": 262.04
+        },
+        {
+          "word": "您",
+          "start": 262.04,
+          "end": 262.22
+        },
+        {
+          "word": "取",
+          "start": 262.22,
+          "end": 262.4
+        },
+        {
+          "word": "中",
+          "start": 262.4,
+          "end": 262.5
+        },
+        {
+          "word": "文",
+          "start": 262.5,
+          "end": 262.74
+        },
+        {
+          "word": "的，",
+          "start": 262.74,
+          "end": 262.98
+        },
+        {
+          "word": "您",
+          "start": 263.02,
+          "end": 263.16
+        },
+        {
+          "word": "去",
+          "start": 263.16,
+          "end": 263.28
+        },
+        {
+          "word": "那",
+          "start": 263.28,
+          "end": 263.36
+        },
+        {
+          "word": "边",
+          "start": 263.36,
+          "end": 263.46
+        },
+        {
+          "word": "桌",
+          "start": 263.46,
+          "end": 263.58
+        },
+        {
+          "word": "上",
+          "start": 263.58,
+          "end": 263.7
+        },
+        {
+          "word": "签",
+          "start": 263.7,
+          "end": 263.78
+        },
+        {
+          "word": "个",
+          "start": 263.78,
+          "end": 263.88
+        },
+        {
+          "word": "字",
+          "start": 263.88,
+          "end": 264.0
+        },
+        {
+          "word": "就",
+          "start": 264.0,
+          "end": 264.12
+        },
+        {
+          "word": "好",
+          "start": 264.12,
+          "end": 264.24
+        },
+        {
+          "word": "了。",
+          "start": 264.24,
+          "end": 264.475
+        }
+      ],
+      "confidence": null,
+      "note": "",
+      "flags": [],
+      "id": "seg_00063",
+      "reviewed": false
+    },
+    {
+      "start": 268.073,
+      "end": 268.72,
+      "type": "speech",
+      "speaker": "SPEAKER_05",
+      "overlap_speakers": [],
+      "text": "稍等一",
+      "words": [
+        {
+          "word": "稍",
+          "start": 268.16,
+          "end": 268.3
+        },
+        {
+          "word": "等",
+          "start": 268.3,
+          "end": 268.48
+        },
+        {
+          "word": "一",
+          "start": 268.48,
+          "end": 268.72
+        }
+      ],
+      "confidence": null,
+      "note": "",
+      "flags": [
+        "low_vad"
+      ],
+      "id": "seg_00064",
+      "reviewed": false
+    },
+    {
+      "start": 269.98,
+      "end": 270.976,
+      "type": "speech",
+      "speaker": "SPEAKER_05",
+      "overlap_speakers": [],
+      "text": "下。哎，小姐，你",
+      "words": [
+        {
+          "word": "下。",
+          "start": 269.98,
+          "end": 270.22
+        },
+        {
+          "word": "哎，",
+          "start": 270.3,
+          "end": 270.42
+        },
+        {
+          "word": "小",
+          "start": 270.42,
+          "end": 270.6
+        },
+        {
+          "word": "姐，",
+          "start": 270.6,
+          "end": 270.72
+        },
+        {
+          "word": "你",
+          "start": 270.72,
+          "end": 270.96
+        }
+      ],
+      "confidence": null,
+      "note": "",
+      "flags": [],
+      "id": "seg_00065",
+      "reviewed": false
+    },
+    {
+      "start": 271.48,
+      "end": 272.98,
+      "type": "speech",
+      "speaker": "SPEAKER_05",
+      "overlap_speakers": [],
+      "text": "好，请问您是翻译吗？",
+      "words": [
+        {
+          "word": "好，",
+          "start": 271.48,
+          "end": 271.66
+        },
+        {
+          "word": "请",
+          "start": 271.66,
+          "end": 271.9
+        },
+        {
+          "word": "问",
+          "start": 272.04,
+          "end": 272.26
+        },
+        {
+          "word": "您",
+          "start": 272.26,
+          "end": 272.4
+        },
+        {
+          "word": "是",
+          "start": 272.4,
+          "end": 272.5
+        },
+        {
+          "word": "翻",
+          "start": 272.5,
+          "end": 272.58
+        },
+        {
+          "word": "译",
+          "start": 272.58,
+          "end": 272.74
+        },
+        {
+          "word": "吗？",
+          "start": 272.74,
+          "end": 272.98
+        }
+      ],
+      "confidence": null,
+      "note": "",
+      "flags": [],
+      "id": "seg_00066",
+      "reviewed": false
+    },
+    {
+      "start": 273.26,
+      "end": 273.5,
+      "type": "speech",
+      "speaker": "SPEAKER_01",
+      "overlap_speakers": [],
+      "text": "啊",
+      "words": [
+        {
+          "word": "啊",
+          "start": 273.26,
+          "end": 273.5
+        }
+      ],
+      "confidence": null,
+      "note": "",
+      "flags": [
+        "short"
+      ],
+      "id": "seg_00067",
+      "reviewed": false
+    },
+    {
+      "start": 273.558,
+      "end": 274.3,
+      "type": "speech",
+      "speaker": "SPEAKER_05",
+      "overlap_speakers": [],
+      "text": "啊，太好了，",
+      "words": [
+        {
+          "word": "啊，",
+          "start": 273.58,
+          "end": 273.76
+        },
+        {
+          "word": "太",
+          "start": 273.76,
+          "end": 273.88
+        },
+        {
+          "word": "好",
+          "start": 273.88,
+          "end": 274.06
+        },
+        {
+          "word": "了，",
+          "start": 274.06,
+          "end": 274.3
+        }
+      ],
+      "confidence": null,
+      "note": "",
+      "flags": [],
+      "id": "seg_00068",
+      "reviewed": false
+    },
+    {
+      "start": 274.655,
+      "end": 275.026,
+      "type": "speech",
+      "speaker": "SPEAKER_05",
+      "overlap_speakers": [],
+      "text": "请您帮",
+      "words": [
+        {
+          "word": "请",
+          "start": 274.66,
+          "end": 274.84
+        },
+        {
+          "word": "您",
+          "start": 274.84,
+          "end": 274.92
+        },
+        {
+          "word": "帮",
+          "start": 274.92,
+          "end": 275.0
+        }
+      ],
+      "confidence": null,
+      "note": "",
+      "flags": [
+        "short"
+      ],
+      "id": "seg_00069",
+      "reviewed": false
+    },
+    {
+      "start": 275.0,
+      "end": 277.0,
+      "type": "speech",
+      "speaker": "SPEAKER_07",
+      "overlap_speakers": [],
+      "text": "我翻译一下。这位朋友想要告诉我的话，",
+      "words": [
+        {
+          "word": "我",
+          "start": 275.0,
+          "end": 275.12
+        },
+        {
+          "word": "翻",
+          "start": 275.12,
+          "end": 275.24
+        },
+        {
+          "word": "译",
+          "start": 275.24,
+          "end": 275.36
+        },
+        {
+          "word": "一",
+          "start": 275.36,
+          "end": 275.48
+        },
+        {
+          "word": "下。",
+          "start": 275.48,
+          "end": 275.6
+        },
+        {
+          "word": "这",
+          "start": 275.6,
+          "end": 275.7
+        },
+        {
+          "word": "位",
+          "start": 275.7,
+          "end": 275.8
+        },
+        {
+          "word": "朋",
+          "start": 275.8,
+          "end": 275.94
+        },
+        {
+          "word": "友",
+          "start": 275.94,
+          "end": 276.06
+        },
+        {
+          "word": "想",
+          "start": 276.06,
+          "end": 276.18
+        },
+        {
+          "word": "要",
+          "start": 276.18,
+          "end": 276.3
+        },
+        {
+          "word": "告",
+          "start": 276.3,
+          "end": 276.4
+        },
+        {
+          "word": "诉",
+          "start": 276.4,
+          "end": 276.52
+        },
+        {
+          "word": "我",
+          "start": 276.52,
+          "end": 276.6
+        },
+        {
+          "word": "的",
+          "start": 276.6,
+          "end": 276.7
+        },
+        {
+          "word": "话，",
+          "start": 276.7,
+          "end": 276.965
+        }
+      ],
+      "confidence": null,
+      "note": "",
+      "flags": [],
+      "id": "seg_00070",
+      "reviewed": false
+    },
+    {
+      "start": 277.642,
+      "end": 278.62,
+      "type": "speech",
+      "speaker": "SPEAKER_01",
+      "overlap_speakers": [],
+      "text": "",
+      "words": [],
+      "confidence": null,
+      "note": "",
+      "flags": [
+        "no_text"
+      ],
+      "id": "seg_00071",
+      "reviewed": false
+    },
+    {
+      "start": 278.57,
+      "end": 289.03,
+      "type": "speech",
+      "speaker": "SPEAKER_07",
+      "overlap_speakers": [],
+      "text": "me university dizuicc a classiy by me。 m， may you s university and mound， particularly or more on evil。 this shows be viised and leclear。 this sounds the air intermantal achief，",
+      "words": [
+        {
+          "word": "me",
+          "start": 278.57,
+          "end": 278.81
+        },
+        {
+          "word": "university",
+          "start": 278.83,
+          "end": 279.23
+        },
+        {
+          "word": "dizuicc",
+          "start": 279.23,
+          "end": 280.03
+        },
+        {
+          "word": "a",
+          "start": 280.03,
+          "end": 280.13
+        },
+        {
+          "word": "classiy",
+          "start": 280.13,
+          "end": 280.59
+        },
+        {
+          "word": "by",
+          "start": 280.59,
+          "end": 280.77
+        },
+        {
+          "word": "me。",
+          "start": 280.77,
+          "end": 280.89
+        },
+        {
+          "word": "m，",
+          "start": 280.89,
+          "end": 281.05
+        },
+        {
+          "word": "may",
+          "start": 281.05,
+          "end": 281.15
+        },
+        {
+          "word": "you",
+          "start": 281.15,
+          "end": 281.25
+        },
+        {
+          "word": "s",
+          "start": 281.25,
+          "end": 281.41
+        },
+        {
+          "word": "university",
+          "start": 281.41,
+          "end": 281.85
+        },
+        {
+          "word": "and",
+          "start": 281.85,
+          "end": 282.01
+        },
+        {
+          "word": "mound，",
+          "start": 282.01,
+          "end": 282.55
+        },
+        {
+          "word": "particularly",
+          "start": 282.67,
+          "end": 283.33
+        },
+        {
+          "word": "or",
+          "start": 283.33,
+          "end": 283.57
+        },
+        {
+          "word": "more",
+          "start": 283.61,
+          "end": 283.73
+        },
+        {
+          "word": "on",
+          "start": 283.73,
+          "end": 283.89
+        },
+        {
+          "word": "evil。",
+          "start": 283.89,
+          "end": 284.23
+        },
+        {
+          "word": "this",
+          "start": 284.23,
+          "end": 284.39
+        },
+        {
+          "word": "shows",
+          "start": 284.39,
+          "end": 284.67
+        },
+        {
+          "word": "be",
+          "start": 284.67,
+          "end": 284.81
+        },
+        {
+          "word": "viised",
+          "start": 284.81,
+          "end": 285.15
+        },
+        {
+          "word": "and",
+          "start": 285.15,
+          "end": 285.29
+        },
+        {
+          "word": "leclear。",
+          "start": 285.29,
+          "end": 286.13
+        },
+        {
+          "word": "this",
+          "start": 286.13,
+          "end": 286.33
+        },
+        {
+          "word": "sounds",
+          "start": 286.33,
+          "end": 286.75
+        },
+        {
+          "word": "the",
+          "start": 286.75,
+          "end": 286.99
+        },
+        {
+          "word": "air",
+          "start": 287.17,
+          "end": 287.45
+        },
+        {
+          "word": "intermantal",
+          "start": 287.45,
+          "end": 287.87
+        },
+        {
+          "word": "achief，",
+          "start": 287.87,
+          "end": 289.03
+        }
+      ],
+      "confidence": null,
+      "note": "",
+      "flags": [],
+      "id": "seg_00072",
+      "reviewed": false
+    },
+    {
+      "start": 288.863,
+      "end": 293.268,
+      "type": "speech",
+      "speaker": "SPEAKER_07",
+      "overlap_speakers": [],
+      "text": "i but i stand it， although the diplomate or onand noon on ternoon on openabebut",
+      "words": [
+        {
+          "word": "i",
+          "start": 289.03,
+          "end": 289.21
+        },
+        {
+          "word": "but",
+          "start": 289.21,
+          "end": 289.37
+        },
+        {
+          "word": "i",
+          "start": 289.37,
+          "end": 289.51
+        },
+        {
+          "word": "stand",
+          "start": 289.51,
+          "end": 289.77
+        },
+        {
+          "word": "it，",
+          "start": 289.77,
+          "end": 289.91
+        },
+        {
+          "word": "although",
+          "start": 289.91,
+          "end": 290.29
+        },
+        {
+          "word": "the",
+          "start": 290.29,
+          "end": 290.45
+        },
+        {
+          "word": "diplomate",
+          "start": 290.45,
+          "end": 291.03
+        },
+        {
+          "word": "or",
+          "start": 291.03,
+          "end": 291.17
+        },
+        {
+          "word": "onand",
+          "start": 291.17,
+          "end": 291.49
+        },
+        {
+          "word": "noon",
+          "start": 291.49,
+          "end": 291.85
+        },
+        {
+          "word": "on",
+          "start": 291.85,
+          "end": 292.07
+        },
+        {
+          "word": "ternoon",
+          "start": 292.07,
+          "end": 292.49
+        },
+        {
+          "word": "on",
+          "start": 292.49,
+          "end": 292.57
+        },
+        {
+          "word": "openabebut",
+          "start": 292.57,
+          "end": 293.11
+        }
+      ],
+      "confidence": null,
+      "note": "",
+      "flags": [],
+      "id": "seg_00073",
+      "reviewed": false
+    },
+    {
+      "start": 293.11,
+      "end": 298.162,
+      "type": "speech",
+      "speaker": "SPEAKER_07",
+      "overlap_speakers": [],
+      "text": "university diosic electricical want university acpuluity discipline now sess",
+      "words": [
+        {
+          "word": "university",
+          "start": 293.11,
+          "end": 294.49
+        },
+        {
+          "word": "diosic",
+          "start": 294.49,
+          "end": 294.91
+        },
+        {
+          "word": "electricical",
+          "start": 294.91,
+          "end": 295.65
+        },
+        {
+          "word": "want",
+          "start": 295.65,
+          "end": 295.81
+        },
+        {
+          "word": "university",
+          "start": 295.81,
+          "end": 296.41
+        },
+        {
+          "word": "acpuluity",
+          "start": 296.41,
+          "end": 296.89
+        },
+        {
+          "word": "discipline",
+          "start": 296.89,
+          "end": 297.39
+        },
+        {
+          "word": "now",
+          "start": 297.39,
+          "end": 297.61
+        },
+        {
+          "word": "sess",
+          "start": 297.61,
+          "end": 298.03
+        }
+      ],
+      "confidence": null,
+      "note": "",
+      "flags": [],
+      "id": "seg_00074",
+      "reviewed": false
+    },
+    {
+      "start": 298.162,
+      "end": 300.0,
+      "type": "non_speech",
+      "speaker": null,
+      "overlap_speakers": [],
+      "text": "",
+      "words": [],
+      "confidence": null,
+      "note": "Vehicle",
+      "flags": [],
+      "id": "seg_00075",
+      "reviewed": false
+    },
+    {
+      "start": 301.098,
+      "end": 301.435,
+      "type": "speech",
+      "speaker": "SPEAKER_01",
+      "overlap_speakers": [],
+      "text": "",
+      "words": [],
+      "confidence": null,
+      "note": "",
+      "flags": [
+        "no_text",
+        "short",
+        "low_vad"
+      ],
+      "id": "seg_00076",
+      "reviewed": false
+    },
+    {
+      "start": 301.756,
+      "end": 304.321,
+      "type": "speech",
+      "speaker": "SPEAKER_01",
+      "overlap_speakers": [],
+      "text": "你的朋友是说苏黎世大学",
+      "words": [
+        {
+          "word": "你",
+          "start": 301.82,
+          "end": 301.98
+        },
+        {
+          "word": "的",
+          "start": 301.98,
+          "end": 302.12
+        },
+        {
+          "word": "朋",
+          "start": 302.12,
+          "end": 302.28
+        },
+        {
+          "word": "友",
+          "start": 302.28,
+          "end": 302.5
+        },
+        {
+          "word": "是",
+          "start": 302.5,
+          "end": 302.68
+        },
+        {
+          "word": "说",
+          "start": 302.68,
+          "end": 302.92
+        },
+        {
+          "word": "苏",
+          "start": 302.98,
+          "end": 303.16
+        },
+        {
+          "word": "黎",
+          "start": 303.16,
+          "end": 303.34
+        },
+        {
+          "word": "世",
+          "start": 303.34,
+          "end": 303.58
+        },
+        {
+          "word": "大",
+          "start": 303.6,
+          "end": 303.82
+        },
+        {
+          "word": "学",
+          "start": 303.82,
+          "end": 304.06
+        }
+      ],
+      "confidence": null,
+      "note": "",
+      "flags": [],
+      "id": "seg_00077",
+      "reviewed": false
+    },
+    {
+      "start": 304.68,
+      "end": 309.367,
+      "type": "speech",
+      "speaker": "SPEAKER_01",
+      "overlap_speakers": [],
+      "text": "呃，在生物学、神经科学，还有",
+      "words": [
+        {
+          "word": "呃，",
+          "start": 304.68,
+          "end": 304.92
+        },
+        {
+          "word": "在",
+          "start": 305.38,
+          "end": 305.62
+        },
+        {
+          "word": "生",
+          "start": 306.22,
+          "end": 306.46
+        },
+        {
+          "word": "物",
+          "start": 306.46,
+          "end": 306.7
+        },
+        {
+          "word": "学、",
+          "start": 306.7,
+          "end": 306.94
+        },
+        {
+          "word": "神",
+          "start": 307.46,
+          "end": 307.7
+        },
+        {
+          "word": "经",
+          "start": 307.72,
+          "end": 307.96
+        },
+        {
+          "word": "科",
+          "start": 307.98,
+          "end": 308.14
+        },
+        {
+          "word": "学，",
+          "start": 308.14,
+          "end": 308.38
+        },
+        {
+          "word": "还",
+          "start": 308.54,
+          "end": 308.78
+        },
+        {
+          "word": "有",
+          "start": 308.8,
+          "end": 309.04
+        }
+      ],
+      "confidence": null,
+      "note": "",
+      "flags": [],
+      "id": "seg_00078",
+      "reviewed": false
+    },
+    {
+      "start": 309.89,
+      "end": 314.429,
+      "type": "speech",
+      "speaker": "SPEAKER_01",
+      "overlap_speakers": [],
+      "text": "社会学方面都在世界享有世界级领域。呃，",
+      "words": [
+        {
+          "word": "社",
+          "start": 309.92,
+          "end": 310.16
+        },
+        {
+          "word": "会",
+          "start": 310.18,
+          "end": 310.42
+        },
+        {
+          "word": "学",
+          "start": 310.42,
+          "end": 310.6
+        },
+        {
+          "word": "方",
+          "start": 310.6,
+          "end": 310.78
+        },
+        {
+          "word": "面",
+          "start": 310.78,
+          "end": 311.02
+        },
+        {
+          "word": "都",
+          "start": 311.24,
+          "end": 311.44
+        },
+        {
+          "word": "在",
+          "start": 311.44,
+          "end": 311.64
+        },
+        {
+          "word": "世",
+          "start": 311.64,
+          "end": 311.78
+        },
+        {
+          "word": "界",
+          "start": 311.78,
+          "end": 312.02
+        },
+        {
+          "word": "享",
+          "start": 312.1,
+          "end": 312.32
+        },
+        {
+          "word": "有",
+          "start": 312.32,
+          "end": 312.56
+        },
+        {
+          "word": "世",
+          "start": 312.72,
+          "end": 312.86
+        },
+        {
+          "word": "界",
+          "start": 312.86,
+          "end": 313.04
+        },
+        {
+          "word": "级",
+          "start": 313.04,
+          "end": 313.18
+        },
+        {
+          "word": "领",
+          "start": 313.18,
+          "end": 313.34
+        },
+        {
+          "word": "域。",
+          "start": 313.34,
+          "end": 313.58
+        },
+        {
+          "word": "呃，",
+          "start": 313.96,
+          "end": 314.2
+        }
+      ],
+      "confidence": null,
+      "note": "",
+      "flags": [],
+      "id": "seg_00079",
+      "reviewed": false
+    },
+    {
+      "start": 314.429,
+      "end": 319.323,
+      "type": "speech",
+      "speaker": "SPEAKER_00",
+      "overlap_speakers": [],
+      "text": "苏黎世大学在分子生物学、神经科学、人类学等领域享有世界声誉，",
+      "words": [
+        {
+          "word": "苏",
+          "start": 314.48,
+          "end": 314.6
+        },
+        {
+          "word": "黎",
+          "start": 314.6,
+          "end": 314.78
+        },
+        {
+          "word": "世",
+          "start": 314.78,
+          "end": 314.9
+        },
+        {
+          "word": "大",
+          "start": 314.9,
+          "end": 315.08
+        },
+        {
+          "word": "学",
+          "start": 315.08,
+          "end": 315.32
+        },
+        {
+          "word": "在",
+          "start": 315.32,
+          "end": 315.46
+        },
+        {
+          "word": "分",
+          "start": 315.46,
+          "end": 315.68
+        },
+        {
+          "word": "子",
+          "start": 315.68,
+          "end": 315.92
+        },
+        {
+          "word": "生",
+          "start": 315.94,
+          "end": 316.1
+        },
+        {
+          "word": "物",
+          "start": 316.1,
+          "end": 316.22
+        },
+        {
+          "word": "学、",
+          "start": 316.22,
+          "end": 316.46
+        },
+        {
+          "word": "神",
+          "start": 316.48,
+          "end": 316.64
+        },
+        {
+          "word": "经",
+          "start": 316.64,
+          "end": 316.88
+        },
+        {
+          "word": "科",
+          "start": 316.9,
+          "end": 317.06
+        },
+        {
+          "word": "学、",
+          "start": 317.06,
+          "end": 317.26
+        },
+        {
+          "word": "人",
+          "start": 317.26,
+          "end": 317.4
+        },
+        {
+          "word": "类",
+          "start": 317.4,
+          "end": 317.64
+        },
+        {
+          "word": "学",
+          "start": 317.64,
+          "end": 317.879
+        },
+        {
+          "word": "等",
+          "start": 317.879,
+          "end": 318.04
+        },
+        {
+          "word": "领",
+          "start": 318.04,
+          "end": 318.18
+        },
+        {
+          "word": "域",
+          "start": 318.18,
+          "end": 318.38
+        },
+        {
+          "word": "享",
+          "start": 318.38,
+          "end": 318.48
+        },
+        {
+          "word": "有",
+          "start": 318.48,
+          "end": 318.68
+        },
+        {
+          "word": "世",
+          "start": 318.68,
+          "end": 318.78
+        },
+        {
+          "word": "界",
+          "start": 318.78,
+          "end": 318.9
+        },
+        {
+          "word": "声",
+          "start": 318.9,
+          "end": 319.08
+        },
+        {
+          "word": "誉，",
+          "start": 319.08,
+          "end": 319.32
+        }
+      ],
+      "confidence": null,
+      "note": "",
+      "flags": [],
+      "id": "seg_00080",
+      "reviewed": false
+    },
+    {
+      "start": 319.8,
+      "end": 322.96,
+      "type": "speech",
+      "speaker": "SPEAKER_00",
+      "overlap_speakers": [],
+      "text": "培养出了包括爱因斯坦等十二名诺贝尔奖。得知",
+      "words": [
+        {
+          "word": "培",
+          "start": 319.8,
+          "end": 319.98
+        },
+        {
+          "word": "养",
+          "start": 319.98,
+          "end": 320.16
+        },
+        {
+          "word": "出",
+          "start": 320.16,
+          "end": 320.28
+        },
+        {
+          "word": "了",
+          "start": 320.28,
+          "end": 320.4
+        },
+        {
+          "word": "包",
+          "start": 320.4,
+          "end": 320.52
+        },
+        {
+          "word": "括",
+          "start": 320.52,
+          "end": 320.7
+        },
+        {
+          "word": "爱",
+          "start": 320.7,
+          "end": 320.78
+        },
+        {
+          "word": "因",
+          "start": 320.78,
+          "end": 320.96
+        },
+        {
+          "word": "斯",
+          "start": 320.96,
+          "end": 321.12
+        },
+        {
+          "word": "坦",
+          "start": 321.12,
+          "end": 321.3
+        },
+        {
+          "word": "等",
+          "start": 321.3,
+          "end": 321.5
+        },
+        {
+          "word": "十",
+          "start": 321.5,
+          "end": 321.64
+        },
+        {
+          "word": "二",
+          "start": 321.64,
+          "end": 321.76
+        },
+        {
+          "word": "名",
+          "start": 321.76,
+          "end": 321.98
+        },
+        {
+          "word": "诺",
+          "start": 321.98,
+          "end": 322.12
+        },
+        {
+          "word": "贝",
+          "start": 322.12,
+          "end": 322.24
+        },
+        {
+          "word": "尔",
+          "start": 322.24,
+          "end": 322.36
+        },
+        {
+          "word": "奖。",
+          "start": 322.36,
+          "end": 322.6
+        },
+        {
+          "word": "得",
+          "start": 322.6,
+          "end": 322.72
+        },
+        {
+          "word": "知",
+          "start": 322.72,
+          "end": 322.96
+        }
+      ],
+      "confidence": null,
+      "note": "",
+      "flags": [],
+      "id": "seg_00081",
+      "reviewed": false
+    },
+    {
+      "start": 323.34,
+      "end": 325.775,
+      "type": "speech",
+      "speaker": "SPEAKER_00",
+      "overlap_speakers": [],
+      "text": "苏黎世大学是瑞士最大的综合性领学",
+      "words": [
+        {
+          "word": "苏",
+          "start": 323.34,
+          "end": 323.5
+        },
+        {
+          "word": "黎",
+          "start": 323.5,
+          "end": 323.62
+        },
+        {
+          "word": "世",
+          "start": 323.62,
+          "end": 323.72
+        },
+        {
+          "word": "大",
+          "start": 323.72,
+          "end": 323.8
+        },
+        {
+          "word": "学",
+          "start": 323.8,
+          "end": 324.04
+        },
+        {
+          "word": "是",
+          "start": 324.1,
+          "end": 324.34
+        },
+        {
+          "word": "瑞",
+          "start": 324.34,
+          "end": 324.52
+        },
+        {
+          "word": "士",
+          "start": 324.52,
+          "end": 324.72
+        },
+        {
+          "word": "最",
+          "start": 324.72,
+          "end": 324.88
+        },
+        {
+          "word": "大",
+          "start": 324.88,
+          "end": 325.0
+        },
+        {
+          "word": "的",
+          "start": 325.0,
+          "end": 325.08
+        },
+        {
+          "word": "综",
+          "start": 325.08,
+          "end": 325.18
+        },
+        {
+          "word": "合",
+          "start": 325.18,
+          "end": 325.36
+        },
+        {
+          "word": "性",
+          "start": 325.36,
+          "end": 325.48
+        },
+        {
+          "word": "领",
+          "start": 325.48,
+          "end": 325.56
+        },
+        {
+          "word": "学",
+          "start": 325.56,
+          "end": 325.775
+        }
+      ],
+      "confidence": null,
+      "note": "",
+      "flags": [],
+      "id": "seg_00082",
+      "reviewed": false
+    },
+    {
+      "start": 325.775,
+      "end": 327.48,
+      "type": "non_speech",
+      "speaker": null,
+      "overlap_speakers": [],
+      "text": "",
+      "words": [],
+      "confidence": null,
+      "note": "Music",
+      "flags": [],
+      "id": "seg_00083",
+      "reviewed": false
+    },
+    {
+      "start": 327.48,
+      "end": 327.72,
+      "type": "speech",
+      "speaker": "SPEAKER_06",
+      "overlap_speakers": [],
+      "text": "啊，",
+      "words": [
+        {
+          "word": "啊，",
+          "start": 327.48,
+          "end": 327.72
+        }
+      ],
+      "confidence": null,
+      "note": "",
+      "flags": [
+        "short",
+        "low_vad",
+        "noise"
+      ],
+      "id": "seg_00084",
+      "reviewed": false
+    },
+    {
+      "start": 327.72,
+      "end": 328.5,
+      "type": "non_speech",
+      "speaker": null,
+      "overlap_speakers": [],
+      "text": "",
+      "words": [],
+      "confidence": null,
+      "note": "Music",
+      "flags": [],
+      "id": "seg_00085",
+      "reviewed": false
+    },
+    {
+      "start": 328.74,
+      "end": 329.34,
+      "type": "speech",
+      "speaker": "SPEAKER_00",
+      "overlap_speakers": [],
+      "text": "明白了，",
+      "words": [
+        {
+          "word": "明",
+          "start": 328.74,
+          "end": 328.94
+        },
+        {
+          "word": "白",
+          "start": 328.94,
+          "end": 329.1
+        },
+        {
+          "word": "了，",
+          "start": 329.1,
+          "end": 329.34
+        }
+      ],
+      "confidence": null,
+      "note": "",
+      "flags": [],
+      "id": "seg_00086",
+      "reviewed": false
+    },
+    {
+      "start": 329.52,
+      "end": 332.025,
+      "type": "speech",
+      "speaker": "SPEAKER_00",
+      "overlap_speakers": [],
+      "text": "谢谢，谢谢你们不客气。",
+      "words": [
+        {
+          "word": "谢",
+          "start": 329.52,
+          "end": 329.76
+        },
+        {
+          "word": "谢，",
+          "start": 329.76,
+          "end": 330.0
+        },
+        {
+          "word": "谢",
+          "start": 330.26,
+          "end": 330.46
+        },
+        {
+          "word": "谢",
+          "start": 330.46,
+          "end": 330.58
+        },
+        {
+          "word": "你",
+          "start": 330.58,
+          "end": 330.7
+        },
+        {
+          "word": "们",
+          "start": 330.7,
+          "end": 330.94
+        },
+        {
+          "word": "不",
+          "start": 330.94,
+          "end": 331.1
+        },
+        {
+          "word": "客",
+          "start": 331.1,
+          "end": 331.22
+        },
+        {
+          "word": "气。",
+          "start": 331.22,
+          "end": 332.025
+        }
+      ],
+      "confidence": null,
+      "note": "",
+      "flags": [],
+      "id": "seg_00087",
+      "reviewed": false
+    },
+    {
+      "start": 332.025,
+      "end": 336.1,
+      "type": "non_speech",
+      "speaker": null,
+      "overlap_speakers": [],
+      "text": "",
+      "words": [],
+      "confidence": null,
+      "note": "Music",
+      "flags": [],
+      "id": "seg_00088",
+      "reviewed": false
+    },
+    {
+      "start": 336.1,
+      "end": 336.451,
+      "type": "speech",
+      "speaker": "SPEAKER_01",
+      "overlap_speakers": [],
+      "text": "哎，",
+      "words": [
+        {
+          "word": "哎，",
+          "start": 336.1,
+          "end": 336.34
+        }
+      ],
+      "confidence": null,
+      "note": "",
+      "flags": [
+        "short",
+        "noise"
+      ],
+      "id": "seg_00089",
+      "reviewed": false
+    },
+    {
+      "start": 336.451,
+      "end": 337.42,
+      "type": "non_speech",
+      "speaker": null,
+      "overlap_speakers": [],
+      "text": "",
+      "words": [],
+      "confidence": null,
+      "note": "Music",
+      "flags": [],
+      "id": "seg_00090",
+      "reviewed": false
+    },
+    {
+      "start": 337.42,
+      "end": 338.5,
+      "type": "speech",
+      "speaker": "SPEAKER_01",
+      "overlap_speakers": [],
+      "text": "你懂法语啊，",
+      "words": [
+        {
+          "word": "你",
+          "start": 337.42,
+          "end": 337.6
+        },
+        {
+          "word": "懂",
+          "start": 337.6,
+          "end": 337.84
+        },
+        {
+          "word": "法",
+          "start": 337.88,
+          "end": 338.08
+        },
+        {
+          "word": "语",
+          "start": 338.08,
+          "end": 338.26
+        },
+        {
+          "word": "啊，",
+          "start": 338.26,
+          "end": 338.5
+        }
+      ],
+      "confidence": null,
+      "note": "",
+      "flags": [],
+      "id": "seg_00091",
+      "reviewed": false
+    },
+    {
+      "start": 338.76,
+      "end": 339.64,
+      "type": "speech",
+      "speaker": "SPEAKER_01",
+      "overlap_speakers": [],
+      "text": "你这么厉害，",
+      "words": [
+        {
+          "word": "你",
+          "start": 338.76,
+          "end": 339.0
+        },
+        {
+          "word": "这",
+          "start": 339.0,
+          "end": 339.1
+        },
+        {
+          "word": "么",
+          "start": 339.1,
+          "end": 339.24
+        },
+        {
+          "word": "厉",
+          "start": 339.24,
+          "end": 339.4
+        },
+        {
+          "word": "害，",
+          "start": 339.4,
+          "end": 339.64
+        }
+      ],
+      "confidence": null,
+      "note": "",
+      "flags": [],
+      "id": "seg_00092",
+      "reviewed": false
+    },
+    {
+      "start": 340.147,
+      "end": 342.86,
+      "type": "speech",
+      "speaker": "SPEAKER_01",
+      "overlap_speakers": [],
+      "text": "我叫乔飞，你叫什么呀？你也是交换留学生啊，",
+      "words": [
+        {
+          "word": "我",
+          "start": 340.16,
+          "end": 340.3
+        },
+        {
+          "word": "叫",
+          "start": 340.3,
+          "end": 340.44
+        },
+        {
+          "word": "乔",
+          "start": 340.44,
+          "end": 340.6
+        },
+        {
+          "word": "飞，",
+          "start": 340.6,
+          "end": 340.72
+        },
+        {
+          "word": "你",
+          "start": 340.72,
+          "end": 340.84
+        },
+        {
+          "word": "叫",
+          "start": 340.84,
+          "end": 341.02
+        },
+        {
+          "word": "什",
+          "start": 341.02,
+          "end": 341.14
+        },
+        {
+          "word": "么",
+          "start": 341.14,
+          "end": 341.22
+        },
+        {
+          "word": "呀？",
+          "start": 341.22,
+          "end": 341.46
+        },
+        {
+          "word": "你",
+          "start": 341.56,
+          "end": 341.72
+        },
+        {
+          "word": "也",
+          "start": 341.72,
+          "end": 341.84
+        },
+        {
+          "word": "是",
+          "start": 341.84,
+          "end": 341.98
+        },
+        {
+          "word": "交",
+          "start": 341.98,
+          "end": 342.08
+        },
+        {
+          "word": "换",
+          "start": 342.08,
+          "end": 342.2
+        },
+        {
+          "word": "留",
+          "start": 342.2,
+          "end": 342.32
+        },
+        {
+          "word": "学",
+          "start": 342.32,
+          "end": 342.44
+        },
+        {
+          "word": "生",
+          "start": 342.44,
+          "end": 342.62
+        },
+        {
+          "word": "啊，",
+          "start": 342.62,
+          "end": 342.86
+        }
+      ],
+      "confidence": null,
+      "note": "",
+      "flags": [],
+      "id": "seg_00093",
+      "reviewed": false
+    },
+    {
+      "start": 343.0,
+      "end": 344.5,
+      "type": "non_speech",
+      "speaker": null,
+      "overlap_speakers": [],
+      "text": "",
+      "words": [],
+      "confidence": null,
+      "note": "Music",
+      "flags": [],
+      "id": "seg_00094",
+      "reviewed": false
+    },
+    {
+      "start": 344.78,
+      "end": 348.0,
+      "type": "speech",
+      "speaker": "SPEAKER_00",
+      "overlap_speakers": [],
+      "text": "你在刚才的用词里，把分子生物学翻译成了生物学，",
+      "words": [
+        {
+          "word": "你",
+          "start": 344.78,
+          "end": 344.96
+        },
+        {
+          "word": "在",
+          "start": 344.96,
+          "end": 345.1
+        },
+        {
+          "word": "刚",
+          "start": 345.1,
+          "end": 345.26
+        },
+        {
+          "word": "才",
+          "start": 345.26,
+          "end": 345.38
+        },
+        {
+          "word": "的",
+          "start": 345.38,
+          "end": 345.5
+        },
+        {
+          "word": "用",
+          "start": 345.5,
+          "end": 345.62
+        },
+        {
+          "word": "词",
+          "start": 345.62,
+          "end": 345.8
+        },
+        {
+          "word": "里，",
+          "start": 345.8,
+          "end": 345.96
+        },
+        {
+          "word": "把",
+          "start": 345.96,
+          "end": 346.14
+        },
+        {
+          "word": "分",
+          "start": 346.14,
+          "end": 346.32
+        },
+        {
+          "word": "子",
+          "start": 346.32,
+          "end": 346.52
+        },
+        {
+          "word": "生",
+          "start": 346.52,
+          "end": 346.62
+        },
+        {
+          "word": "物",
+          "start": 346.62,
+          "end": 346.74
+        },
+        {
+          "word": "学",
+          "start": 346.74,
+          "end": 346.94
+        },
+        {
+          "word": "翻",
+          "start": 346.94,
+          "end": 347.1
+        },
+        {
+          "word": "译",
+          "start": 347.1,
+          "end": 347.22
+        },
+        {
+          "word": "成",
+          "start": 347.22,
+          "end": 347.34
+        },
+        {
+          "word": "了",
+          "start": 347.34,
+          "end": 347.46
+        },
+        {
+          "word": "生",
+          "start": 347.46,
+          "end": 347.58
+        },
+        {
+          "word": "物",
+          "start": 347.58,
+          "end": 347.76
+        },
+        {
+          "word": "学，",
+          "start": 347.76,
+          "end": 348.0
+        }
+      ],
+      "confidence": null,
+      "note": "",
+      "flags": [],
+      "id": "seg_00095",
+      "reviewed": false
+    },
+    {
+      "start": 348.4,
+      "end": 351.605,
+      "type": "speech",
+      "speaker": "SPEAKER_00",
+      "overlap_speakers": [],
+      "text": "把人类学翻译成了社会学，你知道这是很大的错误吗？",
+      "words": [
+        {
+          "word": "把",
+          "start": 348.4,
+          "end": 348.6
+        },
+        {
+          "word": "人",
+          "start": 348.6,
+          "end": 348.72
+        },
+        {
+          "word": "类",
+          "start": 348.72,
+          "end": 348.96
+        },
+        {
+          "word": "学",
+          "start": 348.96,
+          "end": 349.1
+        },
+        {
+          "word": "翻",
+          "start": 349.1,
+          "end": 349.24
+        },
+        {
+          "word": "译",
+          "start": 349.24,
+          "end": 349.36
+        },
+        {
+          "word": "成",
+          "start": 349.36,
+          "end": 349.48
+        },
+        {
+          "word": "了",
+          "start": 349.48,
+          "end": 349.58
+        },
+        {
+          "word": "社",
+          "start": 349.58,
+          "end": 349.72
+        },
+        {
+          "word": "会",
+          "start": 349.72,
+          "end": 349.9
+        },
+        {
+          "word": "学，",
+          "start": 349.9,
+          "end": 350.08
+        },
+        {
+          "word": "你",
+          "start": 350.08,
+          "end": 350.16
+        },
+        {
+          "word": "知",
+          "start": 350.16,
+          "end": 350.26
+        },
+        {
+          "word": "道",
+          "start": 350.26,
+          "end": 350.38
+        },
+        {
+          "word": "这",
+          "start": 350.38,
+          "end": 350.5
+        },
+        {
+          "word": "是",
+          "start": 350.5,
+          "end": 350.6
+        },
+        {
+          "word": "很",
+          "start": 350.6,
+          "end": 350.74
+        },
+        {
+          "word": "大",
+          "start": 350.74,
+          "end": 350.92
+        },
+        {
+          "word": "的",
+          "start": 350.92,
+          "end": 351.04
+        },
+        {
+          "word": "错",
+          "start": 351.04,
+          "end": 351.16
+        },
+        {
+          "word": "误",
+          "start": 351.16,
+          "end": 351.34
+        },
+        {
+          "word": "吗？",
+          "start": 351.34,
+          "end": 351.605
+        }
+      ],
+      "confidence": null,
+      "note": "",
+      "flags": [],
+      "id": "seg_00096",
+      "reviewed": false
+    },
+    {
+      "start": 351.605,
+      "end": 353.5,
+      "type": "non_speech",
+      "speaker": null,
+      "overlap_speakers": [],
+      "text": "",
+      "words": [],
+      "confidence": null,
+      "note": "Music",
+      "flags": [],
+      "id": "seg_00097",
+      "reviewed": false
+    },
+    {
+      "start": 353.748,
+      "end": 354.56,
+      "type": "speech",
+      "speaker": "SPEAKER_01",
+      "overlap_speakers": [],
+      "text": "我翻错了，",
+      "words": [
+        {
+          "word": "我",
+          "start": 353.76,
+          "end": 353.92
+        },
+        {
+          "word": "翻",
+          "start": 353.92,
+          "end": 354.08
+        },
+        {
+          "word": "错",
+          "start": 354.08,
+          "end": 354.32
+        },
+        {
+          "word": "了，",
+          "start": 354.32,
+          "end": 354.56
+        }
+      ],
+      "confidence": null,
+      "note": "",
+      "flags": [],
+      "id": "seg_00098",
+      "reviewed": false
+    },
+    {
+      "start": 354.56,
+      "end": 355.975,
+      "type": "non_speech",
+      "speaker": null,
+      "overlap_speakers": [],
+      "text": "",
+      "words": [],
+      "confidence": null,
+      "note": "Music",
+      "flags": [],
+      "id": "seg_00099",
+      "reviewed": false
+    },
+    {
+      "start": 355.975,
+      "end": 359.22,
+      "type": "speech",
+      "speaker": "SPEAKER_01",
+      "overlap_speakers": [],
+      "text": "我现在才大二，有些词大三才能学到呢，",
+      "words": [
+        {
+          "word": "我",
+          "start": 356.0,
+          "end": 356.24
+        },
+        {
+          "word": "现",
+          "start": 356.26,
+          "end": 356.42
+        },
+        {
+          "word": "在",
+          "start": 356.42,
+          "end": 356.54
+        },
+        {
+          "word": "才",
+          "start": 356.54,
+          "end": 356.72
+        },
+        {
+          "word": "大",
+          "start": 356.72,
+          "end": 356.9
+        },
+        {
+          "word": "二，",
+          "start": 356.9,
+          "end": 357.14
+        },
+        {
+          "word": "有",
+          "start": 357.38,
+          "end": 357.54
+        },
+        {
+          "word": "些",
+          "start": 357.54,
+          "end": 357.72
+        },
+        {
+          "word": "词",
+          "start": 357.72,
+          "end": 357.92
+        },
+        {
+          "word": "大",
+          "start": 357.92,
+          "end": 358.08
+        },
+        {
+          "word": "三",
+          "start": 358.08,
+          "end": 358.28
+        },
+        {
+          "word": "才",
+          "start": 358.28,
+          "end": 358.44
+        },
+        {
+          "word": "能",
+          "start": 358.44,
+          "end": 358.58
+        },
+        {
+          "word": "学",
+          "start": 358.58,
+          "end": 358.8
+        },
+        {
+          "word": "到",
+          "start": 358.8,
+          "end": 358.98
+        },
+        {
+          "word": "呢，",
+          "start": 358.98,
+          "end": 359.22
+        }
+      ],
+      "confidence": null,
+      "note": "",
+      "flags": [],
+      "id": "seg_00100",
+      "reviewed": false
+    },
+    {
+      "start": 359.738,
+      "end": 361.713,
+      "type": "speech",
+      "speaker": "SPEAKER_00",
+      "overlap_speakers": [],
+      "text": "就你这样用不了到大三，",
+      "words": [
+        {
+          "word": "就",
+          "start": 359.78,
+          "end": 359.98
+        },
+        {
+          "word": "你",
+          "start": 359.98,
+          "end": 360.12
+        },
+        {
+          "word": "这",
+          "start": 360.12,
+          "end": 360.28
+        },
+        {
+          "word": "样",
+          "start": 360.28,
+          "end": 360.52
+        },
+        {
+          "word": "用",
+          "start": 360.76,
+          "end": 360.94
+        },
+        {
+          "word": "不",
+          "start": 360.94,
+          "end": 361.06
+        },
+        {
+          "word": "了",
+          "start": 361.06,
+          "end": 361.18
+        },
+        {
+          "word": "到",
+          "start": 361.18,
+          "end": 361.3
+        },
+        {
+          "word": "大",
+          "start": 361.3,
+          "end": 361.42
+        },
+        {
+          "word": "三，",
+          "start": 361.42,
+          "end": 361.66
+        }
+      ],
+      "confidence": null,
+      "note": "",
+      "flags": [],
+      "id": "seg_00101",
+      "reviewed": false
+    },
+    {
+      "start": 362.6,
+      "end": 364.48,
+      "type": "speech",
+      "speaker": "SPEAKER_01",
+      "overlap_speakers": [],
+      "text": "你什么意思啊？说清楚",
+      "words": [
+        {
+          "word": "你",
+          "start": 362.6,
+          "end": 362.8
+        },
+        {
+          "word": "什",
+          "start": 362.8,
+          "end": 362.96
+        },
+        {
+          "word": "么",
+          "start": 362.96,
+          "end": 363.06
+        },
+        {
+          "word": "意",
+          "start": 363.06,
+          "end": 363.2
+        },
+        {
+          "word": "思",
+          "start": 363.2,
+          "end": 363.32
+        },
+        {
+          "word": "啊？",
+          "start": 363.32,
+          "end": 363.56
+        },
+        {
+          "word": "说",
+          "start": 363.78,
+          "end": 363.98
+        },
+        {
+          "word": "清",
+          "start": 363.98,
+          "end": 364.1
+        },
+        {
+          "word": "楚",
+          "start": 364.1,
+          "end": 364.455
+        }
+      ],
+      "confidence": null,
+      "note": "",
+      "flags": [],
+      "id": "seg_00102",
+      "reviewed": false
+    },
+    {
+      "start": 365.324,
+      "end": 366.93,
+      "type": "speech",
+      "speaker": "SPEAKER_00",
+      "overlap_speakers": [],
+      "text": "你犯的是最基本的错误。",
+      "words": [
+        {
+          "word": "你",
+          "start": 365.39,
+          "end": 365.57
+        },
+        {
+          "word": "犯",
+          "start": 365.57,
+          "end": 365.75
+        },
+        {
+          "word": "的",
+          "start": 365.75,
+          "end": 365.83
+        },
+        {
+          "word": "是",
+          "start": 365.83,
+          "end": 365.93
+        },
+        {
+          "word": "最",
+          "start": 365.93,
+          "end": 366.11
+        },
+        {
+          "word": "基",
+          "start": 366.11,
+          "end": 366.27
+        },
+        {
+          "word": "本",
+          "start": 366.27,
+          "end": 366.39
+        },
+        {
+          "word": "的",
+          "start": 366.39,
+          "end": 366.53
+        },
+        {
+          "word": "错",
+          "start": 366.53,
+          "end": 366.69
+        },
+        {
+          "word": "误。",
+          "start": 366.69,
+          "end": 366.93
+        }
+      ],
+      "confidence": null,
+      "note": "",
+      "flags": [],
+      "id": "seg_00103",
+      "reviewed": false
+    },
+    {
+      "start": 367.41,
+      "end": 380.495,
+      "type": "speech",
+      "speaker": "SPEAKER_00",
+      "overlap_speakers": [],
+      "text": "大一课文里第八课第三章节出现过这两个词，你回去仔细看一下，不要以为学法语是很好混的一门专业的。大一进校玩一年，大二出国交流混一年大三大四，谈个恋爱就可以拿文凭。你们这样学法语是胡闹，",
+      "words": [
+        {
+          "word": "大",
+          "start": 367.41,
+          "end": 367.65
+        },
+        {
+          "word": "一",
+          "start": 367.65,
+          "end": 367.77
+        },
+        {
+          "word": "课",
+          "start": 367.77,
+          "end": 367.89
+        },
+        {
+          "word": "文",
+          "start": 367.89,
+          "end": 368.07
+        },
+        {
+          "word": "里",
+          "start": 368.07,
+          "end": 368.21
+        },
+        {
+          "word": "第",
+          "start": 368.21,
+          "end": 368.37
+        },
+        {
+          "word": "八",
+          "start": 368.37,
+          "end": 368.55
+        },
+        {
+          "word": "课",
+          "start": 368.55,
+          "end": 368.67
+        },
+        {
+          "word": "第",
+          "start": 368.67,
+          "end": 368.79
+        },
+        {
+          "word": "三",
+          "start": 368.79,
+          "end": 368.99
+        },
+        {
+          "word": "章",
+          "start": 368.99,
+          "end": 369.15
+        },
+        {
+          "word": "节",
+          "start": 369.15,
+          "end": 369.37
+        },
+        {
+          "word": "出",
+          "start": 369.37,
+          "end": 369.51
+        },
+        {
+          "word": "现",
+          "start": 369.51,
+          "end": 369.69
+        },
+        {
+          "word": "过",
+          "start": 369.69,
+          "end": 369.79
+        },
+        {
+          "word": "这",
+          "start": 369.79,
+          "end": 369.89
+        },
+        {
+          "word": "两",
+          "start": 369.89,
+          "end": 370.03
+        },
+        {
+          "word": "个",
+          "start": 370.03,
+          "end": 370.15
+        },
+        {
+          "word": "词，",
+          "start": 370.15,
+          "end": 370.39
+        },
+        {
+          "word": "你",
+          "start": 370.39,
+          "end": 370.53
+        },
+        {
+          "word": "回",
+          "start": 370.53,
+          "end": 370.69
+        },
+        {
+          "word": "去",
+          "start": 370.69,
+          "end": 370.83
+        },
+        {
+          "word": "仔",
+          "start": 370.83,
+          "end": 370.93
+        },
+        {
+          "word": "细",
+          "start": 370.93,
+          "end": 371.11
+        },
+        {
+          "word": "看",
+          "start": 371.11,
+          "end": 371.29
+        },
+        {
+          "word": "一",
+          "start": 371.29,
+          "end": 371.41
+        },
+        {
+          "word": "下，",
+          "start": 371.41,
+          "end": 371.65
+        },
+        {
+          "word": "不",
+          "start": 371.79,
+          "end": 371.95
+        },
+        {
+          "word": "要",
+          "start": 371.95,
+          "end": 372.09
+        },
+        {
+          "word": "以",
+          "start": 372.09,
+          "end": 372.19
+        },
+        {
+          "word": "为",
+          "start": 372.19,
+          "end": 372.31
+        },
+        {
+          "word": "学",
+          "start": 372.31,
+          "end": 372.45
+        },
+        {
+          "word": "法",
+          "start": 372.45,
+          "end": 372.61
+        },
+        {
+          "word": "语",
+          "start": 372.61,
+          "end": 372.79
+        },
+        {
+          "word": "是",
+          "start": 372.79,
+          "end": 372.91
+        },
+        {
+          "word": "很",
+          "start": 372.91,
+          "end": 373.03
+        },
+        {
+          "word": "好",
+          "start": 373.03,
+          "end": 373.15
+        },
+        {
+          "word": "混",
+          "start": 373.15,
+          "end": 373.31
+        },
+        {
+          "word": "的",
+          "start": 373.31,
+          "end": 373.43
+        },
+        {
+          "word": "一",
+          "start": 373.43,
+          "end": 373.53
+        },
+        {
+          "word": "门",
+          "start": 373.53,
+          "end": 373.63
+        },
+        {
+          "word": "专",
+          "start": 373.63,
+          "end": 373.79
+        },
+        {
+          "word": "业",
+          "start": 373.79,
+          "end": 373.93
+        },
+        {
+          "word": "的。",
+          "start": 373.93,
+          "end": 374.17
+        },
+        {
+          "word": "大",
+          "start": 374.25,
+          "end": 374.47
+        },
+        {
+          "word": "一",
+          "start": 374.47,
+          "end": 374.61
+        },
+        {
+          "word": "进",
+          "start": 374.61,
+          "end": 374.77
+        },
+        {
+          "word": "校",
+          "start": 374.77,
+          "end": 374.89
+        },
+        {
+          "word": "玩",
+          "start": 374.89,
+          "end": 375.07
+        },
+        {
+          "word": "一",
+          "start": 375.07,
+          "end": 375.19
+        },
+        {
+          "word": "年，",
+          "start": 375.19,
+          "end": 375.39
+        },
+        {
+          "word": "大",
+          "start": 375.39,
+          "end": 375.55
+        },
+        {
+          "word": "二",
+          "start": 375.55,
+          "end": 375.75
+        },
+        {
+          "word": "出",
+          "start": 375.75,
+          "end": 375.85
+        },
+        {
+          "word": "国",
+          "start": 375.85,
+          "end": 376.05
+        },
+        {
+          "word": "交",
+          "start": 376.05,
+          "end": 376.15
+        },
+        {
+          "word": "流",
+          "start": 376.15,
+          "end": 376.29
+        },
+        {
+          "word": "混",
+          "start": 376.29,
+          "end": 376.45
+        },
+        {
+          "word": "一",
+          "start": 376.45,
+          "end": 376.57
+        },
+        {
+          "word": "年",
+          "start": 376.57,
+          "end": 376.81
+        },
+        {
+          "word": "大",
+          "start": 376.81,
+          "end": 376.93
+        },
+        {
+          "word": "三",
+          "start": 376.93,
+          "end": 377.11
+        },
+        {
+          "word": "大",
+          "start": 377.11,
+          "end": 377.21
+        },
+        {
+          "word": "四，",
+          "start": 377.21,
+          "end": 377.37
+        },
+        {
+          "word": "谈",
+          "start": 377.37,
+          "end": 377.51
+        },
+        {
+          "word": "个",
+          "start": 377.51,
+          "end": 377.61
+        },
+        {
+          "word": "恋",
+          "start": 377.61,
+          "end": 377.69
+        },
+        {
+          "word": "爱",
+          "start": 377.69,
+          "end": 377.81
+        },
+        {
+          "word": "就",
+          "start": 377.81,
+          "end": 377.95
+        },
+        {
+          "word": "可",
+          "start": 377.95,
+          "end": 378.05
+        },
+        {
+          "word": "以",
+          "start": 378.05,
+          "end": 378.17
+        },
+        {
+          "word": "拿",
+          "start": 378.17,
+          "end": 378.31
+        },
+        {
+          "word": "文",
+          "start": 378.31,
+          "end": 378.47
+        },
+        {
+          "word": "凭。",
+          "start": 378.47,
+          "end": 378.71
+        },
+        {
+          "word": "你",
+          "start": 378.79,
+          "end": 378.95
+        },
+        {
+          "word": "们",
+          "start": 378.95,
+          "end": 379.07
+        },
+        {
+          "word": "这",
+          "start": 379.07,
+          "end": 379.19
+        },
+        {
+          "word": "样",
+          "start": 379.19,
+          "end": 379.31
+        },
+        {
+          "word": "学",
+          "start": 379.31,
+          "end": 379.51
+        },
+        {
+          "word": "法",
+          "start": 379.51,
+          "end": 379.67
+        },
+        {
+          "word": "语",
+          "start": 379.67,
+          "end": 379.85
+        },
+        {
+          "word": "是",
+          "start": 379.85,
+          "end": 380.01
+        },
+        {
+          "word": "胡",
+          "start": 380.01,
+          "end": 380.21
+        },
+        {
+          "word": "闹，",
+          "start": 380.21,
+          "end": 380.45
+        }
+      ],
+      "confidence": null,
+      "note": "",
+      "flags": [],
+      "id": "seg_00104",
+      "reviewed": false
+    },
+    {
+      "start": 380.61,
+      "end": 381.775,
+      "type": "speech",
+      "speaker": "SPEAKER_01",
+      "overlap_speakers": [],
+      "text": "你凭什么说我胡闹？",
+      "words": [
+        {
+          "word": "你",
+          "start": 380.61,
+          "end": 380.73
+        },
+        {
+          "word": "凭",
+          "start": 380.73,
+          "end": 380.91
+        },
+        {
+          "word": "什",
+          "start": 380.91,
+          "end": 381.03
+        },
+        {
+          "word": "么",
+          "start": 381.03,
+          "end": 381.15
+        },
+        {
+          "word": "说",
+          "start": 381.15,
+          "end": 381.27
+        },
+        {
+          "word": "我",
+          "start": 381.27,
+          "end": 381.349
+        },
+        {
+          "word": "胡",
+          "start": 381.349,
+          "end": 381.43
+        },
+        {
+          "word": "闹？",
+          "start": 381.43,
+          "end": 381.775
+        }
+      ],
+      "confidence": null,
+      "note": "",
+      "flags": [],
+      "id": "seg_00105",
+      "reviewed": false
+    },
+    {
+      "start": 382.638,
+      "end": 387.65,
+      "type": "speech",
+      "speaker": "SPEAKER_01",
+      "overlap_speakers": [],
+      "text": "我告诉你，我是因为学习成绩优秀，我拿了奖学金，我才来瑞士做调研。生了。你听我说，",
+      "words": [
+        {
+          "word": "我",
+          "start": 382.75,
+          "end": 382.87
+        },
+        {
+          "word": "告",
+          "start": 382.87,
+          "end": 382.97
+        },
+        {
+          "word": "诉",
+          "start": 382.97,
+          "end": 383.15
+        },
+        {
+          "word": "你，",
+          "start": 383.15,
+          "end": 383.33
+        },
+        {
+          "word": "我",
+          "start": 383.33,
+          "end": 383.45
+        },
+        {
+          "word": "是",
+          "start": 383.45,
+          "end": 383.57
+        },
+        {
+          "word": "因",
+          "start": 383.57,
+          "end": 383.69
+        },
+        {
+          "word": "为",
+          "start": 383.69,
+          "end": 383.79
+        },
+        {
+          "word": "学",
+          "start": 383.79,
+          "end": 383.87
+        },
+        {
+          "word": "习",
+          "start": 383.87,
+          "end": 383.99
+        },
+        {
+          "word": "成",
+          "start": 383.99,
+          "end": 384.11
+        },
+        {
+          "word": "绩",
+          "start": 384.11,
+          "end": 384.25
+        },
+        {
+          "word": "优",
+          "start": 384.25,
+          "end": 384.41
+        },
+        {
+          "word": "秀，",
+          "start": 384.41,
+          "end": 384.57
+        },
+        {
+          "word": "我",
+          "start": 384.57,
+          "end": 384.67
+        },
+        {
+          "word": "拿",
+          "start": 384.67,
+          "end": 384.81
+        },
+        {
+          "word": "了",
+          "start": 384.81,
+          "end": 384.91
+        },
+        {
+          "word": "奖",
+          "start": 384.91,
+          "end": 385.05
+        },
+        {
+          "word": "学",
+          "start": 385.05,
+          "end": 385.23
+        },
+        {
+          "word": "金，",
+          "start": 385.23,
+          "end": 385.47
+        },
+        {
+          "word": "我",
+          "start": 385.65,
+          "end": 385.77
+        },
+        {
+          "word": "才",
+          "start": 385.77,
+          "end": 385.95
+        },
+        {
+          "word": "来",
+          "start": 385.95,
+          "end": 386.05
+        },
+        {
+          "word": "瑞",
+          "start": 386.05,
+          "end": 386.19
+        },
+        {
+          "word": "士",
+          "start": 386.19,
+          "end": 386.31
+        },
+        {
+          "word": "做",
+          "start": 386.31,
+          "end": 386.43
+        },
+        {
+          "word": "调",
+          "start": 386.43,
+          "end": 386.53
+        },
+        {
+          "word": "研。",
+          "start": 386.53,
+          "end": 386.65
+        },
+        {
+          "word": "生",
+          "start": 386.65,
+          "end": 386.77
+        },
+        {
+          "word": "了。",
+          "start": 386.77,
+          "end": 386.95
+        },
+        {
+          "word": "你",
+          "start": 386.95,
+          "end": 387.07
+        },
+        {
+          "word": "听",
+          "start": 387.07,
+          "end": 387.19
+        },
+        {
+          "word": "我",
+          "start": 387.19,
+          "end": 387.31
+        },
+        {
+          "word": "说，",
+          "start": 387.31,
+          "end": 387.55
+        }
+      ],
+      "confidence": null,
+      "note": "",
+      "flags": [],
+      "id": "seg_00106",
+      "reviewed": false
+    },
+    {
+      "start": 387.65,
+      "end": 388.5,
+      "type": "non_speech",
+      "speaker": null,
+      "overlap_speakers": [],
+      "text": "",
+      "words": [],
+      "confidence": null,
+      "note": "Music",
+      "flags": [],
+      "id": "seg_00107",
+      "reviewed": false
+    },
+    {
+      "start": 388.81,
+      "end": 390.772,
+      "type": "speech",
+      "speaker": "SPEAKER_01",
+      "overlap_speakers": [],
+      "text": "我的梦想是成为一名翻译官。",
+      "words": [
+        {
+          "word": "我",
+          "start": 388.81,
+          "end": 389.05
+        },
+        {
+          "word": "的",
+          "start": 389.05,
+          "end": 389.19
+        },
+        {
+          "word": "梦",
+          "start": 389.19,
+          "end": 389.35
+        },
+        {
+          "word": "想",
+          "start": 389.35,
+          "end": 389.47
+        },
+        {
+          "word": "是",
+          "start": 389.47,
+          "end": 389.61
+        },
+        {
+          "word": "成",
+          "start": 389.61,
+          "end": 389.69
+        },
+        {
+          "word": "为",
+          "start": 389.69,
+          "end": 389.81
+        },
+        {
+          "word": "一",
+          "start": 389.81,
+          "end": 389.91
+        },
+        {
+          "word": "名",
+          "start": 389.91,
+          "end": 390.07
+        },
+        {
+          "word": "翻",
+          "start": 390.07,
+          "end": 390.23
+        },
+        {
+          "word": "译",
+          "start": 390.23,
+          "end": 390.35
+        },
+        {
+          "word": "官。",
+          "start": 390.35,
+          "end": 390.59
+        }
+      ],
+      "confidence": null,
+      "note": "",
+      "flags": [],
+      "id": "seg_00108",
+      "reviewed": false
+    },
+    {
+      "start": 391.77,
+      "end": 392.805,
+      "type": "speech",
+      "speaker": "SPEAKER_00",
+      "overlap_speakers": [],
+      "text": "好，我马上过去",
+      "words": [
+        {
+          "word": "好，",
+          "start": 391.77,
+          "end": 392.01
+        },
+        {
+          "word": "我",
+          "start": 392.03,
+          "end": 392.17
+        },
+        {
+          "word": "马",
+          "start": 392.17,
+          "end": 392.27
+        },
+        {
+          "word": "上",
+          "start": 392.27,
+          "end": 392.39
+        },
+        {
+          "word": "过",
+          "start": 392.39,
+          "end": 392.51
+        },
+        {
+          "word": "去",
+          "start": 392.51,
+          "end": 392.805
+        }
+      ],
+      "confidence": null,
+      "note": "",
+      "flags": [],
+      "id": "seg_00109",
+      "reviewed": false
+    },
+    {
+      "start": 394.11,
+      "end": 394.855,
+      "type": "speech",
+      "speaker": "SPEAKER_00",
+      "overlap_speakers": [],
+      "text": "翻译官，",
+      "words": [
+        {
+          "word": "翻",
+          "start": 394.11,
+          "end": 394.35
+        },
+        {
+          "word": "译",
+          "start": 394.35,
+          "end": 394.53
+        },
+        {
+          "word": "官，",
+          "start": 394.53,
+          "end": 394.77
+        }
+      ],
+      "confidence": null,
+      "note": "",
+      "flags": [],
+      "id": "seg_00110",
+      "reviewed": false
+    },
+    {
+      "start": 395.49,
+      "end": 396.391,
+      "type": "speech",
+      "speaker": "SPEAKER_00",
+      "overlap_speakers": [],
+      "text": "你不合适，",
+      "words": [
+        {
+          "word": "你",
+          "start": 395.49,
+          "end": 395.73
+        },
+        {
+          "word": "不",
+          "start": 395.73,
+          "end": 395.87
+        },
+        {
+          "word": "合",
+          "start": 395.87,
+          "end": 396.03
+        },
+        {
+          "word": "适，",
+          "start": 396.03,
+          "end": 396.27
+        }
+      ],
+      "confidence": null,
+      "note": "",
+      "flags": [],
+      "id": "seg_00111",
+      "reviewed": false
+    },
+    {
+      "start": 398.011,
+      "end": 399.277,
+      "type": "speech",
+      "speaker": "SPEAKER_01",
+      "overlap_speakers": [],
+      "text": "你曹飞，",
+      "words": [
+        {
+          "word": "你",
+          "start": 398.09,
+          "end": 398.33
+        },
+        {
+          "word": "曹",
+          "start": 398.65,
+          "end": 398.89
+        },
+        {
+          "word": "飞，",
+          "start": 398.89,
+          "end": 399.13
+        }
+      ],
+      "confidence": null,
+      "note": "",
+      "flags": [],
+      "id": "seg_00112",
+      "reviewed": false
+    },
+    {
+      "start": 399.97,
+      "end": 401.69,
+      "type": "speech",
+      "speaker": "SPEAKER_01",
+      "overlap_speakers": [],
+      "text": "你怎么了？脸变得通红。",
+      "words": [
+        {
+          "word": "你",
+          "start": 399.97,
+          "end": 400.17
+        },
+        {
+          "word": "怎",
+          "start": 400.17,
+          "end": 400.27
+        },
+        {
+          "word": "么",
+          "start": 400.27,
+          "end": 400.39
+        },
+        {
+          "word": "了？",
+          "start": 400.39,
+          "end": 400.63
+        },
+        {
+          "word": "脸",
+          "start": 400.71,
+          "end": 400.87
+        },
+        {
+          "word": "变",
+          "start": 400.87,
+          "end": 401.05
+        },
+        {
+          "word": "得",
+          "start": 401.05,
+          "end": 401.13
+        },
+        {
+          "word": "通",
+          "start": 401.13,
+          "end": 401.27
+        },
+        {
+          "word": "红。",
+          "start": 401.27,
+          "end": 401.51
+        }
+      ],
+      "confidence": null,
+      "note": "",
+      "flags": [],
+      "id": "seg_00113",
+      "reviewed": false
+    },
+    {
+      "start": 402.73,
+      "end": 405.368,
+      "type": "speech",
+      "speaker": "SPEAKER_01",
+      "overlap_speakers": [],
+      "text": "我遇到一个超级狂妄自大的家伙啊，什",
+      "words": [
+        {
+          "word": "我",
+          "start": 402.73,
+          "end": 402.97
+        },
+        {
+          "word": "遇",
+          "start": 402.99,
+          "end": 403.13
+        },
+        {
+          "word": "到",
+          "start": 403.13,
+          "end": 403.31
+        },
+        {
+          "word": "一",
+          "start": 403.31,
+          "end": 403.39
+        },
+        {
+          "word": "个",
+          "start": 403.39,
+          "end": 403.47
+        },
+        {
+          "word": "超",
+          "start": 403.47,
+          "end": 403.59
+        },
+        {
+          "word": "级",
+          "start": 403.59,
+          "end": 403.79
+        },
+        {
+          "word": "狂",
+          "start": 403.79,
+          "end": 403.89
+        },
+        {
+          "word": "妄",
+          "start": 403.89,
+          "end": 404.09
+        },
+        {
+          "word": "自",
+          "start": 404.09,
+          "end": 404.25
+        },
+        {
+          "word": "大",
+          "start": 404.25,
+          "end": 404.37
+        },
+        {
+          "word": "的",
+          "start": 404.37,
+          "end": 404.51
+        },
+        {
+          "word": "家",
+          "start": 404.51,
+          "end": 404.67
+        },
+        {
+          "word": "伙",
+          "start": 404.67,
+          "end": 404.75
+        },
+        {
+          "word": "啊，",
+          "start": 404.75,
+          "end": 404.99
+        },
+        {
+          "word": "什",
+          "start": 405.05,
+          "end": 405.29
+        }
+      ],
+      "confidence": null,
+      "note": "",
+      "flags": [],
+      "id": "seg_00114",
+      "reviewed": false
+    },
+    {
+      "start": 405.858,
+      "end": 406.565,
+      "type": "speech",
+      "speaker": "SPEAKER_01",
+      "overlap_speakers": [],
+      "text": "么人啊，",
+      "words": [
+        {
+          "word": "么",
+          "start": 405.91,
+          "end": 406.11
+        },
+        {
+          "word": "人",
+          "start": 406.11,
+          "end": 406.23
+        },
+        {
+          "word": "啊，",
+          "start": 406.23,
+          "end": 406.565
+        }
+      ],
+      "confidence": null,
+      "note": "",
+      "flags": [],
+      "id": "seg_00115",
+      "reviewed": false
+    },
+    {
+      "start": 407.24,
+      "end": 407.76,
+      "type": "speech",
+      "speaker": "SPEAKER_01",
+      "overlap_speakers": [],
+      "text": "别理他",
+      "words": [
+        {
+          "word": "别",
+          "start": 407.24,
+          "end": 407.4
+        },
+        {
+          "word": "理",
+          "start": 407.4,
+          "end": 407.52
+        },
+        {
+          "word": "他",
+          "start": 407.52,
+          "end": 407.76
+        }
+      ],
+      "confidence": null,
+      "note": "",
+      "flags": [],
+      "id": "seg_00116",
+      "reviewed": false
+    },
+    {
+      "start": 408.12,
+      "end": 412.287,
+      "type": "speech",
+      "speaker": "SPEAKER_01",
+      "overlap_speakers": [],
+      "text": "了，快仗着最后一班岗吧。你只要拿到实习全优就可以拿到奖学金了。",
+      "words": [
+        {
+          "word": "了，",
+          "start": 408.12,
+          "end": 408.32
+        },
+        {
+          "word": "快",
+          "start": 408.32,
+          "end": 408.52
+        },
+        {
+          "word": "仗",
+          "start": 408.52,
+          "end": 408.62
+        },
+        {
+          "word": "着",
+          "start": 408.62,
+          "end": 408.7
+        },
+        {
+          "word": "最",
+          "start": 408.7,
+          "end": 408.8
+        },
+        {
+          "word": "后",
+          "start": 408.8,
+          "end": 408.92
+        },
+        {
+          "word": "一",
+          "start": 408.92,
+          "end": 409.1
+        },
+        {
+          "word": "班",
+          "start": 409.1,
+          "end": 409.28
+        },
+        {
+          "word": "岗",
+          "start": 409.28,
+          "end": 409.52
+        },
+        {
+          "word": "吧。",
+          "start": 409.7,
+          "end": 409.88
+        },
+        {
+          "word": "你",
+          "start": 409.88,
+          "end": 409.98
+        },
+        {
+          "word": "只",
+          "start": 409.98,
+          "end": 410.06
+        },
+        {
+          "word": "要",
+          "start": 410.06,
+          "end": 410.14
+        },
+        {
+          "word": "拿",
+          "start": 410.14,
+          "end": 410.22
+        },
+        {
+          "word": "到",
+          "start": 410.22,
+          "end": 410.34
+        },
+        {
+          "word": "实",
+          "start": 410.34,
+          "end": 410.46
+        },
+        {
+          "word": "习",
+          "start": 410.46,
+          "end": 410.58
+        },
+        {
+          "word": "全",
+          "start": 410.58,
+          "end": 410.74
+        },
+        {
+          "word": "优",
+          "start": 410.74,
+          "end": 410.98
+        },
+        {
+          "word": "就",
+          "start": 411.06,
+          "end": 411.22
+        },
+        {
+          "word": "可",
+          "start": 411.22,
+          "end": 411.3
+        },
+        {
+          "word": "以",
+          "start": 411.3,
+          "end": 411.38
+        },
+        {
+          "word": "拿",
+          "start": 411.38,
+          "end": 411.46
+        },
+        {
+          "word": "到",
+          "start": 411.46,
+          "end": 411.56
+        },
+        {
+          "word": "奖",
+          "start": 411.56,
+          "end": 411.68
+        },
+        {
+          "word": "学",
+          "start": 411.68,
+          "end": 411.86
+        },
+        {
+          "word": "金",
+          "start": 411.86,
+          "end": 411.96
+        },
+        {
+          "word": "了。",
+          "start": 411.96,
+          "end": 412.2
+        }
+      ],
+      "confidence": null,
+      "note": "",
+      "flags": [],
+      "id": "seg_00117",
+      "reviewed": false
+    },
+    {
+      "start": 412.5,
+      "end": 413.48,
+      "type": "non_speech",
+      "speaker": null,
+      "overlap_speakers": [],
+      "text": "",
+      "words": [],
+      "confidence": null,
+      "note": "Vehicle",
+      "flags": [],
+      "id": "seg_00118",
+      "reviewed": false
+    },
+    {
+      "start": 413.48,
+      "end": 413.72,
+      "type": "speech",
+      "speaker": null,
+      "overlap_speakers": [],
+      "text": "嗯，",
+      "words": [
+        {
+          "word": "嗯，",
+          "start": 413.48,
+          "end": 413.72
+        }
+      ],
+      "confidence": null,
+      "note": "",
+      "flags": [
+        "short",
+        "no_speaker"
+      ],
+      "id": "seg_00119",
+      "reviewed": false
+    },
+    {
+      "start": 414.54,
+      "end": 415.004,
+      "type": "speech",
+      "speaker": "SPEAKER_01",
+      "overlap_speakers": [],
+      "text": "加油。",
+      "words": [
+        {
+          "word": "加",
+          "start": 414.54,
+          "end": 414.72
+        },
+        {
+          "word": "油。",
+          "start": 414.72,
+          "end": 414.985
+        }
+      ],
+      "confidence": null,
+      "note": "",
+      "flags": [],
+      "id": "seg_00120",
+      "reviewed": false
+    },
+    {
+      "start": 415.004,
+      "end": 442.25,
+      "type": "non_speech",
+      "speaker": null,
+      "overlap_speakers": [],
+      "text": "",
+      "words": [],
+      "confidence": null,
+      "note": "Music",
+      "flags": [],
+      "id": "seg_00121",
+      "reviewed": false
+    },
+    {
+      "start": 442.25,
+      "end": 443.17,
+      "type": "speech",
+      "speaker": "SPEAKER_02",
+      "overlap_speakers": [],
+      "text": "哎，小菲，",
+      "words": [
+        {
+          "word": "哎，",
+          "start": 442.25,
+          "end": 442.49
+        },
+        {
+          "word": "小",
+          "start": 442.71,
+          "end": 442.93
+        },
+        {
+          "word": "菲，",
+          "start": 442.93,
+          "end": 443.17
+        }
+      ],
+      "confidence": null,
+      "note": "",
+      "flags": [],
+      "id": "seg_00122",
+      "reviewed": false
+    },
+    {
+      "start": 443.51,
+      "end": 444.73,
+      "type": "speech",
+      "speaker": "SPEAKER_02",
+      "overlap_speakers": [],
+      "text": "你的奖学金咋了",
+      "words": [
+        {
+          "word": "你",
+          "start": 443.51,
+          "end": 443.71
+        },
+        {
+          "word": "的",
+          "start": 443.71,
+          "end": 443.83
+        },
+        {
+          "word": "奖",
+          "start": 443.83,
+          "end": 443.95
+        },
+        {
+          "word": "学",
+          "start": 443.95,
+          "end": 444.07
+        },
+        {
+          "word": "金",
+          "start": 444.07,
+          "end": 444.27
+        },
+        {
+          "word": "咋",
+          "start": 444.27,
+          "end": 444.49
+        },
+        {
+          "word": "了",
+          "start": 444.49,
+          "end": 444.73
+        }
+      ],
+      "confidence": null,
+      "note": "",
+      "flags": [],
+      "id": "seg_00123",
+      "reviewed": false
+    },
+    {
+      "start": 444.99,
+      "end": 445.868,
+      "type": "speech",
+      "speaker": "SPEAKER_02",
+      "overlap_speakers": [],
+      "text": "啊，为什么？",
+      "words": [
+        {
+          "word": "啊，",
+          "start": 444.99,
+          "end": 445.23
+        },
+        {
+          "word": "为",
+          "start": 445.29,
+          "end": 445.51
+        },
+        {
+          "word": "什",
+          "start": 445.51,
+          "end": 445.61
+        },
+        {
+          "word": "么？",
+          "start": 445.61,
+          "end": 445.85
+        }
+      ],
+      "confidence": null,
+      "note": "",
+      "flags": [],
+      "id": "seg_00124",
+      "reviewed": false
+    },
+    {
+      "start": 446.21,
+      "end": 448.552,
+      "type": "speech",
+      "speaker": "SPEAKER_02",
+      "overlap_speakers": [],
+      "text": "好像是因为你之前犯了翻译错误，",
+      "words": [
+        {
+          "word": "好",
+          "start": 446.21,
+          "end": 446.39
+        },
+        {
+          "word": "像",
+          "start": 446.39,
+          "end": 446.57
+        },
+        {
+          "word": "是",
+          "start": 446.57,
+          "end": 446.69
+        },
+        {
+          "word": "因",
+          "start": 446.69,
+          "end": 446.87
+        },
+        {
+          "word": "为",
+          "start": 446.87,
+          "end": 446.99
+        },
+        {
+          "word": "你",
+          "start": 446.99,
+          "end": 447.13
+        },
+        {
+          "word": "之",
+          "start": 447.13,
+          "end": 447.23
+        },
+        {
+          "word": "前",
+          "start": 447.23,
+          "end": 447.41
+        },
+        {
+          "word": "犯",
+          "start": 447.41,
+          "end": 447.51
+        },
+        {
+          "word": "了",
+          "start": 447.51,
+          "end": 447.65
+        },
+        {
+          "word": "翻",
+          "start": 447.65,
+          "end": 447.81
+        },
+        {
+          "word": "译",
+          "start": 447.81,
+          "end": 447.95
+        },
+        {
+          "word": "错",
+          "start": 447.95,
+          "end": 448.17
+        },
+        {
+          "word": "误，",
+          "start": 448.17,
+          "end": 448.41
+        }
+      ],
+      "confidence": null,
+      "note": "",
+      "flags": [],
+      "id": "seg_00125",
+      "reviewed": false
+    },
+    {
+      "start": 448.97,
+      "end": 453.732,
+      "type": "speech",
+      "speaker": "SPEAKER_02",
+      "overlap_speakers": [],
+      "text": "哎，你也真够倒霉的。上次你在会堂门口遇到那个alex成是个翻译官，",
+      "words": [
+        {
+          "word": "哎，",
+          "start": 448.97,
+          "end": 449.21
+        },
+        {
+          "word": "你",
+          "start": 449.33,
+          "end": 449.43
+        },
+        {
+          "word": "也",
+          "start": 449.43,
+          "end": 449.55
+        },
+        {
+          "word": "真",
+          "start": 449.55,
+          "end": 449.67
+        },
+        {
+          "word": "够",
+          "start": 449.67,
+          "end": 449.83
+        },
+        {
+          "word": "倒",
+          "start": 449.83,
+          "end": 449.95
+        },
+        {
+          "word": "霉",
+          "start": 449.95,
+          "end": 450.13
+        },
+        {
+          "word": "的。",
+          "start": 450.13,
+          "end": 450.33
+        },
+        {
+          "word": "上",
+          "start": 450.33,
+          "end": 450.49
+        },
+        {
+          "word": "次",
+          "start": 450.49,
+          "end": 450.61
+        },
+        {
+          "word": "你",
+          "start": 450.61,
+          "end": 450.69
+        },
+        {
+          "word": "在",
+          "start": 450.69,
+          "end": 450.81
+        },
+        {
+          "word": "会",
+          "start": 450.81,
+          "end": 450.97
+        },
+        {
+          "word": "堂",
+          "start": 450.97,
+          "end": 451.11
+        },
+        {
+          "word": "门",
+          "start": 451.11,
+          "end": 451.27
+        },
+        {
+          "word": "口",
+          "start": 451.27,
+          "end": 451.41
+        },
+        {
+          "word": "遇",
+          "start": 451.41,
+          "end": 451.49
+        },
+        {
+          "word": "到",
+          "start": 451.49,
+          "end": 451.59
+        },
+        {
+          "word": "那",
+          "start": 451.59,
+          "end": 451.71
+        },
+        {
+          "word": "个",
+          "start": 451.71,
+          "end": 451.81
+        },
+        {
+          "word": "alex",
+          "start": 451.81,
+          "end": 452.13
+        },
+        {
+          "word": "成",
+          "start": 452.13,
+          "end": 452.37
+        },
+        {
+          "word": "是",
+          "start": 452.67,
+          "end": 452.83
+        },
+        {
+          "word": "个",
+          "start": 452.83,
+          "end": 452.97
+        },
+        {
+          "word": "翻",
+          "start": 452.97,
+          "end": 453.07
+        },
+        {
+          "word": "译",
+          "start": 453.07,
+          "end": 453.25
+        },
+        {
+          "word": "官，",
+          "start": 453.25,
+          "end": 453.695
+        }
+      ],
+      "confidence": null,
+      "note": "",
+      "flags": [],
+      "id": "seg_00126",
+      "reviewed": false
+    },
+    {
+      "start": 455.13,
+      "end": 456.247,
+      "type": "speech",
+      "speaker": "SPEAKER_02",
+      "overlap_speakers": [],
+      "text": "会场门口",
+      "words": [
+        {
+          "word": "会",
+          "start": 455.13,
+          "end": 455.37
+        },
+        {
+          "word": "场",
+          "start": 455.41,
+          "end": 455.65
+        },
+        {
+          "word": "门",
+          "start": 455.71,
+          "end": 455.95
+        },
+        {
+          "word": "口",
+          "start": 455.95,
+          "end": 456.19
+        }
+      ],
+      "confidence": null,
+      "note": "",
+      "flags": [],
+      "id": "seg_00127",
+      "reviewed": false
+    },
+    {
+      "start": 456.5,
+      "end": 457.09,
+      "type": "non_speech",
+      "speaker": null,
+      "overlap_speakers": [],
+      "text": "",
+      "words": [],
+      "confidence": null,
+      "note": "Cough",
+      "flags": [],
+      "id": "seg_00128",
+      "reviewed": false
+    },
+    {
+      "start": 457.09,
+      "end": 457.33,
+      "type": "speech",
+      "speaker": null,
+      "overlap_speakers": [],
+      "text": "啊。",
+      "words": [
+        {
+          "word": "啊。",
+          "start": 457.09,
+          "end": 457.33
+        }
+      ],
+      "confidence": null,
+      "note": "",
+      "flags": [
+        "short",
+        "low_vad",
+        "noise",
+        "no_speaker"
+      ],
+      "id": "seg_00129",
+      "reviewed": false
+    },
+    {
+      "start": 457.99,
+      "end": 462.085,
+      "type": "speech",
+      "speaker": "SPEAKER_01",
+      "overlap_speakers": [],
+      "text": "就上次在会场门口，遇见那个狂妄自大的家伙，是个翻译官，",
+      "words": [
+        {
+          "word": "就",
+          "start": 457.99,
+          "end": 458.23
+        },
+        {
+          "word": "上",
+          "start": 458.23,
+          "end": 458.41
+        },
+        {
+          "word": "次",
+          "start": 458.41,
+          "end": 458.57
+        },
+        {
+          "word": "在",
+          "start": 458.57,
+          "end": 458.71
+        },
+        {
+          "word": "会",
+          "start": 458.71,
+          "end": 458.81
+        },
+        {
+          "word": "场",
+          "start": 458.81,
+          "end": 459.01
+        },
+        {
+          "word": "门",
+          "start": 459.01,
+          "end": 459.11
+        },
+        {
+          "word": "口，",
+          "start": 459.11,
+          "end": 459.25
+        },
+        {
+          "word": "遇",
+          "start": 459.25,
+          "end": 459.41
+        },
+        {
+          "word": "见",
+          "start": 459.41,
+          "end": 459.51
+        },
+        {
+          "word": "那",
+          "start": 459.51,
+          "end": 459.63
+        },
+        {
+          "word": "个",
+          "start": 459.63,
+          "end": 459.73
+        },
+        {
+          "word": "狂",
+          "start": 459.73,
+          "end": 459.87
+        },
+        {
+          "word": "妄",
+          "start": 459.87,
+          "end": 460.07
+        },
+        {
+          "word": "自",
+          "start": 460.07,
+          "end": 460.17
+        },
+        {
+          "word": "大",
+          "start": 460.17,
+          "end": 460.35
+        },
+        {
+          "word": "的",
+          "start": 460.35,
+          "end": 460.43
+        },
+        {
+          "word": "家",
+          "start": 460.43,
+          "end": 460.57
+        },
+        {
+          "word": "伙，",
+          "start": 460.57,
+          "end": 460.81
+        },
+        {
+          "word": "是",
+          "start": 461.11,
+          "end": 461.35
+        },
+        {
+          "word": "个",
+          "start": 461.35,
+          "end": 461.49
+        },
+        {
+          "word": "翻",
+          "start": 461.49,
+          "end": 461.65
+        },
+        {
+          "word": "译",
+          "start": 461.65,
+          "end": 461.77
+        },
+        {
+          "word": "官，",
+          "start": 461.77,
+          "end": 462.065
+        }
+      ],
+      "confidence": null,
+      "note": "",
+      "flags": [],
+      "id": "seg_00130",
+      "reviewed": false
+    },
+    {
+      "start": 464.026,
+      "end": 468.397,
+      "type": "speech",
+      "speaker": "SPEAKER_01",
+      "overlap_speakers": [],
+      "text": "傻死了。我还告诉他，我叫乔飞，我还问他是不是交流生，",
+      "words": [
+        {
+          "word": "傻",
+          "start": 464.13,
+          "end": 464.37
+        },
+        {
+          "word": "死",
+          "start": 464.59,
+          "end": 464.83
+        },
+        {
+          "word": "了。",
+          "start": 464.87,
+          "end": 465.01
+        },
+        {
+          "word": "我",
+          "start": 465.01,
+          "end": 465.11
+        },
+        {
+          "word": "还",
+          "start": 465.11,
+          "end": 465.25
+        },
+        {
+          "word": "告",
+          "start": 465.25,
+          "end": 465.41
+        },
+        {
+          "word": "诉",
+          "start": 465.41,
+          "end": 465.53
+        },
+        {
+          "word": "他，",
+          "start": 465.53,
+          "end": 465.67
+        },
+        {
+          "word": "我",
+          "start": 465.67,
+          "end": 465.77
+        },
+        {
+          "word": "叫",
+          "start": 465.77,
+          "end": 465.91
+        },
+        {
+          "word": "乔",
+          "start": 465.91,
+          "end": 466.15
+        },
+        {
+          "word": "飞，",
+          "start": 466.19,
+          "end": 466.43
+        },
+        {
+          "word": "我",
+          "start": 466.73,
+          "end": 466.89
+        },
+        {
+          "word": "还",
+          "start": 466.89,
+          "end": 467.03
+        },
+        {
+          "word": "问",
+          "start": 467.03,
+          "end": 467.19
+        },
+        {
+          "word": "他",
+          "start": 467.19,
+          "end": 467.37
+        },
+        {
+          "word": "是",
+          "start": 467.37,
+          "end": 467.49
+        },
+        {
+          "word": "不",
+          "start": 467.49,
+          "end": 467.61
+        },
+        {
+          "word": "是",
+          "start": 467.61,
+          "end": 467.75
+        },
+        {
+          "word": "交",
+          "start": 467.75,
+          "end": 467.91
+        },
+        {
+          "word": "流",
+          "start": 467.91,
+          "end": 468.09
+        },
+        {
+          "word": "生，",
+          "start": 468.09,
+          "end": 468.33
+        }
+      ],
+      "confidence": null,
+      "note": "",
+      "flags": [],
+      "id": "seg_00131",
+      "reviewed": false
+    },
+    {
+      "start": 469.39,
+      "end": 470.01,
+      "type": "speech",
+      "speaker": "SPEAKER_01",
+      "overlap_speakers": [],
+      "text": "我我奖",
+      "words": [
+        {
+          "word": "我",
+          "start": 469.39,
+          "end": 469.63
+        },
+        {
+          "word": "我",
+          "start": 469.67,
+          "end": 469.89
+        },
+        {
+          "word": "奖",
+          "start": 469.89,
+          "end": 470.01
+        }
+      ],
+      "confidence": null,
+      "note": "",
+      "flags": [],
+      "id": "seg_00132",
+      "reviewed": false
+    },
+    {
+      "start": 469.966,
+      "end": 471.063,
+      "type": "speech",
+      "speaker": "SPEAKER_02",
+      "overlap_speakers": [],
+      "text": "学金真的砸了，",
+      "words": [
+        {
+          "word": "学",
+          "start": 470.01,
+          "end": 470.17
+        },
+        {
+          "word": "金",
+          "start": 470.17,
+          "end": 470.31
+        },
+        {
+          "word": "真",
+          "start": 470.31,
+          "end": 470.47
+        },
+        {
+          "word": "的",
+          "start": 470.47,
+          "end": 470.59
+        },
+        {
+          "word": "砸",
+          "start": 470.59,
+          "end": 470.77
+        },
+        {
+          "word": "了，",
+          "start": 470.77,
+          "end": 471.01
+        }
+      ],
+      "confidence": null,
+      "note": "",
+      "flags": [],
+      "id": "seg_00133",
+      "reviewed": false
+    },
+    {
+      "start": 471.99,
+      "end": 475.035,
+      "type": "speech",
+      "speaker": "SPEAKER_02",
+      "overlap_speakers": [],
+      "text": "那你现在是不是不能待在瑞士，只能回国了？",
+      "words": [
+        {
+          "word": "那",
+          "start": 471.99,
+          "end": 472.21
+        },
+        {
+          "word": "你",
+          "start": 472.21,
+          "end": 472.35
+        },
+        {
+          "word": "现",
+          "start": 472.35,
+          "end": 472.51
+        },
+        {
+          "word": "在",
+          "start": 472.51,
+          "end": 472.75
+        },
+        {
+          "word": "是",
+          "start": 472.89,
+          "end": 473.05
+        },
+        {
+          "word": "不",
+          "start": 473.05,
+          "end": 473.15
+        },
+        {
+          "word": "是",
+          "start": 473.15,
+          "end": 473.25
+        },
+        {
+          "word": "不",
+          "start": 473.25,
+          "end": 473.33
+        },
+        {
+          "word": "能",
+          "start": 473.33,
+          "end": 473.47
+        },
+        {
+          "word": "待",
+          "start": 473.47,
+          "end": 473.57
+        },
+        {
+          "word": "在",
+          "start": 473.57,
+          "end": 473.75
+        },
+        {
+          "word": "瑞",
+          "start": 473.75,
+          "end": 473.87
+        },
+        {
+          "word": "士，",
+          "start": 473.87,
+          "end": 474.11
+        },
+        {
+          "word": "只",
+          "start": 474.19,
+          "end": 474.29
+        },
+        {
+          "word": "能",
+          "start": 474.29,
+          "end": 474.41
+        },
+        {
+          "word": "回",
+          "start": 474.41,
+          "end": 474.53
+        },
+        {
+          "word": "国",
+          "start": 474.53,
+          "end": 474.71
+        },
+        {
+          "word": "了？",
+          "start": 474.71,
+          "end": 475.035
+        }
+      ],
+      "confidence": null,
+      "note": "",
+      "flags": [],
+      "id": "seg_00134",
+      "reviewed": false
+    },
+    {
+      "start": 477.796,
+      "end": 480.614,
+      "type": "speech",
+      "speaker": "SPEAKER_01",
+      "overlap_speakers": [],
+      "text": "我还想在瑞士再多学一学期呢，",
+      "words": [
+        {
+          "word": "我",
+          "start": 477.81,
+          "end": 478.01
+        },
+        {
+          "word": "还",
+          "start": 478.01,
+          "end": 478.13
+        },
+        {
+          "word": "想",
+          "start": 478.13,
+          "end": 478.31
+        },
+        {
+          "word": "在",
+          "start": 478.31,
+          "end": 478.51
+        },
+        {
+          "word": "瑞",
+          "start": 478.51,
+          "end": 478.67
+        },
+        {
+          "word": "士",
+          "start": 478.67,
+          "end": 478.87
+        },
+        {
+          "word": "再",
+          "start": 478.87,
+          "end": 479.03
+        },
+        {
+          "word": "多",
+          "start": 479.03,
+          "end": 479.23
+        },
+        {
+          "word": "学",
+          "start": 479.23,
+          "end": 479.47
+        },
+        {
+          "word": "一",
+          "start": 479.51,
+          "end": 479.69
+        },
+        {
+          "word": "学",
+          "start": 479.69,
+          "end": 479.91
+        },
+        {
+          "word": "期",
+          "start": 479.91,
+          "end": 480.15
+        },
+        {
+          "word": "呢，",
+          "start": 480.15,
+          "end": 480.39
+        }
+      ],
+      "confidence": null,
+      "note": "",
+      "flags": [],
+      "id": "seg_00135",
+      "reviewed": false
+    },
+    {
+      "start": 482.437,
+      "end": 483.702,
+      "type": "speech",
+      "speaker": "SPEAKER_01",
+      "overlap_speakers": [],
+      "text": "什么alex成，",
+      "words": [
+        {
+          "word": "什",
+          "start": 482.51,
+          "end": 482.67
+        },
+        {
+          "word": "么",
+          "start": 482.67,
+          "end": 482.79
+        },
+        {
+          "word": "alex",
+          "start": 482.79,
+          "end": 483.21
+        },
+        {
+          "word": "成，",
+          "start": 483.21,
+          "end": 483.45
+        }
+      ],
+      "confidence": null,
+      "note": "",
+      "flags": [],
+      "id": "seg_00136",
+      "reviewed": false
+    },
+    {
+      "start": 484.35,
+      "end": 487.887,
+      "type": "speech",
+      "speaker": "SPEAKER_01",
+      "overlap_speakers": [],
+      "text": "我怎么得罪他了？我我再见着他，真的跟他没完。",
+      "words": [
+        {
+          "word": "我",
+          "start": 484.35,
+          "end": 484.59
+        },
+        {
+          "word": "怎",
+          "start": 484.61,
+          "end": 484.75
+        },
+        {
+          "word": "么",
+          "start": 484.75,
+          "end": 484.91
+        },
+        {
+          "word": "得",
+          "start": 484.91,
+          "end": 485.11
+        },
+        {
+          "word": "罪",
+          "start": 485.11,
+          "end": 485.29
+        },
+        {
+          "word": "他",
+          "start": 485.29,
+          "end": 485.469
+        },
+        {
+          "word": "了？",
+          "start": 485.469,
+          "end": 485.59
+        },
+        {
+          "word": "我",
+          "start": 485.59,
+          "end": 485.83
+        },
+        {
+          "word": "我",
+          "start": 486.21,
+          "end": 486.37
+        },
+        {
+          "word": "再",
+          "start": 486.37,
+          "end": 486.49
+        },
+        {
+          "word": "见",
+          "start": 486.49,
+          "end": 486.59
+        },
+        {
+          "word": "着",
+          "start": 486.59,
+          "end": 486.71
+        },
+        {
+          "word": "他，",
+          "start": 486.71,
+          "end": 486.85
+        },
+        {
+          "word": "真",
+          "start": 486.85,
+          "end": 486.95
+        },
+        {
+          "word": "的",
+          "start": 486.95,
+          "end": 487.07
+        },
+        {
+          "word": "跟",
+          "start": 487.07,
+          "end": 487.19
+        },
+        {
+          "word": "他",
+          "start": 487.19,
+          "end": 487.31
+        },
+        {
+          "word": "没",
+          "start": 487.31,
+          "end": 487.49
+        },
+        {
+          "word": "完。",
+          "start": 487.49,
+          "end": 487.845
+        }
+      ],
+      "confidence": null,
+      "note": "",
+      "flags": [],
+      "id": "seg_00137",
+      "reviewed": false
+    },
+    {
+      "start": 488.849,
+      "end": 492.106,
+      "type": "speech",
+      "speaker": "SPEAKER_01",
+      "overlap_speakers": [],
+      "text": "他上次还说我连大一的词我都不记得，",
+      "words": [
+        {
+          "word": "他",
+          "start": 489.17,
+          "end": 489.41
+        },
+        {
+          "word": "上",
+          "start": 489.41,
+          "end": 489.63
+        },
+        {
+          "word": "次",
+          "start": 489.63,
+          "end": 489.81
+        },
+        {
+          "word": "还",
+          "start": 489.81,
+          "end": 489.99
+        },
+        {
+          "word": "说",
+          "start": 489.99,
+          "end": 490.17
+        },
+        {
+          "word": "我",
+          "start": 490.17,
+          "end": 490.33
+        },
+        {
+          "word": "连",
+          "start": 490.33,
+          "end": 490.47
+        },
+        {
+          "word": "大",
+          "start": 490.47,
+          "end": 490.69
+        },
+        {
+          "word": "一",
+          "start": 490.69,
+          "end": 490.79
+        },
+        {
+          "word": "的",
+          "start": 490.79,
+          "end": 490.91
+        },
+        {
+          "word": "词",
+          "start": 490.91,
+          "end": 491.15
+        },
+        {
+          "word": "我",
+          "start": 491.17,
+          "end": 491.27
+        },
+        {
+          "word": "都",
+          "start": 491.27,
+          "end": 491.43
+        },
+        {
+          "word": "不",
+          "start": 491.43,
+          "end": 491.59
+        },
+        {
+          "word": "记",
+          "start": 491.59,
+          "end": 491.83
+        },
+        {
+          "word": "得，",
+          "start": 491.85,
+          "end": 492.09
+        }
+      ],
+      "confidence": null,
+      "note": "",
+      "flags": [],
+      "id": "seg_00138",
+      "reviewed": false
+    },
+    {
+      "start": 492.61,
+      "end": 492.975,
+      "type": "speech",
+      "speaker": "SPEAKER_01",
+      "overlap_speakers": [],
+      "text": "我",
+      "words": [
+        {
+          "word": "我",
+          "start": 492.61,
+          "end": 492.975
+        }
+      ],
+      "confidence": null,
+      "note": "",
+      "flags": [
+        "short"
+      ],
+      "id": "seg_00139",
+      "reviewed": false
+    },
+    {
+      "start": 496.72,
+      "end": 497.793,
+      "type": "speech",
+      "speaker": "SPEAKER_01",
+      "overlap_speakers": [],
+      "text": "同学借我用一下，",
+      "words": [
+        {
+          "word": "同",
+          "start": 496.72,
+          "end": 496.92
+        },
+        {
+          "word": "学",
+          "start": 496.92,
+          "end": 497.02
+        },
+        {
+          "word": "借",
+          "start": 497.02,
+          "end": 497.14
+        },
+        {
+          "word": "我",
+          "start": 497.14,
+          "end": 497.24
+        },
+        {
+          "word": "用",
+          "start": 497.24,
+          "end": 497.38
+        },
+        {
+          "word": "一",
+          "start": 497.38,
+          "end": 497.46
+        },
+        {
+          "word": "下，",
+          "start": 497.46,
+          "end": 497.785
+        }
+      ],
+      "confidence": null,
+      "note": "",
+      "flags": [],
+      "id": "seg_00140",
+      "reviewed": false
+    },
+    {
+      "start": 500.0,
+      "end": 502.5,
+      "type": "non_speech",
+      "speaker": null,
+      "overlap_speakers": [],
+      "text": "",
+      "words": [],
+      "confidence": null,
+      "note": "Music",
+      "flags": [],
+      "id": "seg_00141",
+      "reviewed": false
+    },
+    {
+      "start": 502.552,
+      "end": 503.02,
+      "type": "speech",
+      "speaker": "SPEAKER_01",
+      "overlap_speakers": [],
+      "text": "还真",
+      "words": [
+        {
+          "word": "还",
+          "start": 502.58,
+          "end": 502.78
+        },
+        {
+          "word": "真",
+          "start": 502.78,
+          "end": 503.02
+        }
+      ],
+      "confidence": null,
+      "note": "",
+      "flags": [],
+      "id": "seg_00142",
+      "reviewed": false
+    },
+    {
+      "start": 502.973,
+      "end": 503.8,
+      "type": "speech",
+      "speaker": "SPEAKER_02",
+      "overlap_speakers": [],
+      "text": "有。",
+      "words": [
+        {
+          "word": "有。",
+          "start": 503.24,
+          "end": 503.48
+        }
+      ],
+      "confidence": null,
+      "note": "",
+      "flags": [],
+      "id": "seg_00143",
+      "reviewed": false
+    },
+    {
+      "start": 504.46,
+      "end": 506.4,
+      "type": "speech",
+      "speaker": "SPEAKER_02",
+      "overlap_speakers": [],
+      "text": "哎，你别理他他挑刺儿，",
+      "words": [
+        {
+          "word": "哎，",
+          "start": 504.46,
+          "end": 504.7
+        },
+        {
+          "word": "你",
+          "start": 504.8,
+          "end": 504.94
+        },
+        {
+          "word": "别",
+          "start": 504.94,
+          "end": 505.12
+        },
+        {
+          "word": "理",
+          "start": 505.12,
+          "end": 505.28
+        },
+        {
+          "word": "他",
+          "start": 505.28,
+          "end": 505.52
+        },
+        {
+          "word": "他",
+          "start": 505.64,
+          "end": 505.76
+        },
+        {
+          "word": "挑",
+          "start": 505.76,
+          "end": 505.94
+        },
+        {
+          "word": "刺",
+          "start": 505.94,
+          "end": 506.16
+        },
+        {
+          "word": "儿，",
+          "start": 506.16,
+          "end": 506.4
+        }
+      ],
+      "confidence": null,
+      "note": "",
+      "flags": [],
+      "id": "seg_00144",
+      "reviewed": false
+    },
+    {
+      "start": 506.78,
+      "end": 508.272,
+      "type": "speech",
+      "speaker": "SPEAKER_02",
+      "overlap_speakers": [],
+      "text": "这是课外延伸词汇，",
+      "words": [
+        {
+          "word": "这",
+          "start": 506.78,
+          "end": 506.94
+        },
+        {
+          "word": "是",
+          "start": 506.94,
+          "end": 507.06
+        },
+        {
+          "word": "课",
+          "start": 507.06,
+          "end": 507.18
+        },
+        {
+          "word": "外",
+          "start": 507.18,
+          "end": 507.38
+        },
+        {
+          "word": "延",
+          "start": 507.38,
+          "end": 507.48
+        },
+        {
+          "word": "伸",
+          "start": 507.48,
+          "end": 507.72
+        },
+        {
+          "word": "词",
+          "start": 507.74,
+          "end": 507.9
+        },
+        {
+          "word": "汇，",
+          "start": 507.9,
+          "end": 508.14
+        }
+      ],
+      "confidence": null,
+      "note": "",
+      "flags": [],
+      "id": "seg_00145",
+      "reviewed": false
+    },
+    {
+      "start": 508.6,
+      "end": 509.94,
+      "type": "speech",
+      "speaker": "SPEAKER_02",
+      "overlap_speakers": [],
+      "text": "一般人哪会去记啊，",
+      "words": [
+        {
+          "word": "一",
+          "start": 508.6,
+          "end": 508.72
+        },
+        {
+          "word": "般",
+          "start": 508.72,
+          "end": 508.96
+        },
+        {
+          "word": "人",
+          "start": 508.96,
+          "end": 509.1
+        },
+        {
+          "word": "哪",
+          "start": 509.1,
+          "end": 509.2
+        },
+        {
+          "word": "会",
+          "start": 509.2,
+          "end": 509.32
+        },
+        {
+          "word": "去",
+          "start": 509.32,
+          "end": 509.5
+        },
+        {
+          "word": "记",
+          "start": 509.5,
+          "end": 509.7
+        },
+        {
+          "word": "啊，",
+          "start": 509.7,
+          "end": 509.94
+        }
+      ],
+      "confidence": null,
+      "note": "",
+      "flags": [],
+      "id": "seg_00146",
+      "reviewed": false
+    },
+    {
+      "start": 510.419,
+      "end": 512.215,
+      "type": "speech",
+      "speaker": "SPEAKER_02",
+      "overlap_speakers": [],
+      "text": "现在害你连交换生都做不了。",
+      "words": [
+        {
+          "word": "现",
+          "start": 510.419,
+          "end": 510.64
+        },
+        {
+          "word": "在",
+          "start": 510.64,
+          "end": 510.76
+        },
+        {
+          "word": "害",
+          "start": 510.76,
+          "end": 510.86
+        },
+        {
+          "word": "你",
+          "start": 510.86,
+          "end": 511.1
+        },
+        {
+          "word": "连",
+          "start": 511.1,
+          "end": 511.22
+        },
+        {
+          "word": "交",
+          "start": 511.22,
+          "end": 511.34
+        },
+        {
+          "word": "换",
+          "start": 511.34,
+          "end": 511.52
+        },
+        {
+          "word": "生",
+          "start": 511.52,
+          "end": 511.6
+        },
+        {
+          "word": "都",
+          "start": 511.6,
+          "end": 511.72
+        },
+        {
+          "word": "做",
+          "start": 511.72,
+          "end": 511.88
+        },
+        {
+          "word": "不",
+          "start": 511.88,
+          "end": 511.96
+        },
+        {
+          "word": "了。",
+          "start": 511.96,
+          "end": 512.215
+        }
+      ],
+      "confidence": null,
+      "note": "",
+      "flags": [],
+      "id": "seg_00147",
+      "reviewed": false
+    },
+    {
+      "start": 512.215,
+      "end": 515.917,
+      "type": "non_speech",
+      "speaker": null,
+      "overlap_speakers": [],
+      "text": "",
+      "words": [],
+      "confidence": null,
+      "note": "Music",
+      "flags": [],
+      "id": "seg_00148",
+      "reviewed": false
+    },
+    {
+      "start": 515.917,
+      "end": 517.283,
+      "type": "speech",
+      "speaker": "SPEAKER_01",
+      "overlap_speakers": [],
+      "text": "从今天开始，",
+      "words": [
+        {
+          "word": "从",
+          "start": 515.92,
+          "end": 516.16
+        },
+        {
+          "word": "今",
+          "start": 516.18,
+          "end": 516.32
+        },
+        {
+          "word": "天",
+          "start": 516.32,
+          "end": 516.56
+        },
+        {
+          "word": "开",
+          "start": 516.56,
+          "end": 516.74
+        },
+        {
+          "word": "始，",
+          "start": 516.74,
+          "end": 516.98
+        }
+      ],
+      "confidence": null,
+      "note": "",
+      "flags": [],
+      "id": "seg_00149",
+      "reviewed": false
+    },
+    {
+      "start": 517.283,
+      "end": 518.0,
+      "type": "non_speech",
+      "speaker": null,
+      "overlap_speakers": [],
+      "text": "",
+      "words": [],
+      "confidence": null,
+      "note": "Music",
+      "flags": [],
+      "id": "seg_00150",
+      "reviewed": false
+    },
+    {
+      "start": 518.026,
+      "end": 520.034,
+      "type": "speech",
+      "speaker": "SPEAKER_01",
+      "overlap_speakers": [],
+      "text": "我要一雪前耻，奋发图强，",
+      "words": [
+        {
+          "word": "我",
+          "start": 518.06,
+          "end": 518.24
+        },
+        {
+          "word": "要",
+          "start": 518.24,
+          "end": 518.44
+        },
+        {
+          "word": "一",
+          "start": 518.44,
+          "end": 518.58
+        },
+        {
+          "word": "雪",
+          "start": 518.58,
+          "end": 518.82
+        },
+        {
+          "word": "前",
+          "start": 518.84,
+          "end": 519.06
+        },
+        {
+          "word": "耻，",
+          "start": 519.06,
+          "end": 519.28
+        },
+        {
+          "word": "奋",
+          "start": 519.28,
+          "end": 519.42
+        },
+        {
+          "word": "发",
+          "start": 519.42,
+          "end": 519.56
+        },
+        {
+          "word": "图",
+          "start": 519.56,
+          "end": 519.72
+        },
+        {
+          "word": "强，",
+          "start": 519.72,
+          "end": 519.96
+        }
+      ],
+      "confidence": null,
+      "note": "",
+      "flags": [],
+      "id": "seg_00151",
+      "reviewed": false
+    },
+    {
+      "start": 520.034,
+      "end": 520.86,
+      "type": "non_speech",
+      "speaker": null,
+      "overlap_speakers": [],
+      "text": "",
+      "words": [],
+      "confidence": null,
+      "note": "Music",
+      "flags": [],
+      "id": "seg_00152",
+      "reviewed": false
+    },
+    {
+      "start": 520.86,
+      "end": 523.815,
+      "type": "speech",
+      "speaker": "SPEAKER_01",
+      "overlap_speakers": [],
+      "text": "我一定会成为一个超级好的翻译的。",
+      "words": [
+        {
+          "word": "我",
+          "start": 520.86,
+          "end": 521.04
+        },
+        {
+          "word": "一",
+          "start": 521.04,
+          "end": 521.14
+        },
+        {
+          "word": "定",
+          "start": 521.14,
+          "end": 521.26
+        },
+        {
+          "word": "会",
+          "start": 521.26,
+          "end": 521.4
+        },
+        {
+          "word": "成",
+          "start": 521.4,
+          "end": 521.56
+        },
+        {
+          "word": "为",
+          "start": 521.56,
+          "end": 521.64
+        },
+        {
+          "word": "一",
+          "start": 521.64,
+          "end": 521.72
+        },
+        {
+          "word": "个",
+          "start": 521.72,
+          "end": 521.82
+        },
+        {
+          "word": "超",
+          "start": 521.82,
+          "end": 521.9
+        },
+        {
+          "word": "级",
+          "start": 521.9,
+          "end": 522.08
+        },
+        {
+          "word": "好",
+          "start": 522.08,
+          "end": 522.2
+        },
+        {
+          "word": "的",
+          "start": 522.2,
+          "end": 522.34
+        },
+        {
+          "word": "翻",
+          "start": 522.34,
+          "end": 522.5
+        },
+        {
+          "word": "译",
+          "start": 522.5,
+          "end": 522.62
+        },
+        {
+          "word": "的。",
+          "start": 522.62,
+          "end": 523.815
+        }
+      ],
+      "confidence": null,
+      "note": "",
+      "flags": [
+        "noise"
+      ],
+      "id": "seg_00153",
+      "reviewed": false
+    },
+    {
+      "start": 523.815,
+      "end": 525.98,
+      "type": "non_speech",
+      "speaker": null,
+      "overlap_speakers": [],
+      "text": "",
+      "words": [],
+      "confidence": null,
+      "note": "Music",
+      "flags": [],
+      "id": "seg_00154",
+      "reviewed": false
+    },
+    {
+      "start": 525.98,
+      "end": 526.215,
+      "type": "speech",
+      "speaker": null,
+      "overlap_speakers": [],
+      "text": "嘘。",
+      "words": [
+        {
+          "word": "嘘。",
+          "start": 525.98,
+          "end": 526.215
+        }
+      ],
+      "confidence": null,
+      "note": "",
+      "flags": [
+        "short",
+        "low_vad",
+        "noise",
+        "no_speaker"
+      ],
+      "id": "seg_00155",
+      "reviewed": false
+    },
+    {
+      "start": 526.215,
+      "end": 549.16,
+      "type": "non_speech",
+      "speaker": null,
+      "overlap_speakers": [],
+      "text": "",
+      "words": [],
+      "confidence": null,
+      "note": "Music",
+      "flags": [],
+      "id": "seg_00156",
+      "reviewed": false
+    },
+    {
+      "start": 549.16,
+      "end": 555.269,
+      "type": "speech",
+      "speaker": "SPEAKER_02",
+      "overlap_speakers": [],
+      "text": "哎，外面来了个土豆款，一下买了我六瓶酒干打呢，这一家我可发财了。",
+      "words": [
+        {
+          "word": "哎，",
+          "start": 549.16,
+          "end": 549.4
+        },
+        {
+          "word": "外",
+          "start": 549.72,
+          "end": 549.84
+        },
+        {
+          "word": "面",
+          "start": 549.84,
+          "end": 549.98
+        },
+        {
+          "word": "来",
+          "start": 549.98,
+          "end": 550.08
+        },
+        {
+          "word": "了",
+          "start": 550.08,
+          "end": 550.2
+        },
+        {
+          "word": "个",
+          "start": 550.2,
+          "end": 550.3
+        },
+        {
+          "word": "土",
+          "start": 550.3,
+          "end": 550.44
+        },
+        {
+          "word": "豆",
+          "start": 550.44,
+          "end": 550.62
+        },
+        {
+          "word": "款，",
+          "start": 550.62,
+          "end": 550.86
+        },
+        {
+          "word": "一",
+          "start": 550.98,
+          "end": 551.1
+        },
+        {
+          "word": "下",
+          "start": 551.1,
+          "end": 551.24
+        },
+        {
+          "word": "买",
+          "start": 551.24,
+          "end": 551.34
+        },
+        {
+          "word": "了",
+          "start": 551.34,
+          "end": 551.46
+        },
+        {
+          "word": "我",
+          "start": 551.46,
+          "end": 551.6
+        },
+        {
+          "word": "六",
+          "start": 551.6,
+          "end": 551.76
+        },
+        {
+          "word": "瓶",
+          "start": 551.76,
+          "end": 552.0
+        },
+        {
+          "word": "酒",
+          "start": 552.0,
+          "end": 552.24
+        },
+        {
+          "word": "干",
+          "start": 552.4,
+          "end": 552.58
+        },
+        {
+          "word": "打",
+          "start": 552.58,
+          "end": 552.82
+        },
+        {
+          "word": "呢，",
+          "start": 552.82,
+          "end": 553.06
+        },
+        {
+          "word": "这",
+          "start": 553.4,
+          "end": 553.62
+        },
+        {
+          "word": "一",
+          "start": 553.62,
+          "end": 553.84
+        },
+        {
+          "word": "家",
+          "start": 553.84,
+          "end": 553.96
+        },
+        {
+          "word": "我",
+          "start": 553.96,
+          "end": 554.16
+        },
+        {
+          "word": "可",
+          "start": 554.16,
+          "end": 554.32
+        },
+        {
+          "word": "发",
+          "start": 554.32,
+          "end": 554.56
+        },
+        {
+          "word": "财",
+          "start": 554.68,
+          "end": 554.92
+        },
+        {
+          "word": "了。",
+          "start": 554.94,
+          "end": 555.18
+        }
+      ],
+      "confidence": null,
+      "note": "",
+      "flags": [],
+      "id": "seg_00157",
+      "reviewed": false
+    },
+    {
+      "start": 555.76,
+      "end": 561.26,
+      "type": "speech",
+      "speaker": "SPEAKER_02",
+      "overlap_speakers": [],
+      "text": "哎，对小飞，你不是是说你要攒钱什么住宿费吗？你快去啊，外面都排着队呢，",
+      "words": [
+        {
+          "word": "哎，",
+          "start": 555.76,
+          "end": 556.0
+        },
+        {
+          "word": "对",
+          "start": 556.02,
+          "end": 556.14
+        },
+        {
+          "word": "小",
+          "start": 556.26,
+          "end": 556.36
+        },
+        {
+          "word": "飞，",
+          "start": 556.36,
+          "end": 556.6
+        },
+        {
+          "word": "你",
+          "start": 556.84,
+          "end": 556.98
+        },
+        {
+          "word": "不",
+          "start": 556.98,
+          "end": 557.14
+        },
+        {
+          "word": "是",
+          "start": 557.14,
+          "end": 557.26
+        },
+        {
+          "word": "是",
+          "start": 557.26,
+          "end": 557.5
+        },
+        {
+          "word": "说",
+          "start": 557.94,
+          "end": 558.04
+        },
+        {
+          "word": "你",
+          "start": 558.04,
+          "end": 558.24
+        },
+        {
+          "word": "要",
+          "start": 558.24,
+          "end": 558.34
+        },
+        {
+          "word": "攒",
+          "start": 558.34,
+          "end": 558.58
+        },
+        {
+          "word": "钱",
+          "start": 558.64,
+          "end": 558.76
+        },
+        {
+          "word": "什",
+          "start": 558.76,
+          "end": 558.88
+        },
+        {
+          "word": "么",
+          "start": 558.88,
+          "end": 558.96
+        },
+        {
+          "word": "住",
+          "start": 558.96,
+          "end": 559.06
+        },
+        {
+          "word": "宿",
+          "start": 559.06,
+          "end": 559.18
+        },
+        {
+          "word": "费",
+          "start": 559.18,
+          "end": 559.36
+        },
+        {
+          "word": "吗？",
+          "start": 559.36,
+          "end": 559.6
+        },
+        {
+          "word": "你",
+          "start": 559.66,
+          "end": 559.76
+        },
+        {
+          "word": "快",
+          "start": 559.76,
+          "end": 559.88
+        },
+        {
+          "word": "去",
+          "start": 559.88,
+          "end": 560.06
+        },
+        {
+          "word": "啊，",
+          "start": 560.06,
+          "end": 560.26
+        },
+        {
+          "word": "外",
+          "start": 560.26,
+          "end": 560.36
+        },
+        {
+          "word": "面",
+          "start": 560.36,
+          "end": 560.48
+        },
+        {
+          "word": "都",
+          "start": 560.48,
+          "end": 560.58
+        },
+        {
+          "word": "排",
+          "start": 560.58,
+          "end": 560.66
+        },
+        {
+          "word": "着",
+          "start": 560.66,
+          "end": 560.78
+        },
+        {
+          "word": "队",
+          "start": 560.78,
+          "end": 560.96
+        },
+        {
+          "word": "呢，",
+          "start": 560.96,
+          "end": 561.2
+        }
+      ],
+      "confidence": null,
+      "note": "",
+      "flags": [],
+      "id": "seg_00158",
+      "reviewed": false
+    },
+    {
+      "start": 556.045,
+      "end": 556.298,
+      "type": "speech",
+      "speaker": "SPEAKER_03",
+      "overlap_speakers": [],
+      "text": "了，",
+      "words": [
+        {
+          "word": "了，",
+          "start": 556.14,
+          "end": 556.26
+        }
+      ],
+      "confidence": null,
+      "note": "",
+      "flags": [
+        "short"
+      ],
+      "id": "seg_00159",
+      "reviewed": false
+    },
+    {
+      "start": 561.88,
+      "end": 563.295,
+      "type": "speech",
+      "speaker": "SPEAKER_02",
+      "overlap_speakers": [],
+      "text": "你们去吧，我就不去了。",
+      "words": [
+        {
+          "word": "你",
+          "start": 561.88,
+          "end": 562.04
+        },
+        {
+          "word": "们",
+          "start": 562.04,
+          "end": 562.16
+        },
+        {
+          "word": "去",
+          "start": 562.16,
+          "end": 562.28
+        },
+        {
+          "word": "吧，",
+          "start": 562.28,
+          "end": 562.42
+        },
+        {
+          "word": "我",
+          "start": 562.42,
+          "end": 562.52
+        },
+        {
+          "word": "就",
+          "start": 562.52,
+          "end": 562.64
+        },
+        {
+          "word": "不",
+          "start": 562.64,
+          "end": 562.72
+        },
+        {
+          "word": "去",
+          "start": 562.72,
+          "end": 562.88
+        },
+        {
+          "word": "了。",
+          "start": 562.88,
+          "end": 563.295
+        }
+      ],
+      "confidence": null,
+      "note": "",
+      "flags": [],
+      "id": "seg_00160",
+      "reviewed": false
+    },
+    {
+      "start": 564.365,
+      "end": 566.1,
+      "type": "speech",
+      "speaker": "SPEAKER_02",
+      "overlap_speakers": [],
+      "text": "你呀都过来当服务生",
+      "words": [
+        {
+          "word": "你",
+          "start": 564.4,
+          "end": 564.64
+        },
+        {
+          "word": "呀",
+          "start": 564.68,
+          "end": 564.92
+        },
+        {
+          "word": "都",
+          "start": 565.06,
+          "end": 565.22
+        },
+        {
+          "word": "过",
+          "start": 565.22,
+          "end": 565.34
+        },
+        {
+          "word": "来",
+          "start": 565.34,
+          "end": 565.46
+        },
+        {
+          "word": "当",
+          "start": 565.46,
+          "end": 565.6
+        },
+        {
+          "word": "服",
+          "start": 565.6,
+          "end": 565.76
+        },
+        {
+          "word": "务",
+          "start": 565.76,
+          "end": 565.86
+        },
+        {
+          "word": "生",
+          "start": 565.86,
+          "end": 566.1
+        }
+      ],
+      "confidence": null,
+      "note": "",
+      "flags": [],
+      "id": "seg_00161",
+      "reviewed": false
+    },
+    {
+      "start": 566.035,
+      "end": 567.655,
+      "type": "speech",
+      "speaker": "SPEAKER_01",
+      "overlap_speakers": [],
+      "text": "了，还傲气什么呀？",
+      "words": [
+        {
+          "word": "了，",
+          "start": 566.1,
+          "end": 566.34
+        },
+        {
+          "word": "还",
+          "start": 566.6,
+          "end": 566.8
+        },
+        {
+          "word": "傲",
+          "start": 566.8,
+          "end": 566.94
+        },
+        {
+          "word": "气",
+          "start": 566.94,
+          "end": 567.12
+        },
+        {
+          "word": "什",
+          "start": 567.12,
+          "end": 567.3
+        },
+        {
+          "word": "么",
+          "start": 567.3,
+          "end": 567.38
+        },
+        {
+          "word": "呀？",
+          "start": 567.38,
+          "end": 567.62
+        }
+      ],
+      "confidence": null,
+      "note": "",
+      "flags": [],
+      "id": "seg_00162",
+      "reviewed": false
+    },
+    {
+      "start": 569.06,
+      "end": 572.535,
+      "type": "speech",
+      "speaker": "SPEAKER_01",
+      "overlap_speakers": [],
+      "text": "当服务生怎么了？我就是有一身傲骨，",
+      "words": [
+        {
+          "word": "当",
+          "start": 569.06,
+          "end": 569.3
+        },
+        {
+          "word": "服",
+          "start": 569.34,
+          "end": 569.44
+        },
+        {
+          "word": "务",
+          "start": 569.44,
+          "end": 569.56
+        },
+        {
+          "word": "生",
+          "start": 569.56,
+          "end": 569.78
+        },
+        {
+          "word": "怎",
+          "start": 569.78,
+          "end": 569.98
+        },
+        {
+          "word": "么",
+          "start": 569.98,
+          "end": 570.1
+        },
+        {
+          "word": "了？",
+          "start": 570.1,
+          "end": 570.34
+        },
+        {
+          "word": "我",
+          "start": 570.42,
+          "end": 570.6
+        },
+        {
+          "word": "就",
+          "start": 570.6,
+          "end": 570.8
+        },
+        {
+          "word": "是",
+          "start": 570.8,
+          "end": 570.92
+        },
+        {
+          "word": "有",
+          "start": 570.92,
+          "end": 571.06
+        },
+        {
+          "word": "一",
+          "start": 571.06,
+          "end": 571.16
+        },
+        {
+          "word": "身",
+          "start": 571.16,
+          "end": 571.38
+        },
+        {
+          "word": "傲",
+          "start": 571.38,
+          "end": 571.58
+        },
+        {
+          "word": "骨，",
+          "start": 571.58,
+          "end": 572.535
+        }
+      ],
+      "confidence": null,
+      "note": "",
+      "flags": [],
+      "id": "seg_00163",
+      "reviewed": false
+    },
+    {
+      "start": 573.0,
+      "end": 588.08,
+      "type": "non_speech",
+      "speaker": null,
+      "overlap_speakers": [],
+      "text": "",
+      "words": [],
+      "confidence": null,
+      "note": "Music",
+      "flags": [],
+      "id": "seg_00164",
+      "reviewed": false
+    },
+    {
+      "start": 588.08,
+      "end": 596.967,
+      "type": "speech",
+      "speaker": "SPEAKER_02",
+      "overlap_speakers": [],
+      "text": "这三款酒就特别好。你看这款酒啊，它的口感非常没有，还有这款白比常酒先生，您看这是非常适合你的。我觉得还有这款",
+      "words": [
+        {
+          "word": "这",
+          "start": 588.08,
+          "end": 588.2
+        },
+        {
+          "word": "三",
+          "start": 588.2,
+          "end": 588.3
+        },
+        {
+          "word": "款",
+          "start": 588.3,
+          "end": 588.48
+        },
+        {
+          "word": "酒",
+          "start": 588.48,
+          "end": 588.6
+        },
+        {
+          "word": "就",
+          "start": 588.6,
+          "end": 588.8
+        },
+        {
+          "word": "特",
+          "start": 588.8,
+          "end": 588.96
+        },
+        {
+          "word": "别",
+          "start": 588.96,
+          "end": 589.14
+        },
+        {
+          "word": "好。",
+          "start": 589.14,
+          "end": 589.38
+        },
+        {
+          "word": "你",
+          "start": 589.44,
+          "end": 589.56
+        },
+        {
+          "word": "看",
+          "start": 589.56,
+          "end": 589.68
+        },
+        {
+          "word": "这",
+          "start": 589.68,
+          "end": 589.8
+        },
+        {
+          "word": "款",
+          "start": 589.8,
+          "end": 589.96
+        },
+        {
+          "word": "酒",
+          "start": 589.96,
+          "end": 590.12
+        },
+        {
+          "word": "啊，",
+          "start": 590.12,
+          "end": 590.36
+        },
+        {
+          "word": "它",
+          "start": 590.4,
+          "end": 590.5
+        },
+        {
+          "word": "的",
+          "start": 590.5,
+          "end": 590.62
+        },
+        {
+          "word": "口",
+          "start": 590.62,
+          "end": 590.74
+        },
+        {
+          "word": "感",
+          "start": 590.74,
+          "end": 590.98
+        },
+        {
+          "word": "非",
+          "start": 590.98,
+          "end": 591.14
+        },
+        {
+          "word": "常",
+          "start": 591.14,
+          "end": 591.32
+        },
+        {
+          "word": "没",
+          "start": 591.32,
+          "end": 591.5
+        },
+        {
+          "word": "有，",
+          "start": 591.5,
+          "end": 591.74
+        },
+        {
+          "word": "还",
+          "start": 591.76,
+          "end": 591.84
+        },
+        {
+          "word": "有",
+          "start": 591.84,
+          "end": 591.98
+        },
+        {
+          "word": "这",
+          "start": 591.98,
+          "end": 592.08
+        },
+        {
+          "word": "款",
+          "start": 592.08,
+          "end": 592.2
+        },
+        {
+          "word": "白",
+          "start": 592.2,
+          "end": 592.34
+        },
+        {
+          "word": "比",
+          "start": 592.34,
+          "end": 592.5
+        },
+        {
+          "word": "常",
+          "start": 592.5,
+          "end": 592.66
+        },
+        {
+          "word": "酒",
+          "start": 592.66,
+          "end": 592.9
+        },
+        {
+          "word": "先",
+          "start": 592.96,
+          "end": 593.12
+        },
+        {
+          "word": "生，",
+          "start": 593.12,
+          "end": 593.24
+        },
+        {
+          "word": "您",
+          "start": 593.24,
+          "end": 593.36
+        },
+        {
+          "word": "看",
+          "start": 593.36,
+          "end": 593.6
+        },
+        {
+          "word": "这",
+          "start": 593.98,
+          "end": 594.14
+        },
+        {
+          "word": "是",
+          "start": 594.14,
+          "end": 594.22
+        },
+        {
+          "word": "非",
+          "start": 594.22,
+          "end": 594.32
+        },
+        {
+          "word": "常",
+          "start": 594.32,
+          "end": 594.46
+        },
+        {
+          "word": "适",
+          "start": 594.46,
+          "end": 594.6
+        },
+        {
+          "word": "合",
+          "start": 594.6,
+          "end": 594.72
+        },
+        {
+          "word": "你",
+          "start": 594.72,
+          "end": 594.86
+        },
+        {
+          "word": "的。",
+          "start": 594.86,
+          "end": 595.1
+        },
+        {
+          "word": "我",
+          "start": 595.32,
+          "end": 595.46
+        },
+        {
+          "word": "觉",
+          "start": 595.46,
+          "end": 595.56
+        },
+        {
+          "word": "得",
+          "start": 595.56,
+          "end": 595.8
+        },
+        {
+          "word": "还",
+          "start": 596.38,
+          "end": 596.52
+        },
+        {
+          "word": "有",
+          "start": 596.52,
+          "end": 596.6
+        },
+        {
+          "word": "这",
+          "start": 596.6,
+          "end": 596.7
+        },
+        {
+          "word": "款",
+          "start": 596.7,
+          "end": 596.965
+        }
+      ],
+      "confidence": null,
+      "note": "",
+      "flags": [
+        "noise"
+      ],
+      "id": "seg_00165",
+      "reviewed": false
+    },
+    {
+      "start": 596.967,
+      "end": 598.267,
+      "type": "non_speech",
+      "speaker": null,
+      "overlap_speakers": [],
+      "text": "",
+      "words": [],
+      "confidence": null,
+      "note": "Music",
+      "flags": [],
+      "id": "seg_00166",
+      "reviewed": false
+    },
+    {
+      "start": 598.267,
+      "end": 600.005,
+      "type": "speech",
+      "speaker": "SPEAKER_00",
+      "overlap_speakers": [],
+      "text": "先生，我给您推荐一款酒。",
+      "words": [
+        {
+          "word": "先",
+          "start": 598.42,
+          "end": 598.58
+        },
+        {
+          "word": "生，",
+          "start": 598.58,
+          "end": 598.82
+        },
+        {
+          "word": "我",
+          "start": 598.96,
+          "end": 599.1
+        },
+        {
+          "word": "给",
+          "start": 599.1,
+          "end": 599.22
+        },
+        {
+          "word": "您",
+          "start": 599.22,
+          "end": 599.36
+        },
+        {
+          "word": "推",
+          "start": 599.36,
+          "end": 599.44
+        },
+        {
+          "word": "荐",
+          "start": 599.44,
+          "end": 599.62
+        },
+        {
+          "word": "一",
+          "start": 599.62,
+          "end": 599.68
+        },
+        {
+          "word": "款",
+          "start": 599.68,
+          "end": 599.78
+        },
+        {
+          "word": "酒。",
+          "start": 599.78,
+          "end": 599.925
+        }
+      ],
+      "confidence": null,
+      "note": "",
+      "flags": [],
+      "id": "seg_00167",
+      "reviewed": false
+    }
+  ]
+}

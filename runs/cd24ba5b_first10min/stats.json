@@ -1,0 +1,21 @@
+{
+  "duration_seconds": 600.04,
+  "speaker_clusters": 8,
+  "segments": {
+    "non_speech": 44,
+    "speech": 123
+  },
+  "flags": {
+    "noise": 24,
+    "low_vad": 6,
+    "short": 10,
+    "no_text": 2,
+    "no_speaker": 3
+  },
+  "unreviewed": 167,
+  "subtitle_entries": 121,
+  "source_file": "E:\\audio\\raw_Mp4s\\cd24ba5bcfee4ca6b555bffef5b65e8c.mp4",
+  "project_file": "E:\\Voice_purify\\data\\projects\\cd24ba5b_first10min.json",
+  "panns_checkpoint_md5": "541141fa2ee191a88f24a3219fff024e",
+  "environment_note": "Project venv panns_inference/config.py patched to honor PANNS_DATA_DIR."
+}

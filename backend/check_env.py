@@ -66,9 +66,16 @@ def check_environment():
 
         # 检查 HF_TOKEN
         import os
-        if os.getenv("HF_TOKEN"):
+        token = os.getenv("HF_TOKEN")
+        if not token:
+            try:
+                from huggingface_hub import get_token
+                token = get_token()
+            except Exception:
+                token = None
+        if token:
             checks.append("✓ HF_TOKEN 已设置")
-            print("  ✓ HF_TOKEN 已配置")
+            print("  ✓ Hugging Face token 已配置（环境变量或 CLI 登录）")
         else:
             checks.append("✗ HF_TOKEN 未设置")
             print("  ✗ HF_TOKEN 环境变量未设置")
