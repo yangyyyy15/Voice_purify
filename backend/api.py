@@ -73,8 +73,11 @@ def save_project(pid: str, project: Project):
     # 媒体路径以服务器上的文件为准，防止前端改写成任意文件
     current = read_json(path)
     data = project.model_dump()
-    for k in ("source_video", "media", "peaks", "audio_analysis", "audio_export"):
-        data[k] = current[k]
+    for k in ("source_video", "media", "peaks", "audio_analysis", "audio_export",
+              "audio_export_raw", "audio_export_compensated"):
+        if k in current:
+            data[k] = current[k]
+    data["segment_audio_exports"] = current.get("segment_audio_exports", {})
     ids = [s["id"] for s in data["segments"]]
     if len(ids) != len(set(ids)):
         raise HTTPException(400, "片段 id 重复")

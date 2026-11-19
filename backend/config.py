@@ -55,11 +55,17 @@ SPEECH_LABELS = [
     "Whispering", "Babbling",
 ]
 NOISE_LABELS = [
-    "Music", "Ringtone", "Telephone", "Telephone bell ringing", "Alarm",
+    "Music", "Musical instrument", "Singing", "Choir",
+    "Ringtone", "Telephone", "Telephone bell ringing", "Alarm",
     "Alarm clock", "Laughter", "Applause", "Clapping", "Cough", "Sneeze",
     "Siren", "Dog", "Bark", "Door", "Knock", "Typing", "Computer keyboard",
     "Beep, bleep", "Vehicle", "Car", "Engine", "Television", "Radio",
 ]
+
+# ---------- 音乐段合并 ----------
+# 两段 non_speech 之间的 speech 段如果比这个短，且有 noise 标记，则把整个区间合并为 non_speech
+# 解决片头歌声被切碎识别为 speech 的问题
+MUSIC_MERGE_GAP_S = 8.0
 
 # ---------- Step 5: 说话人分离 (pyannote) ----------
 PYANNOTE_PIPELINE = "pyannote/speaker-diarization-3.1"
@@ -86,3 +92,13 @@ ATTACH_TOL_S = 0.5       # 字不在任何说话人区间内时，允许吸附�
 MAX_SEGMENT_S = 20.0     # 超过这个时长的片段在句末标点处拆开
 SHORT_SEGMENT_S = 0.4    # 短于它的片段标 short
 LOW_VAD_RATIO = 0.3      # 片段内 VAD 覆盖率低于它标 low_vad（可能是误检）
+
+# ---------- Step 8: 导出 ----------
+# Demucs 人声轨高频补偿
+EXPORT_USE_VOCALS = True        # 导出时用 Demucs 人声轨（而不是原始音轨）
+EXPORT_COMPENSATE = True        # 开启频谱补偿
+EXPORT_COMP_GAIN_DB = 3.0       # 补偿增益（dB），作用频段见 step8_export.py
+EXPORT_COMP_FREQ_HZ = 5000      # 补偿从这个频率开始向高频增益（人声齿音区）
+EXPORT_BOTH = True              # 同时输出未补偿版本用于对照（vocals_raw/）
+EXPORT_PAD_MS = 80              # 片段首尾各留多少毫秒余量（防止切掉字头字尾）
+EXPORT_FADE_MS = 15             # 淡入淡出（消除切点咔哒声）

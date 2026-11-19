@@ -23,7 +23,7 @@ from pathlib import Path
 from .. import config
 from .common import log, read_json, setup_logging, write_json
 
-STEPS = ["step1", "step2", "step3", "step4", "step5", "step6", "step7"]
+STEPS = ["step1", "step2", "step3", "step4", "step5", "step6", "step7", "step8"]
 PALETTE = ["#e6194b", "#3cb44b", "#4363d8", "#f58231", "#911eb4", "#42d4f4", "#f032e6",
            "#9a6324", "#469990", "#808000", "#000075", "#e6beff", "#aaffc3", "#ffd8b1"]
 
@@ -44,7 +44,8 @@ def step_params(args, video: Path) -> dict:
     return {
         "step1": {"video": str(video.resolve()), "size": st.st_size, "mtime": int(st.st_mtime),
                   "preview": config.MAKE_PREVIEW},
-        "step2": {"demucs": config.USE_DEMUCS and not args.no_demucs, "model": config.DEMUCS_MODEL},
+        "step2": {"demucs": config.USE_DEMUCS and not args.no_demucs, "model": config.DEMUCS_MODEL,
+                  "export_track": 1},
         "step3": {"th": config.VAD_THRESHOLD, "sp": config.VAD_MIN_SPEECH_MS, "si": config.VAD_MIN_SILENCE_MS},
         "step4": {"skip": args.no_events, "th": [config.EVENT_NOISE_THRESHOLD, config.EVENT_SPEECH_THRESHOLD],
                   "labels": config.NOISE_LABELS, "win": [config.EVENT_WINDOW_S, config.EVENT_HOP_S]},
@@ -55,6 +56,10 @@ def step_params(args, video: Path) -> dict:
                   "model": config.FUNASR_MODEL if (args.asr or config.ASR_BACKEND) == "funasr"
                   else config.WHISPER_MODEL},
         "step7": {"gap": config.MERGE_GAP_S, "tol": config.ATTACH_TOL_S, "max": config.MAX_SEGMENT_S},
+        "step8": {"use_vocals": config.EXPORT_USE_VOCALS,
+                  "compensate": config.EXPORT_COMPENSATE, "gain_db": config.EXPORT_COMP_GAIN_DB,
+                  "freq_hz": config.EXPORT_COMP_FREQ_HZ, "both": config.EXPORT_BOTH,
+                  "pad_ms": config.EXPORT_PAD_MS, "fade_ms": config.EXPORT_FADE_MS},
     }
 
 
@@ -85,7 +90,7 @@ class Runner:
         return result
 
 
-def build_project(video_id, video, s1, analysis_audio, segments, diar, params) -> dict:
+def build_project(video_id, video, s1, analysis_audio, segments, diar, params, exports) -> dict:
     # 说话人按首次出现顺序编号配色，没出现过（只在重叠里）的也保留
     order = []
     for s in segments:
@@ -105,6 +110,9 @@ def build_project(video_id, video, s1, analysis_audio, segments, diar, params) -
         "peaks": s1["peaks"],
         "audio_analysis": analysis_audio,
         "audio_export": s1["full"],
+        "audio_export_raw": exports["raw"],
+        "audio_export_compensated": exports["compensated"],
+        "segment_audio_exports": exports["segments"],
         "duration": s1["duration"],
         "created_at": dt.datetime.now().isoformat(timespec="seconds"),
         "pipeline_params": params,
@@ -131,7 +139,7 @@ def run_pipeline(video: Path, args) -> Path:
         log.warning("没有可用的 CUDA，将用 CPU 运行，长视频会很慢")
 
     from . import step1_extract, step2_separate, step3_vad, step4_events, step5_diarize, step6_asr
-    from . import step7_merge
+    from . import step7_merge, step8_export
 
     s1 = runner.step("step1", "抽取音轨", lambda: step1_extract.run(video, cache), "step1.json")
 
@@ -157,7 +165,13 @@ def run_pipeline(video: Path, args) -> Path:
                                                      asr["words"], vad, events),
                            "step7.json")
 
-    project = build_project(video_id, video, s1, vocals, segments, diar, params)
+    export_source = (Path(cache / "vocals_48k.wav")
+                     if config.EXPORT_USE_VOCALS and params["step2"]["demucs"]
+                     else Path(s1["full"]))
+    exports = runner.step("step8", "生成人声导出轨",
+                          lambda: step8_export.run(export_source, cache, segments), "step8.json")
+
+    project = build_project(video_id, video, s1, vocals, segments, diar, params, exports)
     Project.model_validate(project)
 
     out = config.PROJECTS_DIR / f"{video_id}.json"

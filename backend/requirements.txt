@@ -5,6 +5,7 @@ demucs
 silero-vad
 panns-inference
 librosa
+scipy
 pyannote.audio>=3.1,<4
 modelscope
 funasr

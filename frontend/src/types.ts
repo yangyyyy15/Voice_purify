@@ -36,6 +36,8 @@ export interface Project {
   peaks: string;
   audio_analysis: string;
   audio_export: string;
+  audio_export_raw?: string | null;
+  audio_export_compensated?: string | null;
   duration: number;
   created_at: string;
   pipeline_params: Record<string, unknown>;

@@ -54,6 +54,9 @@ class Project(BaseModel):
     peaks: str                    # 波形峰值 json
     audio_analysis: str           # 16k 分析音轨（人声轨）
     audio_export: str             # 48k 原始音轨，导出用
+    audio_export_raw: Optional[str] = None
+    audio_export_compensated: Optional[str] = None
+    segment_audio_exports: dict = Field(default_factory=dict)
     duration: float
     created_at: str = ""
     pipeline_params: dict = Field(default_factory=dict)

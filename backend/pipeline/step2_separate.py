@@ -1,5 +1,5 @@
 """
-Step 2：Demucs 人声分离。输入 48k 原轨，输出 vocals_16k.wav（16kHz 单声道人声轨）。
+Step 2：Demucs 人声分离。保留 48k 导出轨，同时生成 16k 分析轨。
 
 长音频分块处理（每块带前后上下文，拼接时裁掉上下文），内存占用和视频时长无关。
 """
@@ -20,6 +20,7 @@ def run(full_48k: Path, cache: Path, device: str) -> str:
     from demucs.pretrained import get_model
 
     out = cache / "vocals_16k.wav"
+    export_out = cache / "vocals_48k.wav"
     model = get_model(config.DEMUCS_MODEL)
     model.eval()
     vocals_idx = model.sources.index("vocals")
@@ -28,6 +29,7 @@ def run(full_48k: Path, cache: Path, device: str) -> str:
     total = len(audio)
     chunk, ctx = CHUNK_S * sr, CONTEXT_S * sr
     pieces = []
+    export_pieces = []
     for start in range(0, total, chunk):
         end = min(start + chunk, total)
         a, b = max(0, start - ctx), min(total, end + ctx)
@@ -41,14 +43,16 @@ def run(full_48k: Path, cache: Path, device: str) -> str:
                                   split=True, overlap=0.25, segment=config.DEMUCS_SEGMENT,
                                   progress=False)[0]
         vocals = sources[vocals_idx] * std + mean                       # (ch, n')
-        vocals = convert_audio(vocals.cpu(), model.samplerate, config.ANALYSIS_SAMPLE_RATE, 1)[0].numpy()
-        # 裁掉上下文（按 16k 采样点换算）
-        k = config.ANALYSIS_SAMPLE_RATE / sr
-        lo = round((start - a) * k)
-        hi = lo + round((end - start) * k)
-        pieces.append(vocals[lo:hi])
+        export = convert_audio(vocals.cpu(), model.samplerate, config.EXPORT_SAMPLE_RATE, 1)[0].numpy()
+        analysis = convert_audio(vocals.cpu(), model.samplerate, config.ANALYSIS_SAMPLE_RATE, 1)[0].numpy()
+        for data, rate, target in ((analysis, config.ANALYSIS_SAMPLE_RATE, pieces),
+                                   (export, config.EXPORT_SAMPLE_RATE, export_pieces)):
+            lo = round((start - a) * rate / sr)
+            hi = lo + round((end - start) * rate / sr)
+            target.append(data[lo:hi])
         if device.startswith("cuda"):
             torch.cuda.empty_cache()
 
     save_wav(out, np.clip(np.concatenate(pieces), -1, 1), config.ANALYSIS_SAMPLE_RATE)
+    save_wav(export_out, np.clip(np.concatenate(export_pieces), -1, 1), config.EXPORT_SAMPLE_RATE)
     return str(out)
