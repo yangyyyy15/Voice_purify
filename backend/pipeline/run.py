@@ -121,6 +121,46 @@ def build_project(video_id, video, s1, analysis_audio, segments, diar, params, e
     }
 
 
+def preserve_reviewed_content(project: dict, previous: dict) -> dict:
+    """Carry reviewer edits forward when regenerated segments retain their IDs."""
+    old_segments = {segment["id"]: segment for segment in previous.get("segments", [])}
+    new_segments = {segment["id"]: segment for segment in project["segments"]}
+    regenerated_bounds = {segment_id: (segment["start"], segment["end"])
+                          for segment_id, segment in new_segments.items()}
+    preserved = 0
+    for segment_id, current in new_segments.items():
+        old = old_segments.get(segment_id)
+        if old is None:
+            continue
+        if old.get("reviewed"):
+            for key in ("start", "end", "type", "speaker", "overlap_speakers", "text",
+                        "words", "confidence", "note", "flags", "reviewed"):
+                if key in old:
+                    current[key] = old[key]
+            preserved += 1
+
+    old_speakers = {speaker["id"]: speaker for speaker in previous.get("speakers", [])}
+    for speaker in project["speakers"]:
+        old = old_speakers.get(speaker["id"])
+        if old and old.get("name"):
+            speaker["name"] = old["name"]
+        if old and old.get("color"):
+            speaker["color"] = old["color"]
+
+    old_exports = previous.get("segment_audio_exports", {})
+    project["segment_audio_exports"] = {
+        segment_id: old_exports[segment_id]
+        for segment_id, (start, end) in regenerated_bounds.items()
+        if segment_id in old_exports
+        and segment_id in old_segments
+        and start == old_segments[segment_id].get("start")
+        and end == old_segments[segment_id].get("end")
+    }
+    if preserved:
+        log.info("保留 %d 个同 ID 已核验片段及人工修改", preserved)
+    return project
+
+
 def run_pipeline(video: Path, args) -> Path:
     from ..schema import Project
     video = video.resolve()
@@ -176,6 +216,8 @@ def run_pipeline(video: Path, args) -> Path:
 
     out = config.PROJECTS_DIR / f"{video_id}.json"
     if out.exists():
+        previous = read_json(out)
+        project = preserve_reviewed_content(project, previous)
         bak = out.with_name(f"{video_id}.{dt.datetime.now():%Y%m%d_%H%M%S}.bak.json")
         shutil.copy2(out, bak)
         log.warning("已有项目文件，旧版本（含人工核验结果）已备份到 %s", bak.name)

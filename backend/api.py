@@ -77,10 +77,20 @@ def save_project(pid: str, project: Project):
               "audio_export_raw", "audio_export_compensated"):
         if k in current:
             data[k] = current[k]
-    data["segment_audio_exports"] = current.get("segment_audio_exports", {})
     ids = [s["id"] for s in data["segments"]]
     if len(ids) != len(set(ids)):
         raise HTTPException(400, "片段 id 重复")
+    current_segments = {s["id"]: s for s in current.get("segments", [])}
+    requested_segments = {s["id"]: s for s in data["segments"]}
+    current_exports = current.get("segment_audio_exports", {})
+    data["segment_audio_exports"] = {
+        segment_id: files
+        for segment_id, files in current_exports.items()
+        if segment_id in requested_segments
+        and segment_id in current_segments
+        and requested_segments[segment_id].get("start") == current_segments[segment_id].get("start")
+        and requested_segments[segment_id].get("end") == current_segments[segment_id].get("end")
+    }
     spk_ids = {s["id"] for s in data["speakers"]}
     for s in data["segments"]:
         for spk in ([s["speaker"]] if s["speaker"] else []) + s["overlap_speakers"]:

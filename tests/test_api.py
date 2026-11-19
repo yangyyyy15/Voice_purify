@@ -64,6 +64,26 @@ def test_save_roundtrip_and_backup(client):
     assert len(list((config.PROJECTS_DIR / ".history" / "demo_1").glob("*.json"))) == 1
 
 
+def test_save_invalidates_stale_segment_exports(client):
+    c, config = client
+    path = config.PROJECTS_DIR / "demo_1.json"
+    data = json.loads(path.read_text(encoding="utf-8"))
+    data["segment_audio_exports"] = {
+        "seg_00001": {"raw": "old-audio.wav"},
+        "seg_00002": {"raw": "overlap.wav"},
+    }
+    path.write_text(json.dumps(data), encoding="utf-8")
+    edited = c.get("/api/projects/demo_1").json()
+    edited["segments"][0]["start"] = 0.75
+    assert c.put("/api/projects/demo_1", json=edited).status_code == 200
+    saved = c.get("/api/projects/demo_1").json()
+    assert saved["segment_audio_exports"] == {"seg_00002": {"raw": "overlap.wav"}}
+
+    saved["segments"] = saved["segments"][:1]
+    assert c.put("/api/projects/demo_1", json=saved).status_code == 200
+    assert c.get("/api/projects/demo_1").json()["segment_audio_exports"] == {}
+
+
 def test_save_rejects_invalid(client):
     c, _ = client
     p = c.get("/api/projects/demo_1").json()
